@@ -1,0 +1,1 @@
+{"appid":"1101078779","appkey":"SM38bKSbHQ0jZMsO","callback":"http://garnier.local:8888/gar_nier/psshangfengmian/web/Connect2.0/example/oauth/callback.php","scope":"get_user_info","errorReport":true,"storageType":"file","host":"localhost","user":"root","password":"root","database":"test"}
