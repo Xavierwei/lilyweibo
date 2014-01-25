@@ -32,10 +32,10 @@ a{text-decoration:none}
     .pagetitle h1,
     .pagesubhead h2,
     .introduce p{width:0;height: 0;overflow: hidden}
-.video{background: url('../img/video.jpg') no-repeat;height:332px ;padding: 15px 0 0}
+.videobg{background: url('../img/video.jpg') no-repeat;height:332px ;padding: 15px 0 0}
     .videobox{width:484px;height: 252px;margin:0px auto 0;}
 
-.steps {background: url(../img/step_bg.png) no-repeat;height:408px;padding-top:1px;}
+.steps {background: url(../img/step_bg.png) no-repeat;height:408px;padding-top:1px;position:relative;}
     .step {display: none;}
     .step1 {display: block;}
     .step1Title,.step1Input,.step1Intro,.step1BtnNext {background: url(../img/step1_ele.gif) no-repeat;}
@@ -44,7 +44,8 @@ a{text-decoration:none}
     .step1Title {width:668px;height:53px;margin:73px 0 0 31px;}
     .step1Input {border:none;width:671px;height:92px;background-position:0 -73px;margin:19px 0 0 31px;font-size:24px;text-indent:1em;}
     .step1Intro {width:637px;height:34px;background-position:-7px -197px;margin:23px 0 0 31px;}
-    .step1BtnNext {cursor:pointer;width:176px;height:168px;background-position: -706px -68px;margin:0 0 0 31px;}
+    .step1Error {display:none;color:#fc3b77;font-size:18px;margin:5px 0 0 31px;}
+    .step1BtnNext {display:none;cursor:pointer;width:176px;height:168px;background-position: -706px -68px;margin:0 0 0 31px;}
     .step2Title,.step2BtnPrev,.step2BtnNext,.step3BtnPrev,.step3BtnNext {background: url(../img/step2_ele.gif) no-repeat;}
     .step2Title {width:430px;height:53px;margin:73px 0 0 31px;}
     .step2Styles {float: left;margin:26px 0 0 31px;}
@@ -59,6 +60,8 @@ a{text-decoration:none}
     .step3Preview {float:left;margin:45px 0 0 31px;width:670px;}
     .step3Btns {float: left;margin:15px 0 0 31px;}
 
+    .step_loading {display:none;background: url(../img/step_bg.png) no-repeat;height:408px;width:940px;position: absolute;top:0;left:0;}
+    .step_loading .waiting {background: url(../img/waiting.gif) no-repeat;width:272px;height:40px;position: absolute;top:50%;left:50%;margin:-20px 0 0 -135px;}
 .user{}
     .userRank{background:url(../img/rank_line.gif) no-repeat 0 74px;height: 129px;width:900px;margin: 0 0 0 20px;position: relative;font-size: 16px;color:#fc3b77;font-weight: bold}
     	.userRank span{color:#fcfb48;padding: 0 5px;}
@@ -79,5 +82,5 @@ a{text-decoration:none}
 	.list_user{float: left;width:120px;text-align: center;font-size:14px;color:#3b76b5;}
 		.list_pho{background: url('../img/list_pho.png') no-repeat;width:68px;height: 72px;text-align: center;padding: 5px 0 0;margin: 0 auto}
 		.list_rank span{color:#f87f9e}
-	.list_infor{float: right;background: url('../img/list_infor.jpg') no-repeat;width:575px;height:113px;}
+	.list_infor{float: right;width:575px;height:113px;}
 .list_more{background: url('../img/list_more.jpg') no-repeat right;height:80px;width:758px;margin:0 auto;display: block;}

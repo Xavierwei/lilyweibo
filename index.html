@@ -18,7 +18,7 @@
     <div class="pagetitle"><h1>写微博织围脖</h1></div>
     <div class="pagesubhead"><h2>赋予情人节更多快乐</h2></div>
     <div class="introduce"><p>怎样将微博发言实时编织成围脖？<br />2月8日至2月14日   Lily为您打成所愿！</p></div>
-    <div class="video">
+    <div class="videobg">
         <div class="videobox"><img src="img/videodemo.jpg" /></div>
     </div>
 
@@ -27,6 +27,7 @@
             <div class="step1Title"></div>
             <div class="step1Left">
                 <input id="val_word" class="step1Input" type="text" />
+                <div class="step1Error">不能超过15个字喔！</div>
                 <div class="step1Intro"></div>
             </div>
             <div class="step1Right">
@@ -64,6 +65,7 @@
             <div class="step3Title"></div>
             <div class="step3Preview">
                 <img src="img/list_infor.jpg" />
+                <input id="val_image" type="hidden" />
             </div>
             <div class="step3Btns">
                 <div class="step3BtnPrev" data-a="back_style"></div>
@@ -87,43 +89,38 @@
                         </div>
                         <div class="step4Preview"><img src="img/userWeibo.jpg" /></div>
                     </div>
-                    <div class="step4BtnDMX"></div>
+                    <div class="step4BtnDMX" data-a="submit_dmx"></div>
                 </div>
             </div>
+        </div>
+
+        <div class="step_loading">
+            <div class="waiting"></div>
         </div>
     </div>
 
 
     <div class="listHD"></div>
     <div class="list">
-        <div class="list_item cs-clear">
-            <div class="list_user">
-                <div class="list_pho"><img src="http://tp3.sinaimg.cn/1769414894/180/40043182605/0" width="59" /></div>
-                <div class="list_name">冷笑话哈哈哈</div>
-                <div class="list_rank">第 <span>2323</span>名</div>
-            </div>
-            <div class="list_infor"></div>
-        </div>
-        <div class="list_item cs-clear">
-            <div class="list_user">
-                <div class="list_pho"><img src="http://tp3.sinaimg.cn/1769414894/180/40043182605/0" width="59" /></div>
-                <div class="list_name">冷笑话哈哈哈</div>
-                <div class="list_rank">第 <span>2323</span>名</div>
-            </div>
-            <div class="list_infor"></div>
-        </div>
-        <div class="list_item cs-clear">
-            <div class="list_user">
-                <div class="list_pho"><img src="http://tp3.sinaimg.cn/1769414894/180/40043182605/0" width="59" /></div>
-                <div class="list_name">冷笑话哈哈哈</div>
-                <div class="list_rank">第 <span>2323</span>名</div>
-            </div>
-            <div class="list_infor"></div>
-        </div>
+        <div id="list_wrap"></div>
         <!--  -->
         <a href="#" class="list_more"></a>
     </div>
 </div>
+
+<!-- Template -->
+<!-- list-item-tpl -->
+<script type="text/tpl" id="list-item-template">
+    <div class="list_item cs-clear">
+        <div class="list_user">
+            <div class="list_pho"><img src="{{user.avatar}}" width="59" /></div>
+            <div class="list_name">{{user.screen_name}}</div>
+            <div class="list_rank">第 <span>{{rank}}</span>名</div>
+        </div>
+        <div class="list_infor"><img src="{{image}}" /></div>
+    </div>
+</script>
+<!-- #list-item-tpl -->
 
 <script type="text/javascript" src="js/plugin/modernizr-2.5.3.min.js"></script>
 <script type="text/javascript" src="js/sea/sea-debug.js" data-config="../config"></script>

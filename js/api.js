@@ -23,21 +23,10 @@ define(function( require , exports , model ){
     // 配置
     var _api = {
         // searchHosts: {path: '/Ajax/searchHosts' , data: {key: ''} , m: '检索小组' , method: 'get' },
-        commentList: {path: '../api/index.php/comment/list', method:'get'},
-        recent: {path: '../api/index.php/node/list', method: 'get'},
-        getNode: {path: '../admin/app/json/node/photo.json'},
-        nodeList: {path: '../api/index.php/node/list?$orderby=datetime&pagenum=100'},
-        like: {path: '../api/index.php/like/post'},
-        unlike: {path: '../api/index.php/like/delete'},
-        // 
-        flag: {path: '../admin/app/json/flag/flag.json'},
-        // get user info
-        login: {path: '../api/index.php/user/login'},
-        logout: {path: '../api/index.php/user/logout'},
-        user: {path: '../api/index.php/user/getcurrent' , method: 'get'},
-        // get user's nodes
-        userNode: {path: '../admin/app/json/node/recent.json' , data:{ uid: 0 , page: 1 }, method: 'get'},
-        saveNode: {path: '../api/index.php/node/put'}
+        getimage: {path: '../api/index.php/scarf/getimage', method:'post'},
+        post: {path: '../api/index.php/scarf/post', method:'post'},
+        dmx: {path: '../api/index.php/scarf/dmx'},
+        list: {path: 'json/list.json'}
     };
 
     // 内部API
