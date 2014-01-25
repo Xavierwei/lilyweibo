@@ -38,9 +38,7 @@
 ]
 ```
 
-### Action: scarf/getneribours 获得当前用户所在排名的前30名和后30名的数据，GET方法
 
-这个方法待确认
 
 
 ### Action: scarf/myrank 获得当前用户的排名，GET方法
@@ -59,6 +57,23 @@
 ]
 ```
 
+### Action scarf/getimage  生成预览图片，POST方法
+
+发送数据
+
+* content (string, 必填)
+* style (int, 必填)
+
+返回数据
+
+```
+[
+    {
+        "image": "upload/01.jpg" //服务器端生成的文字和预设图片合并后的图片
+    }
+]
+```
+
 
 ### Action scarf/post  新增数据，POST方法
 
@@ -66,6 +81,7 @@
 
 * content (string, 必填)
 * style (int, 必填)
+* image (string,必填) 图片路径
 
 返回数据
 

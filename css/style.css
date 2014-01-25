@@ -1,0 +1,83 @@
+@charset "utf-8";
+/*
+ * avene 2013 10 
+ */
+
+/* Reset
+================================================================================================= */
+body{color:#666;background:#fff;font-size:12px;line-height:1.666em;overflow-x:hidden;}
+body{font-family:arial,SimHei,sans-serif;}
+h1,h2,h3{font-size:100%;font-weight: normal;}
+body,h1,h2,h3,h4,ul,li,p,img{margin:0;padding:0;border:0;}
+img{margin:0;line-height:normal;}
+em,i{font-style:normal;text-decoration:none}
+ul{list-style:none;}
+
+/* Commonly Used 
+================================================================================================= */
+a{text-decoration:none}
+.cs-clear{+zoom:1;}
+.cs-clear:before,
+.cs-clear:after{clear:both;content:".";font-size:0;display:block;height:0;overflow:hidden;visibility:hidden;}
+.column{width: 1100px;margin: 0 auto;}
+
+/* Page Used
+================================================================================================= */
+.page{width:940px;margin: 0 auto;}
+.nav{background: url('../img/nav.jpg') repeat-x;height:108px;padding:0 0 0 20px;}
+    .nav a{color:#fff;font-size:14px;font-weight: bold;float:left;margin:10px 80px;}
+.pagetitle{background: url('../img/pagetitle.jpg') no-repeat;height:202px ;}
+.pagesubhead{background: url('../img/pagesubhead.jpg') no-repeat;height:140px ;}
+.introduce{background: url('../img/introduce.jpg') no-repeat;height:233px ;}
+    .pagetitle h1,
+    .pagesubhead h2,
+    .introduce p{width:0;height: 0;overflow: hidden}
+.video{background: url('../img/video.jpg') no-repeat;height:332px ;padding: 15px 0 0}
+    .videobox{width:484px;height: 252px;margin:0px auto 0;}
+
+.steps {background: url(../img/step_bg.png) no-repeat;height:408px;padding-top:1px;}
+    .step {display: none;}
+    .step1 {display: block;}
+    .step1Title,.step1Input,.step1Intro,.step1BtnNext {background: url(../img/step1_ele.gif) no-repeat;}
+    .step1Left {float:left;}
+    .step1Right {float:left;}
+    .step1Title {width:668px;height:53px;margin:73px 0 0 31px;}
+    .step1Input {border:none;width:671px;height:92px;background-position:0 -73px;margin:19px 0 0 31px;font-size:24px;text-indent:1em;}
+    .step1Intro {width:637px;height:34px;background-position:-7px -197px;margin:23px 0 0 31px;}
+    .step1BtnNext {cursor:pointer;width:176px;height:168px;background-position: -706px -68px;margin:0 0 0 31px;}
+    .step2Title,.step2BtnPrev,.step2BtnNext,.step3BtnPrev,.step3BtnNext {background: url(../img/step2_ele.gif) no-repeat;}
+    .step2Title {width:430px;height:53px;margin:73px 0 0 31px;}
+    .step2Styles {float: left;margin:26px 0 0 31px;}
+    .step2Styles li {cursor:pointer;float:left;position: relative;margin:0 46px 0 0;}
+    .step2Styles li .selected {display:none;background:url(../img/style_icon_on.png) no-repeat;width:176px;height:164px;position:absolute; top:0;left:0;}
+    .step2Styles li.on .selected {display: block;}
+    .step2Btns {float: left;margin:18px 0 0 31px;}
+    .step2BtnPrev,.step3BtnPrev {cursor:pointer;background-position:0 -69px;width:175px;height:91px;}
+    .step2BtnNext,.step3BtnNext {cursor:pointer;background-position:0 -164px;width:175px;height:91px;margin-top:5px;}
+    .step2BtnNext {display: none;}
+    .step3Title {background:url(../img/step3_ele.gif) no-repeat;width:430px;height:53px;margin:73px 0 0 31px;}
+    .step3Preview {float:left;margin:45px 0 0 31px;width:670px;}
+    .step3Btns {float: left;margin:15px 0 0 31px;}
+
+.user{}
+    .userRank{background:url(../img/rank_line.gif) no-repeat 0 74px;height: 129px;width:900px;margin: 0 0 0 20px;position: relative;font-size: 16px;color:#fc3b77;font-weight: bold}
+    	.userRank span{color:#fcfb48;padding: 0 5px;}
+    	.userSeat{background: url('../img/userSeat.gif') no-repeat;width:74px;height: 103px;position: absolute;top:30px;left:20%;}
+    	.userLast{position: absolute;top:96px;left:0px;}
+    	.userFirst{position: absolute;top:96px;right:0px;}
+    .userForm{width:859px;height:193px;margin:0 auto;background:url(../img/user_form_bg.gif) no-repeat;}
+    	.userPho{float:left;background: url('../img/userPhobg.png') no-repeat;height:121px;width:109px;padding:12px 0 0 5px;margin:29px 0 0 29px;}
+    	.userWeibo{float:left;height:90px;width:456px;margin:30px 0 0 22px;_display:inline}
+        .myRank {color:#0e7acd;font-size:20px;height:35px;}
+    	.myRank .name {float:left;}
+        .myRank .rank {float:right;}
+        .myRank .rank span {color:#f85a84;}
+        .step4BtnDMX {cursor:pointer;float:left;background: url('../img/userBtn.gif') no-repeat;height:135px;width:176px;margin:20px 0 0 33px;}
+.listHD{background: url('../img/listHD.jpg') no-repeat;height:243px ;}
+.list{background: url('../img/listbg.jpg') repeat-y;}
+.list_item{width:710px;margin:0 auto;background: url('../img/list_line.png') repeat-x bottom;padding:45px 0 70px}
+	.list_user{float: left;width:120px;text-align: center;font-size:14px;color:#3b76b5;}
+		.list_pho{background: url('../img/list_pho.png') no-repeat;width:68px;height: 72px;text-align: center;padding: 5px 0 0;margin: 0 auto}
+		.list_rank span{color:#f87f9e}
+	.list_infor{float: right;background: url('../img/list_infor.jpg') no-repeat;width:575px;height:113px;}
+.list_more{background: url('../img/list_more.jpg') no-repeat right;height:80px;width:758px;margin:0 auto;display: block;}
