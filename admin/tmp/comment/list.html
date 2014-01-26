@@ -1,0 +1,23 @@
+<ul class="comments-list">
+    <li ng-repeat="comment in comments">
+        <div class="user">
+            <div class="avatar"><img ng-src="{{comment.user.avatar}}" width="40" height="40" /></div>
+            <div class="date">{{comment.datetime*1000 | date:'MMM d, y HH:mm a'}}</div>
+            <div class="name"><strong>{{comment.user.firstname}} {{comment.user.lastname}}</strong></div>
+        </div>
+        <div class="content">
+            <img ng-click="open(comment.node)" ng-src="{{comment.node.file | thumbnail}}" width="100" height="100" />
+            {{comment.content}}
+        </div>
+        <div class="btns">
+            <a class="btn btn-default btn-xs" href="#/comment/edit/{{comment.cid}}">Edit</a>
+            <a class="btn btn-default btn-xs" href="javascript:void(0)" ng-click="delete(comment)">Delete</a>
+        </div>
+        <div class="test-links">
+            <a href="javascript:void(0)" ng-click="flag(comment)">-Flag</a>
+            <a href="javascript:void(0)" ng-click="cleanFlag(comment)">-Clean Flag</a>
+        </div>
+    </li>
+
+</ul>
+<div ng-show="error">{{error}}</div>

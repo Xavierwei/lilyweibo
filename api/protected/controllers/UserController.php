@@ -33,7 +33,15 @@ class UserController extends Controller
     public static function isLogin() {
         return Yii::app()->session["is_login"] == "true";
     }
-	
+
+
+  public function actionIsAdmin() {
+    return $this->returnJSON(array(
+      "data" => true,
+      "error" => NULL
+    ));
+  }
+
 	public function actionLogin() {
         $o = new SaeTOAuthV2( WB_AKEY , WB_SKEY );
         $weiboUrl = $o->getAuthorizeURL(WB_CALLBACK_URL);
@@ -70,16 +78,17 @@ class UserController extends Controller
 				$this->refreshSnsUser($user['uid'], $access_token, $basic_account);
 				Yii::app()->session['is_login'] = "true";
 				Yii::app()->session['user'] = $user;
-				$this->returnJSON($user);
+				//$this->returnJSON($user);
 			} else {  // 自动注册
 				if ($user = $this->regUser($basic_account)) {
 					Yii::app()->session["is_login"] = "true";
 					Yii::app()->session["user"] = $user;
-					$this->returnJSON($newUser);
+					//$this->returnJSON($newUser);
 				} else {
-					$this->returnJSON($this->error("login error", 1001));
+					//$this->returnJSON($this->error("login error", 1001));
 				} 
 			}
+      $this->redirect('../../../logined.html');
 		} else {
 			$this->returnJSON($this->error("login error", 1001));
 		}
@@ -103,7 +112,7 @@ class UserController extends Controller
 			"sns_uid" => $basic_account["idstr"],
 			'screen_name' => $basic_account["screen_name"],
 			"avatar" => $basic_account["avatar_large"],
-			"access_token" => $access_token,
+			//"access_token" => $access_token,
 			'reg_datetime' => time()
 		);
 		$mUser = new User();

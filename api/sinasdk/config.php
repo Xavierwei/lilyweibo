@@ -1,4 +1,4 @@
 <?php
-define( "WB_AKEY" , '27031883' );
-define( "WB_SKEY" , 'ec7c9b399b7d811f1b5f93dc449be341' );
-define( "WB_CALLBACK_URL" , 'http://www.19youxi.com/index.php/user/sinacallback' );
+define( "WB_AKEY" , '2935559718' );
+define( "WB_SKEY" , 'a78f1ff36d8e70192866e0fcfe82705f' );
+define( "WB_CALLBACK_URL" , 'http://lily.local:8888/lilyweibo/lilyweibo/index.php/user/sinacallback' );

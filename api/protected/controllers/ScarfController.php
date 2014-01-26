@@ -10,9 +10,9 @@ class ScarfController extends Controller {
 		$this->request = Yii::app()->request;
 		$this->user = Yii::app()->user;
 		$this->styleImages = array(
-			'1' => ROOT_PATH . '/images/weibo_style/style1.jpg',
-			'2' => ROOT_PATH . '/images/weibo_style/style2.jpg',
-			'3' => ROOT_PATH . '/images/weibo_style/style3.jpg',
+			'1' => ROOT_PATH . '/images/weibo_style/1.png',
+			'2' => ROOT_PATH . '/images/weibo_style/2.png',
+			'3' => ROOT_PATH . '/images/weibo_style/2.png',
 		);
 		$this->acceptType = strpos($this->request->getAcceptTypes(), 'json') ? 'json' : 'xml';
     }
@@ -53,19 +53,19 @@ class ScarfController extends Controller {
 	 * 1001：请求有误
 	 */
 	public function actionList() {
-		if ($this->request->isAjaxRequest) {
-			$page = (int)$this->request->getPost('page');
+		if (1) {
+			$page = (int)$this->request->getQuery('page');
 			if ($page <= 0) {
 				$page = 1;
 			}
-			$pagenum = (int)$this->request->getPost('pagenum ', 10);
+			$pagenum = (int)$this->request->getQuery('pagenum ', 10);
 			if ($pagenum <= 0) {
 				$page = 10;
 			}
 			$offset = ($page - 1) * $pagenum;
 			
 			$list = array();
-			if ($this->adminIsLogin()) {
+			if ($this->request->getQuery('status')) {
 				$status = (int)$this->request->getQuery('status');
 				$list = Yii::app()->db->createCommand()
 						->select('*')
@@ -146,8 +146,8 @@ class ScarfController extends Controller {
 		$im = imagecreatefromjpeg($bgImg); 
 		$fontColor  = imagecolorallocate($im, 0, 250, 10); //这是文字颜色，绿色  
 		$font = ROOT_PATH . '/font/msyh.ttf';
-		$fontSize = 26;
-		imagettftext($im, $fontSize,0, 10, 36, $fontColor ,$font, $text);
+		$fontSize = 23;
+    imagettftext($im, $fontSize,0, 122, 79, $fontColor ,$font, $text);
 		imagejpeg($im, $imgFile);  
 		
 		return '/uploads/' . $generateImgPath . $imgName;

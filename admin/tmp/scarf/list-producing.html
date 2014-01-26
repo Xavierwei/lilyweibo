@@ -1,0 +1,29 @@
+<h3>Currently Knitting:</h3>
+<table>
+    <tr>
+        <th>WEIBO USER</th>
+        <th>STYLE</th>
+        <th>MESSAGE</th>
+    </tr>
+    <tr>
+        <td>{{producing.user.screen_name}}</td>
+        <td>{{producing.style}}</td>
+        <td>{{producing.content}}</td>
+    </tr>
+</table>
+
+<h3>Next on the line:</h3>
+<table>
+    <tr>
+        <th>WEIBO USER</th>
+        <th>STYLE</th>
+        <th>MESSAGE</th>
+    </tr>
+    <tr>
+        <td>{{next.user.screen_name}}</td>
+        <td>{{next.style}}</td>
+        <td>{{next.content}}</td>
+    </tr>
+</table>
+
+<div ng-click="productNow()">Product Now!</div>

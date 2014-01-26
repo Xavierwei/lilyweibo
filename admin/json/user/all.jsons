@@ -1,0 +1,26 @@
+{
+	'success': true,
+        'data': 
+        [
+        '{{repeat(20)}}',
+        {
+            "uid": "{{index}}",
+            "firstname": "{{firstName}}",
+            "lastname": " {{surname}}",
+            "avatar": "http://lorempixel.com/80/80/people/{{numeric(0,10)}}",
+            "country":
+            {
+                "countryid": "86",
+                "country_name": "China",
+                "flag_icon": "/upload/country/cn.gif"
+            },
+            "company_email": "{{email}}",
+            "personal_email": "{{email}}",
+            "role": "1",
+            "status": "1"
+        }
+    ],
+        'message':''
+        
+}
+

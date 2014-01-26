@@ -7,8 +7,6 @@
 * pagenum //每页显示几个
 * status (int, 可选)（只有管理员可以传入status值）
 
-
-
 ```
 [
     {
@@ -38,6 +36,77 @@
 ]
 ```
 
+### Action: scarf/rank 获取排名列表，GET方法
+
+发送数据
+* page //第几页
+* pagenum //每页显示几个
+* status (int, 可选)（只有管理员可以传入status值）
+
+```
+[
+    {
+        "cid": 1, // scarf id
+        "content": "Some Text", // 用户输入的文本
+        "style": 1, // 用户选择的围巾风格
+        "image": "upload/01.jpg", //服务器端生成的文字和预设图片合并后的图片
+        "rank": 100, //当前内容的排名名次
+        "status": 1, //状态，这个字段之后当管理员用户访问的时候再返回，需要做权限验证！
+        "user": { // 子数组：用户节点
+            "screen_name": "Someone", //微博用户名
+            "avatar": "http://..." //头像
+        }
+    },
+    {
+        "cid": 2,
+        "content": "Some Text",
+        "style": 3,
+        "image": "upload/01.jpg",
+        "rank": 101,
+        "status": 1,
+        "user": {
+            "screen_name": "Someone",
+            "avatar": "http://..."
+        }
+    }
+]
+```
+
+### Action: scarf/search 根据关键词(微博screen_name, content)搜索，GET方法
+
+发送数据
+* page //第几页
+* pagenum //每页显示几个
+* status (int, 可选)（只有管理员可以传入status值）
+
+```
+[
+    {
+        "cid": 1, // scarf id
+        "content": "Some Text", // 用户输入的文本
+        "style": 1, // 用户选择的围巾风格
+        "image": "upload/01.jpg", //服务器端生成的文字和预设图片合并后的图片
+        "rank": 100, //当前内容的排名名次
+        "status": 1, //状态，这个字段之后当管理员用户访问的时候再返回，需要做权限验证！
+        "user": { // 子数组：用户节点
+            "screen_name": "Someone", //微博用户名
+            "avatar": "http://..." //头像
+        }
+    },
+    {
+        "cid": 2,
+        "content": "Some Text",
+        "style": 3,
+        "image": "upload/01.jpg",
+        "rank": 101,
+        "status": 1,
+        "user": {
+            "screen_name": "Someone",
+            "avatar": "http://..."
+        }
+    }
+]
+```
 
 
 
