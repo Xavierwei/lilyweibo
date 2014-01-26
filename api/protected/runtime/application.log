@@ -1,0 +1,641 @@
+2014/01/23 13:40:09 [error] [php] require_once(sns/webbo/saetv2.ex.class): failed to open stream: No such file or directory (H:\wamp\www\lilyweibo\protected\controllers\ScarfController.php:3)
+Stack trace:
+#0 H:\wamp\www\lilyweibo\framework\web\CWebApplication.php(276): CWebApplication->createController()
+#1 H:\wamp\www\lilyweibo\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#2 H:\wamp\www\lilyweibo\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#3 H:\wamp\www\lilyweibo\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/?r=scarf
+in H:\wamp\www\lilyweibo\protected\controllers\ScarfController.php (3)
+in H:\wamp\www\lilyweibo\protected\controllers\ScarfController.php (3)
+in H:\wamp\www\lilyweibo\index.php (13)
+2014/01/23 13:40:38 [error] [php] require_once(/sns/webbo/saetv2.ex.class): failed to open stream: No such file or directory (H:\wamp\www\lilyweibo\protected\controllers\ScarfController.php:3)
+Stack trace:
+#0 H:\wamp\www\lilyweibo\framework\web\CWebApplication.php(276): CWebApplication->createController()
+#1 H:\wamp\www\lilyweibo\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#2 H:\wamp\www\lilyweibo\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#3 H:\wamp\www\lilyweibo\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/?r=scarf
+in H:\wamp\www\lilyweibo\protected\controllers\ScarfController.php (3)
+in H:\wamp\www\lilyweibo\protected\controllers\ScarfController.php (3)
+in H:\wamp\www\lilyweibo\index.php (13)
+2014/01/23 13:40:39 [error] [php] require_once(/sns/webbo/saetv2.ex.class): failed to open stream: No such file or directory (H:\wamp\www\lilyweibo\protected\controllers\ScarfController.php:3)
+Stack trace:
+#0 H:\wamp\www\lilyweibo\framework\web\CWebApplication.php(276): CWebApplication->createController()
+#1 H:\wamp\www\lilyweibo\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#2 H:\wamp\www\lilyweibo\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#3 H:\wamp\www\lilyweibo\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/?r=scarf
+in H:\wamp\www\lilyweibo\protected\controllers\ScarfController.php (3)
+in H:\wamp\www\lilyweibo\protected\controllers\ScarfController.php (3)
+in H:\wamp\www\lilyweibo\index.php (13)
+2014/01/23 13:40:40 [error] [php] require_once(/sns/webbo/saetv2.ex.class): failed to open stream: No such file or directory (H:\wamp\www\lilyweibo\protected\controllers\ScarfController.php:3)
+Stack trace:
+#0 H:\wamp\www\lilyweibo\framework\web\CWebApplication.php(276): CWebApplication->createController()
+#1 H:\wamp\www\lilyweibo\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#2 H:\wamp\www\lilyweibo\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#3 H:\wamp\www\lilyweibo\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/?r=scarf
+in H:\wamp\www\lilyweibo\protected\controllers\ScarfController.php (3)
+in H:\wamp\www\lilyweibo\protected\controllers\ScarfController.php (3)
+in H:\wamp\www\lilyweibo\index.php (13)
+2014/01/23 13:40:40 [error] [php] require_once(/sns/webbo/saetv2.ex.class): failed to open stream: No such file or directory (H:\wamp\www\lilyweibo\protected\controllers\ScarfController.php:3)
+Stack trace:
+#0 H:\wamp\www\lilyweibo\framework\web\CWebApplication.php(276): CWebApplication->createController()
+#1 H:\wamp\www\lilyweibo\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#2 H:\wamp\www\lilyweibo\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#3 H:\wamp\www\lilyweibo\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/?r=scarf
+in H:\wamp\www\lilyweibo\protected\controllers\ScarfController.php (3)
+in H:\wamp\www\lilyweibo\protected\controllers\ScarfController.php (3)
+in H:\wamp\www\lilyweibo\index.php (13)
+2014/01/23 13:42:55 [error] [php] require_once(sns/webbo/saetv2.ex.class): failed to open stream: No such file or directory (H:\wamp\www\lilyweibo\protected\controllers\ScarfController.php:3)
+Stack trace:
+#0 H:\wamp\www\lilyweibo\framework\web\CWebApplication.php(276): CWebApplication->createController()
+#1 H:\wamp\www\lilyweibo\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#2 H:\wamp\www\lilyweibo\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#3 H:\wamp\www\lilyweibo\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/?r=scarf
+in H:\wamp\www\lilyweibo\protected\controllers\ScarfController.php (3)
+in H:\wamp\www\lilyweibo\protected\controllers\ScarfController.php (3)
+in H:\wamp\www\lilyweibo\index.php (13)
+2014/01/23 14:05:49 [error] [php] require_once(sns/webbo/saetv2.ex.class): failed to open stream: No such file or directory (H:\wamp\www\lilyweibo\protected\controllers\ScarfController.php:2)
+Stack trace:
+#0 H:\wamp\www\lilyweibo\framework\web\CWebApplication.php(276): CWebApplication->createController()
+#1 H:\wamp\www\lilyweibo\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#2 H:\wamp\www\lilyweibo\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#3 H:\wamp\www\lilyweibo\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/?r=scarf
+in H:\wamp\www\lilyweibo\protected\controllers\ScarfController.php (2)
+in H:\wamp\www\lilyweibo\protected\controllers\ScarfController.php (2)
+in H:\wamp\www\lilyweibo\index.php (13)
+2014/01/23 14:07:04 [error] [php] require_once(sns/weibo/saetv2.ex.class): failed to open stream: No such file or directory (H:\wamp\www\lilyweibo\protected\controllers\ScarfController.php:2)
+Stack trace:
+#0 H:\wamp\www\lilyweibo\framework\web\CWebApplication.php(276): CWebApplication->createController()
+#1 H:\wamp\www\lilyweibo\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#2 H:\wamp\www\lilyweibo\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#3 H:\wamp\www\lilyweibo\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/?r=scarf
+in H:\wamp\www\lilyweibo\protected\controllers\ScarfController.php (2)
+in H:\wamp\www\lilyweibo\protected\controllers\ScarfController.php (2)
+in H:\wamp\www\lilyweibo\index.php (13)
+2014/01/23 14:30:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "dmx".' in H:\wamp\www\lilyweibo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\wamp\www\lilyweibo\framework\web\CWebApplication.php(141): CWebApplication->runController('dmx')
+#1 H:\wamp\www\lilyweibo\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\wamp\www\lilyweibo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/?r=dmx
+---
+2014/01/23 15:17:36 [error] [exception.CException] exception 'CException' with message 'The first element in a filter configuration must be the filter class.' in H:\wamp\www\lilyweibo\framework\web\filters\CFilterChain.php:77
+Stack trace:
+#0 H:\wamp\www\lilyweibo\framework\web\CController.php(291): CFilterChain::create(Object(ScarfController), Object(CInlineAction), Array)
+#1 H:\wamp\www\lilyweibo\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#2 H:\wamp\www\lilyweibo\framework\web\CWebApplication.php(282): CController->run('')
+#3 H:\wamp\www\lilyweibo\framework\web\CWebApplication.php(141): CWebApplication->runController('scarf')
+#4 H:\wamp\www\lilyweibo\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 H:\wamp\www\lilyweibo\index.php(13): CApplication->run()
+#6 {main}
+REQUEST_URI=/index.php?r=scarf
+---
+2014/01/23 19:50:52 [error] [exception.CException] exception 'CException' with message 'Property "ScarfController.user" is not defined.' in H:\wamp\www\lilyweibo\framework\base\CComponent.php:173
+Stack trace:
+#0 H:\wamp\www\lilyweibo\protected\controllers\ScarfController.php(11): CComponent->__set('user', Object(CWebUser))
+#1 H:\wamp\www\lilyweibo\framework\web\CWebApplication.php(281): ScarfController->init()
+#2 H:\wamp\www\lilyweibo\framework\web\CWebApplication.php(141): CWebApplication->runController('scarf')
+#3 H:\wamp\www\lilyweibo\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 H:\wamp\www\lilyweibo\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=scarf
+---
+2014/01/23 19:51:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "GII".' in H:\wamp\www\lilyweibo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\wamp\www\lilyweibo\framework\web\CWebApplication.php(141): CWebApplication->runController('GII')
+#1 H:\wamp\www\lilyweibo\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\wamp\www\lilyweibo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=GII
+---
+2014/01/24 14:58:17 [error] [php] mail() [<a href='function.mail'>function.mail</a>]: Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() (F:\wamp\www\lilyweibo\protected\controllers\SiteController.php:67)
+Stack trace:
+#0 F:\wamp\www\lilyweibo\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 F:\wamp\www\lilyweibo\framework\web\CController.php(286): SiteController->runAction()
+#2 F:\wamp\www\lilyweibo\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#3 F:\wamp\www\lilyweibo\framework\web\CWebApplication.php(282): SiteController->run()
+#4 F:\wamp\www\lilyweibo\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 F:\wamp\www\lilyweibo\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 F:\wamp\www\lilyweibo\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=site/contact
+in F:\wamp\www\lilyweibo\protected\controllers\SiteController.php (67)
+in F:\wamp\www\lilyweibo\index.php (13)
+2014/01/24 14:58:54 [error] [php] mail() [<a href='function.mail'>function.mail</a>]: Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() (F:\wamp\www\lilyweibo\protected\controllers\SiteController.php:67)
+Stack trace:
+#0 F:\wamp\www\lilyweibo\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 F:\wamp\www\lilyweibo\framework\web\CController.php(286): SiteController->runAction()
+#2 F:\wamp\www\lilyweibo\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#3 F:\wamp\www\lilyweibo\framework\web\CWebApplication.php(282): SiteController->run()
+#4 F:\wamp\www\lilyweibo\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 F:\wamp\www\lilyweibo\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 F:\wamp\www\lilyweibo\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=site/contact
+in F:\wamp\www\lilyweibo\protected\controllers\SiteController.php (67)
+in F:\wamp\www\lilyweibo\index.php (13)
+2014/01/24 16:18:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "a".' in F:\wamp\www\lilyweibo\framework\web\CController.php:483
+Stack trace:
+#0 F:\wamp\www\lilyweibo\framework\web\CController.php(270): CController->missingAction('a')
+#1 F:\wamp\www\lilyweibo\framework\web\CWebApplication.php(282): CController->run('a')
+#2 F:\wamp\www\lilyweibo\framework\web\CWebApplication.php(141): CWebApplication->runController('scarf/a')
+#3 F:\wamp\www\lilyweibo\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 F:\wamp\www\lilyweibo\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/scarf/list
+---
+2014/01/24 16:39:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "a".' in F:\wamp\www\lilyweibo\framework\web\CController.php:483
+Stack trace:
+#0 F:\wamp\www\lilyweibo\framework\web\CController.php(270): CController->missingAction('a')
+#1 F:\wamp\www\lilyweibo\framework\web\CWebApplication.php(282): CController->run('a')
+#2 F:\wamp\www\lilyweibo\framework\web\CWebApplication.php(141): CWebApplication->runController('scarf/a')
+#3 F:\wamp\www\lilyweibo\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 F:\wamp\www\lilyweibo\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/scarf/list
+---
+2014/01/24 17:22:59 [error] [php] Missing argument 1 for CDbCommand::where(), called in H:\wamp\www\lilyweibo\protected\controllers\ScarfController.php on line 47 and defined (H:\wamp\www\lilyweibo\framework\db\CDbCommand.php:780)
+Stack trace:
+#0 H:\wamp\www\lilyweibo\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 H:\wamp\www\lilyweibo\framework\web\filters\CFilterChain.php(133): ScarfController->runAction()
+#2 H:\wamp\www\lilyweibo\framework\web\CController.php(291): CFilterChain->run()
+#3 H:\wamp\www\lilyweibo\framework\web\CController.php(265): ScarfController->runActionWithFilters()
+#4 H:\wamp\www\lilyweibo\framework\web\CWebApplication.php(282): ScarfController->run()
+#5 H:\wamp\www\lilyweibo\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 H:\wamp\www\lilyweibo\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#7 H:\wamp\www\lilyweibo\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/scarf/list
+in H:\wamp\www\lilyweibo\protected\controllers\ScarfController.php (47)
+in H:\wamp\www\lilyweibo\index.php (13)
+2014/01/25 03:06:40 [error] [php] Missing argument 1 for CDbCommand::where(), called in H:\wamp\www\lilyweibo\protected\controllers\ScarfController.php on line 46 and defined (H:\wamp\www\lilyweibo\framework\db\CDbCommand.php:780)
+Stack trace:
+#0 H:\wamp\www\lilyweibo\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 H:\wamp\www\lilyweibo\framework\web\filters\CFilterChain.php(133): ScarfController->runAction()
+#2 H:\wamp\www\lilyweibo\framework\web\CController.php(291): CFilterChain->run()
+#3 H:\wamp\www\lilyweibo\framework\web\CController.php(265): ScarfController->runActionWithFilters()
+#4 H:\wamp\www\lilyweibo\framework\web\CWebApplication.php(282): ScarfController->run()
+#5 H:\wamp\www\lilyweibo\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 H:\wamp\www\lilyweibo\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#7 H:\wamp\www\lilyweibo\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/scarf/list
+in H:\wamp\www\lilyweibo\protected\controllers\ScarfController.php (46)
+in H:\wamp\www\lilyweibo\index.php (13)
+2014/01/25 05:38:17 [error] [php] Undefined index: status (H:\wamp\www\lilyweibo\protected\controllers\ScarfController.php:144)
+Stack trace:
+#0 H:\wamp\www\lilyweibo\framework\web\actions\CInlineAction.php(49): ScarfController->actionList()
+#1 H:\wamp\www\lilyweibo\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 H:\wamp\www\lilyweibo\framework\web\filters\CFilterChain.php(133): ScarfController->runAction()
+#3 H:\wamp\www\lilyweibo\framework\web\CController.php(291): CFilterChain->run()
+#4 H:\wamp\www\lilyweibo\framework\web\CController.php(265): ScarfController->runActionWithFilters()
+#5 H:\wamp\www\lilyweibo\framework\web\CWebApplication.php(282): ScarfController->run()
+#6 H:\wamp\www\lilyweibo\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 H:\wamp\www\lilyweibo\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 H:\wamp\www\lilyweibo\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/scarf/list
+in H:\wamp\www\lilyweibo\protected\controllers\ScarfController.php (144)
+in H:\wamp\www\lilyweibo\protected\controllers\ScarfController.php (131)
+in H:\wamp\www\lilyweibo\protected\controllers\ScarfController.php (74)
+2014/01/25 05:40:04 [error] [php] Undefined index: status (H:\wamp\www\lilyweibo\protected\controllers\ScarfController.php:129)
+Stack trace:
+#0 H:\wamp\www\lilyweibo\framework\web\actions\CInlineAction.php(49): ScarfController->actionList()
+#1 H:\wamp\www\lilyweibo\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 H:\wamp\www\lilyweibo\framework\web\filters\CFilterChain.php(133): ScarfController->runAction()
+#3 H:\wamp\www\lilyweibo\framework\web\CController.php(291): CFilterChain->run()
+#4 H:\wamp\www\lilyweibo\framework\web\CController.php(265): ScarfController->runActionWithFilters()
+#5 H:\wamp\www\lilyweibo\framework\web\CWebApplication.php(282): ScarfController->run()
+#6 H:\wamp\www\lilyweibo\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 H:\wamp\www\lilyweibo\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 H:\wamp\www\lilyweibo\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/scarf/list
+in H:\wamp\www\lilyweibo\protected\controllers\ScarfController.php (129)
+in H:\wamp\www\lilyweibo\protected\controllers\ScarfController.php (116)
+in H:\wamp\www\lilyweibo\protected\controllers\ScarfController.php (74)
+2014/01/25 07:24:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "GII".' in H:\wamp\www\lilyweibo\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\wamp\www\lilyweibo\framework\web\CWebApplication.php(141): CWebApplication->runController('GII')
+#1 H:\wamp\www\lilyweibo\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\wamp\www\lilyweibo\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/GII
+---
+2014/01/25 07:29:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in H:\wamp\www\lilyweibo\framework\web\CController.php:483
+Stack trace:
+#0 H:\wamp\www\lilyweibo\framework\web\CController.php(270): CController->missingAction('')
+#1 H:\wamp\www\lilyweibo\framework\web\CWebApplication.php(282): CController->run('')
+#2 H:\wamp\www\lilyweibo\framework\web\CWebApplication.php(141): CWebApplication->runController('user')
+#3 H:\wamp\www\lilyweibo\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 H:\wamp\www\lilyweibo\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/user
+---
+2014/01/25 09:57:51 [error] [exception.CException] exception 'CException' with message 'Property "UserController.request" is not defined.' in H:\wamp\www\lilyweibo\framework\base\CComponent.php:173
+Stack trace:
+#0 H:\wamp\www\lilyweibo\protected\controllers\UserController.php(9): CComponent->__set('request', Object(CHttpRequest))
+#1 H:\wamp\www\lilyweibo\framework\web\CWebApplication.php(281): UserController->init()
+#2 H:\wamp\www\lilyweibo\framework\web\CWebApplication.php(141): CWebApplication->runController('user/sinacallba...')
+#3 H:\wamp\www\lilyweibo\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 H:\wamp\www\lilyweibo\index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/user/sinacallback?code=7e5ca1488af0d801c8cc46dfa0bbe99c
+---
+2014/01/25 10:00:42 [error] [exception.CException] exception 'CException' with message 'Property "UserController.request" is not defined.' in H:\wamp\www\lilyweibo\framework\base\CComponent.php:173
+Stack trace:
+#0 H:\wamp\www\lilyweibo\protected\controllers\UserController.php(9): CComponent->__set('request', Object(CHttpRequest))
+#1 H:\wamp\www\lilyweibo\framework\web\CWebApplication.php(281): UserController->init()
+#2 H:\wamp\www\lilyweibo\framework\web\CWebApplication.php(141): CWebApplication->runController('user/sinacallba...')
+#3 H:\wamp\www\lilyweibo\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 H:\wamp\www\lilyweibo\index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/user/sinacallback?code=7e5ca1488af0d801c8cc46dfa0bbe99c
+---
+2014/01/25 10:01:36 [error] [exception.CException] exception 'CException' with message 'Property "UserController.request" is not defined.' in H:\wamp\www\lilyweibo\framework\base\CComponent.php:173
+Stack trace:
+#0 H:\wamp\www\lilyweibo\protected\controllers\UserController.php(9): CComponent->__set('request', Object(CHttpRequest))
+#1 H:\wamp\www\lilyweibo\framework\web\CWebApplication.php(281): UserController->init()
+#2 H:\wamp\www\lilyweibo\framework\web\CWebApplication.php(141): CWebApplication->runController('user/sinacallba...')
+#3 H:\wamp\www\lilyweibo\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 H:\wamp\www\lilyweibo\index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/user/sinacallback?code=7e5ca1488af0d801c8cc46dfa0bbe99c
+---
+2014/01/25 10:02:15 [error] [exception.CException] exception 'CException' with message 'Property "UserController.request" is not defined.' in H:\wamp\www\lilyweibo\framework\base\CComponent.php:173
+Stack trace:
+#0 H:\wamp\www\lilyweibo\protected\controllers\UserController.php(9): CComponent->__set('request', Object(CHttpRequest))
+#1 H:\wamp\www\lilyweibo\framework\web\CWebApplication.php(281): UserController->init()
+#2 H:\wamp\www\lilyweibo\framework\web\CWebApplication.php(141): CWebApplication->runController('user/sinacallba...')
+#3 H:\wamp\www\lilyweibo\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 H:\wamp\www\lilyweibo\index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/user/sinacallback?code=7e5ca1488af0d801c8cc46dfa0bbe99c
+---
+2014/01/25 10:17:25 [error] [php] Undefined variable: token (H:\wamp\www\lilyweibo\protected\controllers\UserController.php:52)
+Stack trace:
+#0 H:\wamp\www\lilyweibo\framework\web\CController.php(286): UserController->runAction()
+#1 H:\wamp\www\lilyweibo\framework\web\CController.php(265): UserController->runActionWithFilters()
+#2 H:\wamp\www\lilyweibo\framework\web\CWebApplication.php(282): UserController->run()
+#3 H:\wamp\www\lilyweibo\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 H:\wamp\www\lilyweibo\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 H:\wamp\www\lilyweibo\index.php(18): CWebApplication->run()
+REQUEST_URI=/index.php/user/sinacallback?code=887b6bf38c3d84951b0cb56fc674de
+in H:\wamp\www\lilyweibo\protected\controllers\UserController.php (52)
+in H:\wamp\www\lilyweibo\index.php (18)
+2014/01/25 10:30:03 [error] [php] Undefined variable: token (H:\wamp\www\lilyweibo\protected\controllers\UserController.php:52)
+Stack trace:
+#0 H:\wamp\www\lilyweibo\framework\web\CController.php(286): UserController->runAction()
+#1 H:\wamp\www\lilyweibo\framework\web\CController.php(265): UserController->runActionWithFilters()
+#2 H:\wamp\www\lilyweibo\framework\web\CWebApplication.php(282): UserController->run()
+#3 H:\wamp\www\lilyweibo\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 H:\wamp\www\lilyweibo\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 H:\wamp\www\lilyweibo\index.php(18): CWebApplication->run()
+REQUEST_URI=/index.php/user/sinacallback?code=887b6bf38c3d84951b0cb56fc674de
+in H:\wamp\www\lilyweibo\protected\controllers\UserController.php (52)
+in H:\wamp\www\lilyweibo\index.php (18)
+2014/01/25 10:31:36 [error] [php] Undefined variable: account (H:\wamp\www\lilyweibo\protected\controllers\UserController.php:89)
+Stack trace:
+#0 H:\wamp\www\lilyweibo\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 H:\wamp\www\lilyweibo\framework\web\CController.php(286): UserController->runAction()
+#2 H:\wamp\www\lilyweibo\framework\web\CController.php(265): UserController->runActionWithFilters()
+#3 H:\wamp\www\lilyweibo\framework\web\CWebApplication.php(282): UserController->run()
+#4 H:\wamp\www\lilyweibo\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 H:\wamp\www\lilyweibo\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 H:\wamp\www\lilyweibo\index.php(18): CWebApplication->run()
+REQUEST_URI=/index.php/user/sinacallback?code=9b7bd83f740f3abea0f5da55164414d2
+in H:\wamp\www\lilyweibo\protected\controllers\UserController.php (89)
+in H:\wamp\www\lilyweibo\protected\controllers\UserController.php (55)
+in H:\wamp\www\lilyweibo\index.php (18)
+2014/01/25 10:31:39 [error] [php] Undefined variable: account (H:\wamp\www\lilyweibo\protected\controllers\UserController.php:89)
+Stack trace:
+#0 H:\wamp\www\lilyweibo\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 H:\wamp\www\lilyweibo\framework\web\CController.php(286): UserController->runAction()
+#2 H:\wamp\www\lilyweibo\framework\web\CController.php(265): UserController->runActionWithFilters()
+#3 H:\wamp\www\lilyweibo\framework\web\CWebApplication.php(282): UserController->run()
+#4 H:\wamp\www\lilyweibo\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 H:\wamp\www\lilyweibo\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 H:\wamp\www\lilyweibo\index.php(18): CWebApplication->run()
+REQUEST_URI=/index.php/user/sinacallback?code=29a844040aba11f1f5d41eb6f03e9360
+in H:\wamp\www\lilyweibo\protected\controllers\UserController.php (89)
+in H:\wamp\www\lilyweibo\protected\controllers\UserController.php (55)
+in H:\wamp\www\lilyweibo\index.php (18)
+2014/01/25 10:31:41 [error] [php] Undefined variable: account (H:\wamp\www\lilyweibo\protected\controllers\UserController.php:89)
+Stack trace:
+#0 H:\wamp\www\lilyweibo\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 H:\wamp\www\lilyweibo\framework\web\CController.php(286): UserController->runAction()
+#2 H:\wamp\www\lilyweibo\framework\web\CController.php(265): UserController->runActionWithFilters()
+#3 H:\wamp\www\lilyweibo\framework\web\CWebApplication.php(282): UserController->run()
+#4 H:\wamp\www\lilyweibo\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 H:\wamp\www\lilyweibo\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 H:\wamp\www\lilyweibo\index.php(18): CWebApplication->run()
+REQUEST_URI=/index.php/user/sinacallback?code=0175695c8e97f7451e5d46cfb38db869
+in H:\wamp\www\lilyweibo\protected\controllers\UserController.php (89)
+in H:\wamp\www\lilyweibo\protected\controllers\UserController.php (55)
+in H:\wamp\www\lilyweibo\index.php (18)
+2014/01/25 10:31:48 [error] [php] Undefined variable: account (H:\wamp\www\lilyweibo\protected\controllers\UserController.php:89)
+Stack trace:
+#0 H:\wamp\www\lilyweibo\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 H:\wamp\www\lilyweibo\framework\web\CController.php(286): UserController->runAction()
+#2 H:\wamp\www\lilyweibo\framework\web\CController.php(265): UserController->runActionWithFilters()
+#3 H:\wamp\www\lilyweibo\framework\web\CWebApplication.php(282): UserController->run()
+#4 H:\wamp\www\lilyweibo\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 H:\wamp\www\lilyweibo\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 H:\wamp\www\lilyweibo\index.php(18): CWebApplication->run()
+REQUEST_URI=/index.php/user/sinacallback?code=6aada1b586c7bfa824df98a65b3222ad
+in H:\wamp\www\lilyweibo\protected\controllers\UserController.php (89)
+in H:\wamp\www\lilyweibo\protected\controllers\UserController.php (55)
+in H:\wamp\www\lilyweibo\index.php (18)
+2014/01/25 10:31:53 [error] [php] Undefined variable: account (H:\wamp\www\lilyweibo\protected\controllers\UserController.php:89)
+Stack trace:
+#0 H:\wamp\www\lilyweibo\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 H:\wamp\www\lilyweibo\framework\web\CController.php(286): UserController->runAction()
+#2 H:\wamp\www\lilyweibo\framework\web\CController.php(265): UserController->runActionWithFilters()
+#3 H:\wamp\www\lilyweibo\framework\web\CWebApplication.php(282): UserController->run()
+#4 H:\wamp\www\lilyweibo\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 H:\wamp\www\lilyweibo\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 H:\wamp\www\lilyweibo\index.php(18): CWebApplication->run()
+REQUEST_URI=/index.php/user/sinacallback?code=374c2cc1567e31b59ab7555ac59135c1
+in H:\wamp\www\lilyweibo\protected\controllers\UserController.php (89)
+in H:\wamp\www\lilyweibo\protected\controllers\UserController.php (55)
+in H:\wamp\www\lilyweibo\index.php (18)
+2014/01/25 10:33:25 [error] [php] Undefined variable: account (H:\wamp\www\lilyweibo\protected\controllers\UserController.php:89)
+Stack trace:
+#0 H:\wamp\www\lilyweibo\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 H:\wamp\www\lilyweibo\framework\web\CController.php(286): UserController->runAction()
+#2 H:\wamp\www\lilyweibo\framework\web\CController.php(265): UserController->runActionWithFilters()
+#3 H:\wamp\www\lilyweibo\framework\web\CWebApplication.php(282): UserController->run()
+#4 H:\wamp\www\lilyweibo\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 H:\wamp\www\lilyweibo\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 H:\wamp\www\lilyweibo\index.php(18): CWebApplication->run()
+REQUEST_URI=/index.php/user/sinacallback?code=6cc75d6898dd6917c87b3e173249d8e8
+in H:\wamp\www\lilyweibo\protected\controllers\UserController.php (89)
+in H:\wamp\www\lilyweibo\protected\controllers\UserController.php (55)
+in H:\wamp\www\lilyweibo\index.php (18)
+2014/01/25 10:37:10 [error] [exception.CException] exception 'CException' with message 'Property "User.sns_id" is not defined.' in H:\wamp\www\lilyweibo\framework\base\CComponent.php:130
+Stack trace:
+#0 H:\wamp\www\lilyweibo\framework\db\ar\CActiveRecord.php(145): CComponent->__get('sns_id')
+#1 H:\wamp\www\lilyweibo\framework\validators\CStringValidator.php(79): CActiveRecord->__get('sns_id')
+#2 H:\wamp\www\lilyweibo\framework\validators\CValidator.php(213): CStringValidator->validateAttribute(Object(User), 'sns_id')
+#3 H:\wamp\www\lilyweibo\framework\base\CModel.php(159): CValidator->validate(Object(User), NULL)
+#4 H:\wamp\www\lilyweibo\framework\db\ar\CActiveRecord.php(805): CModel->validate(NULL)
+#5 H:\wamp\www\lilyweibo\protected\controllers\UserController.php(68): CActiveRecord->save()
+#6 H:\wamp\www\lilyweibo\framework\web\actions\CInlineAction.php(49): UserController->actionSinacallback()
+#7 H:\wamp\www\lilyweibo\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 H:\wamp\www\lilyweibo\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 H:\wamp\www\lilyweibo\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 H:\wamp\www\lilyweibo\framework\web\CWebApplication.php(282): CController->run('sinacallback')
+#11 H:\wamp\www\lilyweibo\framework\web\CWebApplication.php(141): CWebApplication->runController('user/sinacallba...')
+#12 H:\wamp\www\lilyweibo\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 H:\wamp\www\lilyweibo\index.php(18): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php/user/sinacallback?code=56328bd64c9353515ee1460d9cbf5a24
+---
+2014/01/25 10:48:28 [error] [php] Undefined variable: use (H:\wamp\www\lilyweibo\protected\controllers\UserController.php:94)
+Stack trace:
+#0 H:\wamp\www\lilyweibo\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 H:\wamp\www\lilyweibo\framework\web\CController.php(286): UserController->runAction()
+#2 H:\wamp\www\lilyweibo\framework\web\CController.php(265): UserController->runActionWithFilters()
+#3 H:\wamp\www\lilyweibo\framework\web\CWebApplication.php(282): UserController->run()
+#4 H:\wamp\www\lilyweibo\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 H:\wamp\www\lilyweibo\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 H:\wamp\www\lilyweibo\index.php(18): CWebApplication->run()
+REQUEST_URI=/index.php/user/sinacallback?code=7c3fac2a53c650ca4834dcdff39ef5f9
+in H:\wamp\www\lilyweibo\protected\controllers\UserController.php (94)
+in H:\wamp\www\lilyweibo\protected\controllers\UserController.php (55)
+in H:\wamp\www\lilyweibo\index.php (18)
+2014/01/25 11:29:26 [error] [exception.CException] exception 'CException' with message 'CWebApplication and its behaviors do not have a method or closure named "session".' in H:\wamp\www\lilyweibo\framework\base\CComponent.php:266
+Stack trace:
+#0 H:\wamp\www\lilyweibo\protected\views\user\login.php(12): CComponent->__call('session', Array)
+#1 H:\wamp\www\lilyweibo\protected\views\user\login.php(12): CWebApplication->session()
+#2 H:\wamp\www\lilyweibo\framework\web\CBaseController.php(126): require('H:\wamp\www\lil...')
+#3 H:\wamp\www\lilyweibo\framework\web\CBaseController.php(95): CBaseController->renderInternal('H:\wamp\www\lil...', Array, true)
+#4 H:\wamp\www\lilyweibo\framework\web\CController.php(869): CBaseController->renderFile('H:\wamp\www\lil...', Array, true)
+#5 H:\wamp\www\lilyweibo\framework\web\CController.php(782): CController->renderPartial('login', Array, true)
+#6 H:\wamp\www\lilyweibo\protected\controllers\UserController.php(42): CController->render('login', Array)
+#7 H:\wamp\www\lilyweibo\framework\web\actions\CInlineAction.php(49): UserController->actionLogin()
+#8 H:\wamp\www\lilyweibo\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 H:\wamp\www\lilyweibo\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 H:\wamp\www\lilyweibo\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 H:\wamp\www\lilyweibo\framework\web\CWebApplication.php(282): CController->run('')
+#12 H:\wamp\www\lilyweibo\framework\web\CWebApplication.php(141): CWebApplication->runController('user')
+#13 H:\wamp\www\lilyweibo\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 H:\wamp\www\lilyweibo\index.php(18): CApplication->run()
+#15 {main}
+REQUEST_URI=/index.php/user
+---
+2014/01/25 15:24:36 [error] [php] Use of undefined constant ROOT_PAHT - assumed 'ROOT_PAHT' (H:\wamp\www\lilyweibo\protected\controllers\ScarfController.php:16)
+Stack trace:
+#0 H:\wamp\www\lilyweibo\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#1 H:\wamp\www\lilyweibo\index.php(20): CWebApplication->run()
+REQUEST_URI=/index.php/scarf
+in H:\wamp\www\lilyweibo\protected\controllers\ScarfController.php (16)
+in H:\wamp\www\lilyweibo\index.php (20)
+2014/01/25 15:25:37 [error] [php] Use of undefined constant ROOT_PAHT - assumed 'ROOT_PAHT' (H:\wamp\www\lilyweibo\protected\controllers\ScarfController.php:16)
+Stack trace:
+#0 H:\wamp\www\lilyweibo\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#1 H:\wamp\www\lilyweibo\index.php(20): CWebApplication->run()
+REQUEST_URI=/index.php/scarf
+in H:\wamp\www\lilyweibo\protected\controllers\ScarfController.php (16)
+in H:\wamp\www\lilyweibo\index.php (20)
+2014/01/25 15:25:59 [error] [exception.CException] exception 'CException' with message 'Property "ScarfController.style" is not defined.' in H:\wamp\www\lilyweibo\framework\base\CComponent.php:173
+Stack trace:
+#0 H:\wamp\www\lilyweibo\protected\controllers\ScarfController.php(15): CComponent->__set('style', Array)
+#1 H:\wamp\www\lilyweibo\framework\web\CWebApplication.php(281): ScarfController->init()
+#2 H:\wamp\www\lilyweibo\framework\web\CWebApplication.php(141): CWebApplication->runController('scarf')
+#3 H:\wamp\www\lilyweibo\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 H:\wamp\www\lilyweibo\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/scarf
+---
+2014/01/25 15:38:37 [error] [exception.CException] exception 'CException' with message 'Property "ScarfController.style" is not defined.' in H:\wamp\www\lilyweibo\framework\base\CComponent.php:130
+Stack trace:
+#0 H:\wamp\www\lilyweibo\protected\controllers\ScarfController.php(21): CComponent->__get('style')
+#1 H:\wamp\www\lilyweibo\framework\web\CWebApplication.php(281): ScarfController->init()
+#2 H:\wamp\www\lilyweibo\framework\web\CWebApplication.php(141): CWebApplication->runController('scarf')
+#3 H:\wamp\www\lilyweibo\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 H:\wamp\www\lilyweibo\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/scarf
+---
+2014/01/25 15:44:12 [error] [exception.CException] exception 'CException' with message 'Property "ScarfController.style" is not defined.' in H:\wamp\www\lilyweibo\framework\base\CComponent.php:130
+Stack trace:
+#0 H:\wamp\www\lilyweibo\protected\controllers\ScarfController.php(21): CComponent->__get('style')
+#1 H:\wamp\www\lilyweibo\framework\web\CWebApplication.php(281): ScarfController->init()
+#2 H:\wamp\www\lilyweibo\framework\web\CWebApplication.php(141): CWebApplication->runController('scarf')
+#3 H:\wamp\www\lilyweibo\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 H:\wamp\www\lilyweibo\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/scarf
+---
+2014/01/25 15:44:31 [error] [exception.CException] exception 'CException' with message 'Property "ScarfController.style" is not defined.' in H:\wamp\www\lilyweibo\framework\base\CComponent.php:130
+Stack trace:
+#0 H:\wamp\www\lilyweibo\protected\controllers\ScarfController.php(21): CComponent->__get('style')
+#1 H:\wamp\www\lilyweibo\framework\web\CWebApplication.php(281): ScarfController->init()
+#2 H:\wamp\www\lilyweibo\framework\web\CWebApplication.php(141): CWebApplication->runController('scarf')
+#3 H:\wamp\www\lilyweibo\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 H:\wamp\www\lilyweibo\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/scarf
+---
+2014/01/25 17:30:52 [error] [php] imagecreatefromjpeg(H:\wamp\www\lilyweibo/image/style1.jpg): failed to open stream: No such file or directory (H:\wamp\www\lilyweibo\protected\controllers\ScarfController.php:21)
+Stack trace:
+#0 H:\wamp\www\lilyweibo\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#1 H:\wamp\www\lilyweibo\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\wamp\www\lilyweibo\index.php(20): CWebApplication->run()
+REQUEST_URI=/index.php/scarf
+in H:\wamp\www\lilyweibo\protected\controllers\ScarfController.php (21)
+in H:\wamp\www\lilyweibo\index.php (20)
+2014/01/25 17:31:47 [error] [php] imagecreatefromjpeg(H:\wamp\www\lilyweibo/images/style1.jpg): failed to open stream: No such file or directory (H:\wamp\www\lilyweibo\protected\controllers\ScarfController.php:20)
+Stack trace:
+#0 H:\wamp\www\lilyweibo\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#1 H:\wamp\www\lilyweibo\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\wamp\www\lilyweibo\index.php(20): CWebApplication->run()
+REQUEST_URI=/index.php/scarf
+in H:\wamp\www\lilyweibo\protected\controllers\ScarfController.php (20)
+in H:\wamp\www\lilyweibo\index.php (20)
+2014/01/25 19:32:06 [error] [php] Undefined variable: generatePath (H:\wamp\www\lilyweibo\protected\controllers\ScarfController.php:22)
+Stack trace:
+#0 H:\wamp\www\lilyweibo\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#1 H:\wamp\www\lilyweibo\index.php(20): CWebApplication->run()
+REQUEST_URI=/index.php/scarf
+in H:\wamp\www\lilyweibo\protected\controllers\ScarfController.php (22)
+in H:\wamp\www\lilyweibo\index.php (20)
+2014/01/25 20:19:43 [error] [php] Use of undefined constant ERROR_NOT_LOGIN - assumed 'ERROR_NOT_LOGIN' (H:\wamp\www\lilyweibo\protected\controllers\ScarfController.php:154)
+Stack trace:
+#0 H:\wamp\www\lilyweibo\framework\web\CController.php(286): ScarfController->runAction()
+#1 H:\wamp\www\lilyweibo\framework\web\CController.php(265): ScarfController->runActionWithFilters()
+#2 H:\wamp\www\lilyweibo\framework\web\CWebApplication.php(282): ScarfController->run()
+#3 H:\wamp\www\lilyweibo\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 H:\wamp\www\lilyweibo\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 H:\wamp\www\lilyweibo\index.php(20): CWebApplication->run()
+REQUEST_URI=/index.php/scarf/post
+in H:\wamp\www\lilyweibo\protected\controllers\ScarfController.php (154)
+in H:\wamp\www\lilyweibo\index.php (20)
+2014/01/25 20:21:52 [error] [php] Undefined variable: uid (H:\wamp\www\lilyweibo\protected\controllers\ScarfController.php:181)
+Stack trace:
+#0 H:\wamp\www\lilyweibo\framework\web\CController.php(286): ScarfController->runAction()
+#1 H:\wamp\www\lilyweibo\framework\web\CController.php(265): ScarfController->runActionWithFilters()
+#2 H:\wamp\www\lilyweibo\framework\web\CWebApplication.php(282): ScarfController->run()
+#3 H:\wamp\www\lilyweibo\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 H:\wamp\www\lilyweibo\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 H:\wamp\www\lilyweibo\index.php(20): CWebApplication->run()
+REQUEST_URI=/index.php/scarf/post
+in H:\wamp\www\lilyweibo\protected\controllers\ScarfController.php (181)
+in H:\wamp\www\lilyweibo\index.php (20)
+2014/01/25 20:22:47 [error] [php] Undefined variable: uid (H:\wamp\www\lilyweibo\protected\controllers\ScarfController.php:181)
+Stack trace:
+#0 H:\wamp\www\lilyweibo\framework\web\CController.php(286): ScarfController->runAction()
+#1 H:\wamp\www\lilyweibo\framework\web\CController.php(265): ScarfController->runActionWithFilters()
+#2 H:\wamp\www\lilyweibo\framework\web\CWebApplication.php(282): ScarfController->run()
+#3 H:\wamp\www\lilyweibo\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 H:\wamp\www\lilyweibo\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 H:\wamp\www\lilyweibo\index.php(20): CWebApplication->run()
+REQUEST_URI=/index.php/scarf/post
+in H:\wamp\www\lilyweibo\protected\controllers\ScarfController.php (181)
+in H:\wamp\www\lilyweibo\index.php (20)
+2014/01/25 20:26:08 [error] [php] Undefined variable: style (H:\wamp\www\lilyweibo\protected\controllers\ScarfController.php:183)
+Stack trace:
+#0 H:\wamp\www\lilyweibo\framework\web\CController.php(286): ScarfController->runAction()
+#1 H:\wamp\www\lilyweibo\framework\web\CController.php(265): ScarfController->runActionWithFilters()
+#2 H:\wamp\www\lilyweibo\framework\web\CWebApplication.php(282): ScarfController->run()
+#3 H:\wamp\www\lilyweibo\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 H:\wamp\www\lilyweibo\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 H:\wamp\www\lilyweibo\index.php(20): CWebApplication->run()
+REQUEST_URI=/index.php/scarf/post
+in H:\wamp\www\lilyweibo\protected\controllers\ScarfController.php (183)
+in H:\wamp\www\lilyweibo\index.php (20)
+2014/01/25 20:27:10 [error] [php] Undefined variable: style (H:\wamp\www\lilyweibo\protected\controllers\ScarfController.php:183)
+Stack trace:
+#0 H:\wamp\www\lilyweibo\framework\web\CController.php(286): ScarfController->runAction()
+#1 H:\wamp\www\lilyweibo\framework\web\CController.php(265): ScarfController->runActionWithFilters()
+#2 H:\wamp\www\lilyweibo\framework\web\CWebApplication.php(282): ScarfController->run()
+#3 H:\wamp\www\lilyweibo\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 H:\wamp\www\lilyweibo\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 H:\wamp\www\lilyweibo\index.php(20): CWebApplication->run()
+REQUEST_URI=/index.php/scarf/post
+in H:\wamp\www\lilyweibo\protected\controllers\ScarfController.php (183)
+in H:\wamp\www\lilyweibo\index.php (20)
+2014/01/25 20:27:21 [warning] [application] Failed to set unsafe attribute "updae_datetime" of "Scarf".
+in H:\wamp\www\lilyweibo\protected\controllers\ScarfController.php (190)
+in H:\wamp\www\lilyweibo\index.php (20)
+2014/01/25 20:29:42 [warning] [application] Failed to set unsafe attribute "updae_datetime" of "Scarf".
+in H:\wamp\www\lilyweibo\protected\controllers\ScarfController.php (190)
+in H:\wamp\www\lilyweibo\index.php (20)
+2014/01/25 20:30:06 [warning] [application] Failed to set unsafe attribute "updae_datetime" of "Scarf".
+in H:\wamp\www\lilyweibo\protected\controllers\ScarfController.php (190)
+in H:\wamp\www\lilyweibo\index.php (20)
+2014/01/25 20:30:09 [warning] [application] Failed to set unsafe attribute "updae_datetime" of "Scarf".
+in H:\wamp\www\lilyweibo\protected\controllers\ScarfController.php (190)
+in H:\wamp\www\lilyweibo\index.php (20)
+2014/01/25 20:41:27 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[HY093]: Invalid parameter number: no parameters were bound. The SQL statement executed was: SELECT `cid`, `content`, `style`, `image`, `rank`
+FROM `scarf`
+WHERE status = :status1
+ORDER BY `cid` DESC LIMIT 10.
+in H:\wamp\www\lilyweibo\protected\controllers\ScarfController.php (83)
+in H:\wamp\www\lilyweibo\index.php (20)
+2014/01/25 20:41:27 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY093]: Invalid parameter number: no parameters were bound. The SQL statement executed was: SELECT `cid`, `content`, `style`, `image`, `rank`
+FROM `scarf`
+WHERE status = :status1
+ORDER BY `cid` DESC LIMIT 10' in H:\wamp\www\lilyweibo\framework\db\CDbCommand.php:543
+Stack trace:
+#0 H:\wamp\www\lilyweibo\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 H:\wamp\www\lilyweibo\protected\controllers\ScarfController.php(83): CDbCommand->queryAll()
+#2 H:\wamp\www\lilyweibo\framework\web\actions\CInlineAction.php(49): ScarfController->actionList()
+#3 H:\wamp\www\lilyweibo\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 H:\wamp\www\lilyweibo\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 H:\wamp\www\lilyweibo\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 H:\wamp\www\lilyweibo\framework\web\CWebApplication.php(282): CController->run('list')
+#7 H:\wamp\www\lilyweibo\framework\web\CWebApplication.php(141): CWebApplication->runController('scarf/list')
+#8 H:\wamp\www\lilyweibo\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 H:\wamp\www\lilyweibo\index.php(20): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/scarf/list
+---
+2014/01/25 20:41:58 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[HY093]: Invalid parameter number: no parameters were bound. The SQL statement executed was: SELECT `cid`, `content`, `style`, `image`, `rank`
+FROM `scarf`
+WHERE status = :status1
+ORDER BY `cid` DESC LIMIT 10.
+in H:\wamp\www\lilyweibo\protected\controllers\ScarfController.php (83)
+in H:\wamp\www\lilyweibo\index.php (20)
+2014/01/25 20:41:58 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY093]: Invalid parameter number: no parameters were bound. The SQL statement executed was: SELECT `cid`, `content`, `style`, `image`, `rank`
+FROM `scarf`
+WHERE status = :status1
+ORDER BY `cid` DESC LIMIT 10' in H:\wamp\www\lilyweibo\framework\db\CDbCommand.php:543
+Stack trace:
+#0 H:\wamp\www\lilyweibo\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 H:\wamp\www\lilyweibo\protected\controllers\ScarfController.php(83): CDbCommand->queryAll()
+#2 H:\wamp\www\lilyweibo\framework\web\actions\CInlineAction.php(49): ScarfController->actionList()
+#3 H:\wamp\www\lilyweibo\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 H:\wamp\www\lilyweibo\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 H:\wamp\www\lilyweibo\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 H:\wamp\www\lilyweibo\framework\web\CWebApplication.php(282): CController->run('list')
+#7 H:\wamp\www\lilyweibo\framework\web\CWebApplication.php(141): CWebApplication->runController('scarf/list')
+#8 H:\wamp\www\lilyweibo\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 H:\wamp\www\lilyweibo\index.php(20): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/scarf/list
+---
+2014/01/25 20:57:41 [error] [php] Undefined index: uid (H:\wamp\www\lilyweibo\protected\controllers\ScarfController.php:84)
+Stack trace:
+#0 H:\wamp\www\lilyweibo\framework\web\CController.php(286): ScarfController->runAction()
+#1 H:\wamp\www\lilyweibo\framework\web\CController.php(265): ScarfController->runActionWithFilters()
+#2 H:\wamp\www\lilyweibo\framework\web\CWebApplication.php(282): ScarfController->run()
+#3 H:\wamp\www\lilyweibo\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 H:\wamp\www\lilyweibo\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 H:\wamp\www\lilyweibo\index.php(20): CWebApplication->run()
+REQUEST_URI=/index.php/scarf/list
+in H:\wamp\www\lilyweibo\protected\controllers\ScarfController.php (84)
+in H:\wamp\www\lilyweibo\index.php (20)
+2014/01/25 21:05:12 [error] [php] Undefined variable: limit (H:\wamp\www\lilyweibo\protected\controllers\ScarfController.php:76)
+Stack trace:
+#0 H:\wamp\www\lilyweibo\framework\web\CController.php(286): ScarfController->runAction()
+#1 H:\wamp\www\lilyweibo\framework\web\CController.php(265): ScarfController->runActionWithFilters()
+#2 H:\wamp\www\lilyweibo\framework\web\CWebApplication.php(282): ScarfController->run()
+#3 H:\wamp\www\lilyweibo\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 H:\wamp\www\lilyweibo\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 H:\wamp\www\lilyweibo\index.php(20): CWebApplication->run()
+REQUEST_URI=/index.php/scarf/list
+in H:\wamp\www\lilyweibo\protected\controllers\ScarfController.php (76)
+in H:\wamp\www\lilyweibo\index.php (20)
