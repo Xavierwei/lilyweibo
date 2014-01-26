@@ -83,6 +83,23 @@ class Scarf extends CActiveRecord
 	public function getScarfList() {
 		return $this->findAll();
 	}
+
+	/**
+	 * 获取排名列表
+	 */
+	public function getScarfRankList($page, $pagenum) {
+		$start = ($page - 1) * $pagenum;
+		$offset = $pagenum;
+		$connection=Yii::app()->db;
+		$sql = "SELECT *,
+          @curRank := @curRank + 1 AS s_rank
+					FROM scarf s, (SELECT @curRank := ".$start.") r
+					WHERE status = 1
+					ORDER BY rank asc, cid asc LIMIT ".$start.",".$offset.";";
+		$command=$connection->createCommand($sql);
+		$result = $command->queryAll();
+		return $result;
+	}
 	
 	/**
 	 * 分享微博
@@ -106,15 +123,64 @@ class Scarf extends CActiveRecord
 	}
 
 	/**
-	 * 获取排名
-	 * @param type $cid
+	 * 根据随机数获取Rank因子
 	 */
-	public function getRandomRank($cid) {
-		$model = $this->findByPk($cid);
-		if ($model) {
-			return $model['rank'];
-		}
-		return FALSE;
+	public function getRandomRankValue() {
+		$max = $this->getApprovedCount();
+		$randomRank = rand(1, $max); //获取随机排名
+		$row = Yii::app()->db->createCommand() //获取对应的rank因子
+			->select('rank')
+			->from('scarf')
+			->offset($randomRank-1)
+			->limit(1)
+			->queryRow();
+		return $row['rank'];
+	}
+
+	/**
+	 * 更新用户排名
+	 */
+	public function updateRank($uid, $rankValue) {
+
+		$count = Yii::app()->db->createCommand() //获取对应的rank因子
+			->update('scarf', array(
+				'rank' => $rankValue,
+			),'status=:status and uid=:uid', array(':status'=>1, ':uid'=>$uid));
+
+		return $count;
+	}
+
+	/**
+	 * 获取单个用户排名
+	 */
+	public function getUserRank($uid) {
+		$connection=Yii::app()->db;
+		$command=$connection->createCommand("SELECT COUNT(cid) as rank FROM scarf WHERE status=1 and rank <= (SELECT rank FROM scarf WHERE uid=" . $uid . " limit 0,1)");
+		$result = $command->queryRow();
+		return $result['rank'];
+	}
+
+	/**
+	 * 验证用户是否已发帖
+	 */
+	public function isCreated($uid) {
+		$criteria=new CDbCriteria;
+		$criteria->select='image, status';
+		$criteria->addCondition('uid=:uid');
+		$criteria->params=array(':uid'=>$uid);
+		$criteria->addCondition('status!=4');
+		$model = $this->find($criteria);
+		return $model;
+	}
+
+	/**
+	 * 获取已发布状态的微博总数
+	 */
+	public function getApprovedCount() {
+		$criteria=new CDbCriteria;
+		$criteria->addCondition('status=1');
+		$model = $this->count($criteria);
+		return $model;
 	}
 	
 	/**

@@ -1615,6 +1615,25 @@ class SaeTClientV2
 	}
 
 	/**
+	 * 邀请好友
+	 *
+	 * 对应API：{@link http://open.weibo.com/wiki/2/friendships/friends/bilateral/ids friendships/friends/bilateral/ids}
+	 *
+	 * @param int $uid  需要获取双向关注列表的用户UID。
+	 * @param int $count 单页返回的记录条数，默认为50。
+	 * @param int $page  返回结果的页码，默认为1。
+	 * @param int $sort  排序类型，0：按关注时间最近排序，默认为0。
+	 * @return array
+	 **/
+	function invite( $uid, $data)
+	{
+		$params = array();
+		$params['uid'] = $uid;
+		$params['data'] = $data;
+		return $this->oauth->POST( 'messages/invite',  $params  );
+	}
+
+	/**
 	 * 获取用户的关注列表uid
 	 *
 	 * 如果没有提供cursor参数，将只返回最前面的5000个关注id

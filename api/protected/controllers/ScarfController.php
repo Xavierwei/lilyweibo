@@ -58,7 +58,7 @@ class ScarfController extends Controller {
 			if ($page <= 0) {
 				$page = 1;
 			}
-			$pagenum = (int)$this->request->getQuery('pagenum ', 10);
+			$pagenum = (int)$this->request->getQuery('pagenum', 10);
 			if ($pagenum <= 0) {
 				$page = 10;
 			}
@@ -95,6 +95,21 @@ class ScarfController extends Controller {
 		} else {
 			$this->returnJSON($this->error("it is not post", 1001));
 		}
+	}
+
+	/**
+	 * 围巾排名数据列表，GET方法
+	 *
+	 * 错误描述：
+	 * 1001：请求有误
+	 */
+
+	public function actionRankList() {
+		$page = (int)$this->request->getQuery('page',1);
+		$pagenum = (int)$this->request->getQuery('pagenum',10);
+		$scarf = new Scarf();
+		$rankList = $scarf->getScarfRankList($page, $pagenum);
+		return $this->returnJSON($rankList);
 	}
 	
 	/**
@@ -143,11 +158,11 @@ class ScarfController extends Controller {
 		$imgUrl = Yii::app()->params['uploadUrl'] . $generateImgPath . $imgName;
 		
 		//合并文字图片
-		$im = imagecreatefromjpeg($bgImg); 
-		$fontColor  = imagecolorallocate($im, 0, 250, 10); //这是文字颜色，绿色  
+		$im = imagecreatefrompng($bgImg);
+		$fontColor  = imagecolorallocate($im, 255, 255, 255); //这是文字颜色，绿色
 		$font = ROOT_PATH . '/font/msyh.ttf';
 		$fontSize = 23;
-    imagettftext($im, $fontSize,0, 122, 79, $fontColor ,$font, $text);
+    imagettftext($im, $fontSize,0, 88, 59, $fontColor ,$font, $text);
 		imagejpeg($im, $imgFile);  
 		
 		return '/uploads/' . $generateImgPath . $imgName;
@@ -164,11 +179,11 @@ class ScarfController extends Controller {
 	 */
 	public function actionPost() {
 		if ($this->request->isPostRequest && $this->request->isAjaxRequest) {
-            if (!self::isLogin()) {
-                return $this->returnJSON($this->error("not login", 1002));
-            } else {
-                $uid = Yii::app()->session["user"]["uid"];
-            }
+			if (!self::isLogin()) {
+					return $this->returnJSON($this->error("not login", 1002));
+			} else {
+					$uid = Yii::app()->session["user"]["uid"];
+			}
 			$content = trim($this->request->getPost('content'));
 			if (empty($content)) {
 				$this->returnJSON($this->error('content can not be empty', 1003));
@@ -181,7 +196,7 @@ class ScarfController extends Controller {
 				$style = 1;
 			}
 
-			$newScarf = array();
+			$model = new Scarf();
 			$newScarf = array(
 				'uid' => $uid,
 				'content' => $content,
@@ -189,9 +204,8 @@ class ScarfController extends Controller {
 				'image' => Yii::app()->session['image'],
 				'add_datetime' => time(),
 				'updae_datetime' => time(),
-				'rank' => 0,
+				'rank' => $model->getApprovedCount(), //将当前approved状态的总数作为rank因子
 			);
-			$model = new Scarf();
 			$model->attributes = $newScarf;
 			$model->insert();
 			$newScarf['cid'] = $model->getPrimaryKey();
@@ -205,25 +219,61 @@ class ScarfController extends Controller {
 			$this->returnJSON($this->error('bad request', 1001));
 		}
 	}
-	
+
+	/**
+	 * 大冒险
+	 */
 	public function actionDmx() {
-		if ($this->request->isPostRequest && $this->request->isAjaxRequest) {
-			$content = (int)$this->request->getPost('content');
-			$style = (int)$this->request->getPost('style');
-		} 
+		if(self::isLogin()) {
+			$user = Yii::app()->session["user"];
+			$scarf = new Scarf();
+			$currentRank = (int)$scarf->getUserRank($user['uid']); //获取当前排名
+			$randomRankValue = $scarf->getRandomRankValue(); //获取随机的rank因子
+			if($scarf->updateRank($user['uid'], $randomRankValue)) //更新当前用户的rankValue
+			{
+				$newRank = (int)$scarf->getUserRank($user['uid']); //获取新排名
+				$data['offset'] = $currentRank - $newRank;
+				$data['newRank'] = $newRank;
+				return $this->returnJSON(array(
+					"data" => $data,
+					"error" => null
+				));
+			}
+			else {
+				$this->returnJSON($this->error('unknow error', 1002));
+			}
+		}
+		else
+		{
+			$this->returnJSON($this->error('not login', 1001));
+		}
 	}
 
-	public function actionGetNeighbours()
-	{
-		$this->render('getNeighbours');
-	}
 	
 	/**
 	 * 获得当前用户的排名，GET方法（管理员可以传入get值)
 	 */
 	public function actionMyRank()
 	{
-		$this->render('myRank');
+		if(self::isLogin()) {
+			$scarf = new Scarf();
+			$user = Yii::app()->session["user"];
+			$myRank['user']['screen_name'] = $user['screen_name'];
+			$myRank['user']['avatar'] = $user['avatar'];
+			$myRank['total'] = $scarf->getApprovedCount();
+			//判断当前用户是否发过微博
+			if($myScarf = $scarf->isCreated($user['uid'])) {
+				$myRank['rank'] = (int)$scarf->getUserRank($user['uid']);
+				$myRank['image'] = $myScarf->image;
+				$myRank['status'] = (int)$myScarf->status;
+			}
+			return $this->returnJSON(array(
+				"data" => $myRank,
+				"error" => null
+			));
+		} else {
+			$this->returnJSON($this->error('not login', 1001));
+		}
 	}
 
 	public function actionPut()

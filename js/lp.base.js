@@ -149,7 +149,16 @@ LP.use(['jquery' , 'api'] , function( $ , api ){
                 $('.stepLoginBtn').data('url',res.data);
             }
             else {
-                $('.step1').fadeIn();
+                if(res.data.rank) {
+                    $('.step4').fadeIn();
+                    LP.compile( 'myrank-template' ,
+                        res.data,
+                        function( html ){
+                            $('#myRank').append(html);
+                        });
+                } else {
+                    $('.step1').fadeIn();
+                }
             }
         }, function(){
             $('#list_wrap').html('加载失败，请刷新页面再试一次。');

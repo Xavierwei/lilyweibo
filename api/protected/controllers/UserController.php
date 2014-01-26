@@ -42,6 +42,9 @@ class UserController extends Controller
     ));
   }
 
+	/**
+	 * 登陆
+	 */
 	public function actionLogin() {
         $o = new SaeTOAuthV2( WB_AKEY , WB_SKEY );
         $weiboUrl = $o->getAuthorizeURL(WB_CALLBACK_URL);
@@ -49,17 +52,59 @@ class UserController extends Controller
 			'weiboUrl' => $weiboUrl
 		));
 	}
-	
-    public function actionLogout() {
-        Yii::app()->session->clear();
-        Yii::app()->session->destroy();
 
-        return $this->returnJSON(array(
-            "data" => "logout success",
-            "error" => NULL
-        ));
-    }
-	
+	/**
+	 * 退出
+	 */
+	public function actionLogout() {
+			Yii::app()->session->clear();
+			Yii::app()->session->destroy();
+
+			return $this->returnJSON(array(
+					"data" => "logout success",
+					"error" => NULL
+			));
+	}
+
+
+	/**
+	 * 取得好友列表
+	 */
+	public function actionGetFriendList() {
+		if(self::isLogin()) {
+			$user = $this->getLoginUser();
+			$userModel = new User();
+			$friendList = $userModel->getUserFriend($user['sns_uid']);
+			return $this->returnJSON(array(
+				"data" => $friendList,
+				"error" => NULL
+			));
+		}
+		else {
+			$this->returnJSON($this->error('not login', 1001));
+		}
+	}
+
+	/**
+	 * 邀请好友
+	 */
+	public function actionInvitFriends() {
+		if(self::isLogin()) {
+
+//			if ($this->request->isPostRequest && $this->request->isAjaxRequest) {
+//explode(" ",$str
+//			}
+			$userModel = new User();
+			$userModel->invitFriend('1856415417');
+		}
+		else {
+			$this->returnJSON($this->error('not login', 1001));
+		}
+	}
+
+	/**
+	 * Sina Callback
+	 */
 	public function actionSinacallback() {
 		$o = new SaeTOAuthV2(WB_AKEY, WB_SKEY);   
 		if ($code = $this->request->getQuery('code')) {
