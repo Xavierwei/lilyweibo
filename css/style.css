@@ -5,7 +5,7 @@
 
 /* Reset
 ================================================================================================= */
-body{color:#666;background:#fff;font-size:12px;line-height:1.666em;overflow-x:hidden;}
+body{color:#666;background:#8ed9d8;font-size:12px;line-height:1.666em;overflow-x:hidden;}
 body{font-family:arial,SimHei,sans-serif;}
 h1,h2,h3{font-size:100%;font-weight: normal;}
 body,h1,h2,h3,h4,ul,li,p,img{margin:0;padding:0;border:0;}
@@ -35,18 +35,21 @@ a{text-decoration:none}
 .videobg{background: url('../img/video.jpg') no-repeat;height:332px ;padding: 15px 0 0}
     .videobox{width:484px;height: 252px;margin:0px auto 0;}
 
+#weiboLoginForm {display:none;position: fixed;top:50%;left:50%;margin:-175px 0 0 -325px;}
+    #weiboLoginForm .close {cursor:pointer;position: absolute;top:-10px;right:-10px;background:#fff;padding:10px;}
+
 .steps {background: url(../img/step_bg.png) no-repeat;height:408px;padding-top:1px;position:relative;}
     .step {display: none;}
-    .step1 {display: block;}
-    .step1Title,.step1Input,.step1Intro,.step1BtnNext {background: url(../img/step1_ele.gif) no-repeat;}
+    .step1Title,.step1Input,.step1Intro,.step1BtnNext,.step1BtnNextDisable {background: url(../img/step1_ele.gif) no-repeat;}
     .step1Left {float:left;}
     .step1Right {float:left;}
     .step1Title {width:668px;height:53px;margin:73px 0 0 31px;}
     .step1Input {border:none;width:671px;height:92px;background-position:0 -73px;margin:19px 0 0 31px;font-size:24px;text-indent:1em;}
     .step1Intro {width:637px;height:34px;background-position:-7px -197px;margin:23px 0 0 31px;}
     .step1Error {display:none;color:#fc3b77;font-size:18px;margin:5px 0 0 31px;}
-    .step1BtnNext {display:none;cursor:pointer;width:176px;height:168px;background-position: -706px -68px;margin:0 0 0 31px;}
-    .step2Title,.step2BtnPrev,.step2BtnNext,.step3BtnPrev,.step3BtnNext {background: url(../img/step2_ele.gif) no-repeat;}
+    .step1BtnNext {cursor:pointer;width:176px;height:168px;background-position: -706px -68px;margin:0 0 0 31px;}
+    .step1BtnNextDisabled {cursor:default;background-position: -904px -68px;}
+    .step2Title,.step2BtnPrev,.step2BtnNext,.step2BtnNextDisabled,.step3BtnPrev,.step3BtnNext {background: url(../img/step2_ele.gif) no-repeat;}
     .step2Title {width:430px;height:53px;margin:73px 0 0 31px;}
     .step2Styles {float: left;margin:26px 0 0 31px;}
     .step2Styles li {cursor:pointer;float:left;position: relative;margin:0 46px 0 0;}
@@ -55,11 +58,10 @@ a{text-decoration:none}
     .step2Btns {float: left;margin:18px 0 0 31px;}
     .step2BtnPrev,.step3BtnPrev {cursor:pointer;background-position:0 -69px;width:175px;height:91px;}
     .step2BtnNext,.step3BtnNext {cursor:pointer;background-position:0 -164px;width:175px;height:91px;margin-top:5px;}
-    .step2BtnNext {display: none;}
+    .step2BtnNextDisabled {cursor:default;background-position:-186px -164px;}
     .step3Title {background:url(../img/step3_ele.gif) no-repeat;width:430px;height:53px;margin:73px 0 0 31px;}
-    .step3Preview {float:left;margin:45px 0 0 31px;width:670px;}
-    .step3Btns {float: left;margin:15px 0 0 31px;}
-
+    .step3Preview {float:left;margin:45px 0 0 31px;padding:5px;background:#fff;border-bottom:3px solid #719fc7;}
+    .step3Btns {float: left;margin:15px 0 0 60px;}
     .step_loading {display:none;background: url(../img/step_bg.png) no-repeat;height:408px;width:940px;position: absolute;top:0;left:0;}
     .step_loading .waiting {background: url(../img/waiting.gif) no-repeat;width:272px;height:40px;position: absolute;top:50%;left:50%;margin:-20px 0 0 -135px;}
 .user{}

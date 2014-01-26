@@ -23,10 +23,11 @@ define(function( require , exports , model ){
     // 配置
     var _api = {
         // searchHosts: {path: '/Ajax/searchHosts' , data: {key: ''} , m: '检索小组' , method: 'get' },
-        getimage: {path: '../api/index.php/scarf/getimage', method:'post'},
-        post: {path: '../api/index.php/scarf/post', method:'post'},
+        getimage: {path: 'lilyweibo/index.php/scarf/getimage', method:'post'},
+        post: {path: 'lilyweibo/index.php/scarf/post', method:'post'},
         dmx: {path: '../api/index.php/scarf/dmx'},
-        list: {path: 'json/list.json'}
+        list: {path: 'json/list.json'},
+        myrank: {path: 'lilyweibo/index.php/scarf/myrank'}
     };
 
     // 内部API
