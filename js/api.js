@@ -25,9 +25,9 @@ define(function( require , exports , model ){
         // searchHosts: {path: '/Ajax/searchHosts' , data: {key: ''} , m: '检索小组' , method: 'get' },
         getimage: {path: 'api/index.php/scarf/getimage', method:'post'},
         post: {path: 'api/index.php/scarf/post', method:'post'},
-        dmx: {path: 'api/index.php/scarf/dmx'},
-        list: {path: 'json/list.json'},
-        myrank: {path: 'api/index.php/scarf/myrank'}
+        dmx: {path: 'api/index.php/scarf/dmx', method:'get'},
+        list: {path: 'api/index.php/scarf/ranklist', method:'get'},
+        myrank: {path: 'api/index.php/scarf/myrank', method:'get'}
     };
 
     // 内部API

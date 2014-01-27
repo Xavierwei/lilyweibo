@@ -2,7 +2,7 @@
  * page base action
  */
 LP.use(['jquery' , 'api'] , function( $ , api ){
-    var API_ROOT = "lilyweibo";
+    var API_ROOT = "api";
 
     // live for pic-item hover event
     $(document.body)
@@ -151,6 +151,7 @@ LP.use(['jquery' , 'api'] , function( $ , api ){
             else {
                 if(res.data.rank) {
                     $('.step4').fadeIn();
+                    res.data.image = API_ROOT + res.data.image;
                     LP.compile( 'myrank-template' ,
                         res.data,
                         function( html ){

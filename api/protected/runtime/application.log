@@ -1270,3 +1270,332 @@ in /Applications/MAMP/htdocs/lilyweibo/api/index.php (20)
 2014/01/27 10:21:26 [warning] [application] Failed to set unsafe attribute "updae_datetime" of "Scarf".
 in /Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/ScarfController.php (215)
 in /Applications/MAMP/htdocs/lilyweibo/api/index.php (20)
+2014/01/27 10:31:19 [error] [php] Trying to get property of non-object (/Applications/MAMP/htdocs/lilyweibo/api/protected/models/Scarf.php:239)
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(286): ScarfController->runAction()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(265): ScarfController->runActionWithFilters()
+#3 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(282): ScarfController->run()
+#4 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CWebApplication->run()
+REQUEST_URI=/lilyweibo/api/index.php/scarf/ProduceNow
+in /Applications/MAMP/htdocs/lilyweibo/api/protected/models/Scarf.php (239)
+in /Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/ScarfController.php (342)
+in /Applications/MAMP/htdocs/lilyweibo/api/index.php (20)
+2014/01/27 10:31:39 [error] [php] Trying to get property of non-object (/Applications/MAMP/htdocs/lilyweibo/api/protected/models/Scarf.php:239)
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(286): ScarfController->runAction()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(265): ScarfController->runActionWithFilters()
+#3 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(282): ScarfController->run()
+#4 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CWebApplication->run()
+REQUEST_URI=/lilyweibo/api/index.php/scarf/ProduceNow
+in /Applications/MAMP/htdocs/lilyweibo/api/protected/models/Scarf.php (239)
+in /Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/ScarfController.php (342)
+in /Applications/MAMP/htdocs/lilyweibo/api/index.php (20)
+2014/01/27 10:31:47 [error] [php] Trying to get property of non-object (/Applications/MAMP/htdocs/lilyweibo/api/protected/models/Scarf.php:240)
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(286): ScarfController->runAction()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(265): ScarfController->runActionWithFilters()
+#3 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(282): ScarfController->run()
+#4 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CWebApplication->run()
+REQUEST_URI=/lilyweibo/api/index.php/scarf/ProduceNow
+in /Applications/MAMP/htdocs/lilyweibo/api/protected/models/Scarf.php (240)
+in /Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/ScarfController.php (342)
+in /Applications/MAMP/htdocs/lilyweibo/api/index.php (20)
+2014/01/27 10:38:45 [error] [php] Use of undefined constant STATUS_PRINTED - assumed 'STATUS_PRINTED' (/Applications/MAMP/htdocs/lilyweibo/api/protected/models/Scarf.php:237)
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(286): ScarfController->runAction()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(265): ScarfController->runActionWithFilters()
+#3 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(282): ScarfController->run()
+#4 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CWebApplication->run()
+REQUEST_URI=/lilyweibo/api/index.php/scarf/ProduceNow
+in /Applications/MAMP/htdocs/lilyweibo/api/protected/models/Scarf.php (237)
+in /Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/ScarfController.php (342)
+in /Applications/MAMP/htdocs/lilyweibo/api/index.php (20)
+2014/01/27 10:39:09 [error] [exception.CException] exception 'CException' with message 'Property "Scarf.STATUS_PRINTED" is not defined.' in /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CComponent.php:130
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/db/ar/CActiveRecord.php(145): CComponent->__get('STATUS_PRINTED')
+#1 /Applications/MAMP/htdocs/lilyweibo/api/protected/models/Scarf.php(237): CActiveRecord->__get('STATUS_PRINTED')
+#2 /Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/ScarfController.php(342): Scarf->produceNow()
+#3 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/actions/CInlineAction.php(49): ScarfController->actionProduceNow()
+#4 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(282): CController->run('ProduceNow')
+#8 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController('scarf/ProduceNo...')
+#9 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CApplication->run()
+#11 {main}
+REQUEST_URI=/lilyweibo/api/index.php/scarf/ProduceNow
+---
+2014/01/27 11:02:40 [warning] [application] Failed to set unsafe attribute "updae_datetime" of "Scarf".
+in /Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/ScarfController.php (216)
+in /Applications/MAMP/htdocs/lilyweibo/api/index.php (20)
+2014/01/27 11:02:44 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[HY093]: Invalid parameter number: no parameters were bound. The SQL statement executed was: SELECT * FROM `scarf` `t` WHERE uid=:uid LIMIT 1.
+in /Applications/MAMP/htdocs/lilyweibo/api/protected/models/Scarf.php (206)
+in /Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/ScarfController.php (224)
+in /Applications/MAMP/htdocs/lilyweibo/api/index.php (20)
+2014/01/27 11:02:44 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY093]: Invalid parameter number: no parameters were bound. The SQL statement executed was: SELECT * FROM `scarf` `t` WHERE uid=:uid LIMIT 1' in /Applications/MAMP/htdocs/lilyweibo/api/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/db/CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/db/ar/CActiveRecord.php(1351): CDbCommand->queryRow()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/framework/db/ar/CActiveRecord.php(1456): CActiveRecord->query(Object(CDbCriteria))
+#3 /Applications/MAMP/htdocs/lilyweibo/api/protected/models/Scarf.php(206): CActiveRecord->find(Object(CDbCriteria))
+#4 /Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/ScarfController.php(224): Scarf->isInvited('6')
+#5 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/actions/CInlineAction.php(49): ScarfController->actionPost()
+#6 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#8 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(282): CController->run('post')
+#10 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController('scarf/post')
+#11 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#12 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CApplication->run()
+#13 {main}
+REQUEST_URI=/lilyweibo/api/index.php/scarf/post
+HTTP_REFERER=http://lily.local:8888/lilyweibo/
+---
+2014/01/27 11:04:29 [warning] [application] Failed to set unsafe attribute "updae_datetime" of "Scarf".
+in /Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/ScarfController.php (216)
+in /Applications/MAMP/htdocs/lilyweibo/api/index.php (20)
+2014/01/27 11:04:31 [error] [php] Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/ScarfController.php:225) (/Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/ScarfController.php:21)
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/actions/CInlineAction.php(49): ScarfController->actionPost()
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(286): ScarfController->runAction()
+#3 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(265): ScarfController->runActionWithFilters()
+#4 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(282): ScarfController->run()
+#5 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#7 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CWebApplication->run()
+REQUEST_URI=/lilyweibo/api/index.php/scarf/post
+in /Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/ScarfController.php (21)
+in /Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/ScarfController.php (227)
+in /Applications/MAMP/htdocs/lilyweibo/api/index.php (20)
+2014/01/27 11:06:18 [warning] [application] Failed to set unsafe attribute "updae_datetime" of "Scarf".
+in /Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/ScarfController.php (216)
+in /Applications/MAMP/htdocs/lilyweibo/api/index.php (20)
+2014/01/27 11:06:25 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'uid' in 'where clause'. The SQL statement executed was: SELECT * FROM `friend` `t` WHERE uid=:uid LIMIT 1.
+in /Applications/MAMP/htdocs/lilyweibo/api/protected/models/Scarf.php (208)
+in /Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/ScarfController.php (224)
+in /Applications/MAMP/htdocs/lilyweibo/api/index.php (20)
+2014/01/27 11:06:25 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'uid' in 'where clause'. The SQL statement executed was: SELECT * FROM `friend` `t` WHERE uid=:uid LIMIT 1' in /Applications/MAMP/htdocs/lilyweibo/api/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/db/CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/db/ar/CActiveRecord.php(1351): CDbCommand->queryRow()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/framework/db/ar/CActiveRecord.php(1456): CActiveRecord->query(Object(CDbCriteria))
+#3 /Applications/MAMP/htdocs/lilyweibo/api/protected/models/Scarf.php(208): CActiveRecord->find(Object(CDbCriteria))
+#4 /Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/ScarfController.php(224): Scarf->isInvited('6')
+#5 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/actions/CInlineAction.php(49): ScarfController->actionPost()
+#6 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#8 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(282): CController->run('post')
+#10 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController('scarf/post')
+#11 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#12 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CApplication->run()
+#13 {main}
+REQUEST_URI=/lilyweibo/api/index.php/scarf/post
+HTTP_REFERER=http://lily.local:8888/lilyweibo/
+---
+2014/01/27 11:07:41 [warning] [application] Failed to set unsafe attribute "updae_datetime" of "Scarf".
+in /Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/ScarfController.php (216)
+in /Applications/MAMP/htdocs/lilyweibo/api/index.php (20)
+2014/01/27 11:07:42 [error] [php] Trying to get property of non-object (/Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/ScarfController.php:225)
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(286): ScarfController->runAction()
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(265): ScarfController->runActionWithFilters()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(282): ScarfController->run()
+#3 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CWebApplication->run()
+REQUEST_URI=/lilyweibo/api/index.php/scarf/post
+in /Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/ScarfController.php (225)
+in /Applications/MAMP/htdocs/lilyweibo/api/index.php (20)
+2014/01/27 11:08:53 [warning] [application] Failed to set unsafe attribute "updae_datetime" of "Scarf".
+in /Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/ScarfController.php (216)
+in /Applications/MAMP/htdocs/lilyweibo/api/index.php (20)
+2014/01/27 11:22:03 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'friend_sns_uid1' in 'where clause'. The SQL statement executed was: SELECT * FROM `friend` `t` WHERE friend_sns_uid1=:uid LIMIT 1.
+in /Applications/MAMP/htdocs/lilyweibo/api/protected/models/Scarf.php (208)
+in /Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/ScarfController.php (236)
+in /Applications/MAMP/htdocs/lilyweibo/api/index.php (20)
+2014/01/27 11:22:03 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'friend_sns_uid1' in 'where clause'. The SQL statement executed was: SELECT * FROM `friend` `t` WHERE friend_sns_uid1=:uid LIMIT 1' in /Applications/MAMP/htdocs/lilyweibo/api/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/db/CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/db/ar/CActiveRecord.php(1351): CDbCommand->queryRow()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/framework/db/ar/CActiveRecord.php(1456): CActiveRecord->query(Object(CDbCriteria))
+#3 /Applications/MAMP/htdocs/lilyweibo/api/protected/models/Scarf.php(208): CActiveRecord->find(Object(CDbCriteria))
+#4 /Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/ScarfController.php(236): Scarf->isInvited('6')
+#5 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/actions/CInlineAction.php(49): ScarfController->actionisInvited()
+#6 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#8 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(282): CController->run('isInvited')
+#10 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController('scarf/isInvited')
+#11 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#12 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CApplication->run()
+#13 {main}
+REQUEST_URI=/lilyweibo/api/index.php/scarf/isInvited
+---
+2014/01/27 11:23:41 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'friend_sns_uid1' in 'where clause'. The SQL statement executed was: SELECT * FROM `friend` `t` WHERE friend_sns_uid1=:uid LIMIT 1.
+in /Applications/MAMP/htdocs/lilyweibo/api/protected/models/Scarf.php (209)
+in /Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/ScarfController.php (236)
+in /Applications/MAMP/htdocs/lilyweibo/api/index.php (20)
+2014/01/27 11:23:41 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'friend_sns_uid1' in 'where clause'. The SQL statement executed was: SELECT * FROM `friend` `t` WHERE friend_sns_uid1=:uid LIMIT 1' in /Applications/MAMP/htdocs/lilyweibo/api/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/db/CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/db/ar/CActiveRecord.php(1351): CDbCommand->queryRow()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/framework/db/ar/CActiveRecord.php(1456): CActiveRecord->query(Object(CDbCriteria))
+#3 /Applications/MAMP/htdocs/lilyweibo/api/protected/models/Scarf.php(209): CActiveRecord->find(Object(CDbCriteria))
+#4 /Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/ScarfController.php(236): Scarf->isInvited('6')
+#5 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/actions/CInlineAction.php(49): ScarfController->actionisInvited()
+#6 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#8 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(282): CController->run('isInvited')
+#10 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController('scarf/isInvited')
+#11 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#12 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CApplication->run()
+#13 {main}
+REQUEST_URI=/lilyweibo/api/index.php/scarf/isInvited
+---
+2014/01/27 11:24:31 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'friend_sns_uid1' in 'where clause'. The SQL statement executed was: SELECT * FROM `friend` `t` WHERE friend_sns_uid1=:uid LIMIT 1.
+in /Applications/MAMP/htdocs/lilyweibo/api/protected/models/Scarf.php (209)
+in /Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/ScarfController.php (236)
+in /Applications/MAMP/htdocs/lilyweibo/api/index.php (20)
+2014/01/27 11:24:31 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'friend_sns_uid1' in 'where clause'. The SQL statement executed was: SELECT * FROM `friend` `t` WHERE friend_sns_uid1=:uid LIMIT 1' in /Applications/MAMP/htdocs/lilyweibo/api/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/db/CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/db/ar/CActiveRecord.php(1351): CDbCommand->queryRow()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/framework/db/ar/CActiveRecord.php(1456): CActiveRecord->query(Object(CDbCriteria))
+#3 /Applications/MAMP/htdocs/lilyweibo/api/protected/models/Scarf.php(209): CActiveRecord->find(Object(CDbCriteria))
+#4 /Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/ScarfController.php(236): Scarf->isInvited('3164070184')
+#5 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/actions/CInlineAction.php(49): ScarfController->actionisInvited()
+#6 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#8 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(282): CController->run('isInvited')
+#10 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController('scarf/isInvited')
+#11 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#12 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CApplication->run()
+#13 {main}
+REQUEST_URI=/lilyweibo/api/index.php/scarf/isInvited
+---
+2014/01/27 11:36:48 [warning] [application] Failed to set unsafe attribute "updae_datetime" of "Scarf".
+in /Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/ScarfController.php (216)
+in /Applications/MAMP/htdocs/lilyweibo/api/index.php (20)
+2014/01/27 11:37:38 [warning] [application] Failed to set unsafe attribute "updae_datetime" of "Scarf".
+in /Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/ScarfController.php (216)
+in /Applications/MAMP/htdocs/lilyweibo/api/index.php (20)
+2014/01/27 11:39:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "isInvited".' in /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(270): CController->missingAction('isInvited')
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(282): CController->run('isInvited')
+#2 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController('user/isInvited')
+#3 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/lilyweibo/api/index.php/user/isInvited
+---
+2014/01/27 11:40:56 [warning] [application] Failed to set unsafe attribute "updae_datetime" of "Scarf".
+in /Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/ScarfController.php (216)
+in /Applications/MAMP/htdocs/lilyweibo/api/index.php (20)
+2014/01/27 11:42:13 [warning] [application] Failed to set unsafe attribute "updae_datetime" of "Scarf".
+in /Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/ScarfController.php (216)
+in /Applications/MAMP/htdocs/lilyweibo/api/index.php (20)
+2014/01/27 11:47:55 [warning] [application] Failed to set unsafe attribute "updae_datetime" of "Scarf".
+in /Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/ScarfController.php (216)
+in /Applications/MAMP/htdocs/lilyweibo/api/index.php (20)
+2014/01/27 11:54:53 [error] [php] Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/ScarfController.php:115) (/Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/ScarfController.php:21)
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/actions/CInlineAction.php(49): ScarfController->actionRankList()
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(286): ScarfController->runAction()
+#3 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(265): ScarfController->runActionWithFilters()
+#4 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(282): ScarfController->run()
+#5 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#7 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CWebApplication->run()
+REQUEST_URI=/lilyweibo/api/index.php/scarf/ranklist
+in /Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/ScarfController.php (21)
+in /Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/ScarfController.php (123)
+in /Applications/MAMP/htdocs/lilyweibo/api/index.php (20)
+2014/01/27 11:55:06 [error] [php] Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/ScarfController.php:115) (/Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/ScarfController.php:21)
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/actions/CInlineAction.php(49): ScarfController->actionRankList()
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(286): ScarfController->runAction()
+#3 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(265): ScarfController->runActionWithFilters()
+#4 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(282): ScarfController->run()
+#5 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#7 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CWebApplication->run()
+REQUEST_URI=/lilyweibo/api/index.php/scarf/ranklist
+in /Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/ScarfController.php (21)
+in /Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/ScarfController.php (123)
+in /Applications/MAMP/htdocs/lilyweibo/api/index.php (20)
+2014/01/27 11:55:20 [error] [php] Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/ScarfController.php:115) (/Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/ScarfController.php:21)
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/actions/CInlineAction.php(49): ScarfController->actionRankList()
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(286): ScarfController->runAction()
+#3 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(265): ScarfController->runActionWithFilters()
+#4 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(282): ScarfController->run()
+#5 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#7 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CWebApplication->run()
+REQUEST_URI=/lilyweibo/api/index.php/scarf/ranklist
+in /Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/ScarfController.php (21)
+in /Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/ScarfController.php (123)
+in /Applications/MAMP/htdocs/lilyweibo/api/index.php (20)
+2014/01/27 11:55:23 [error] [php] Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/ScarfController.php:115) (/Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/ScarfController.php:21)
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/actions/CInlineAction.php(49): ScarfController->actionRankList()
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(286): ScarfController->runAction()
+#3 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(265): ScarfController->runActionWithFilters()
+#4 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(282): ScarfController->run()
+#5 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#7 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CWebApplication->run()
+REQUEST_URI=/lilyweibo/api/index.php/scarf/ranklist
+in /Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/ScarfController.php (21)
+in /Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/ScarfController.php (123)
+in /Applications/MAMP/htdocs/lilyweibo/api/index.php (20)
+2014/01/27 11:56:59 [error] [php] Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/ScarfController.php:115) (/Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/ScarfController.php:21)
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/actions/CInlineAction.php(49): ScarfController->actionRankList()
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(286): ScarfController->runAction()
+#3 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(265): ScarfController->runActionWithFilters()
+#4 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(282): ScarfController->run()
+#5 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#7 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CWebApplication->run()
+REQUEST_URI=/lilyweibo/api/index.php/scarf/ranklist
+in /Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/ScarfController.php (21)
+in /Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/ScarfController.php (123)
+in /Applications/MAMP/htdocs/lilyweibo/api/index.php (20)
+2014/01/27 12:01:38 [error] [php] Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/ScarfController.php:115) (/Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/ScarfController.php:21)
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/actions/CInlineAction.php(49): ScarfController->actionRankList()
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(286): ScarfController->runAction()
+#3 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(265): ScarfController->runActionWithFilters()
+#4 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(282): ScarfController->run()
+#5 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#7 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CWebApplication->run()
+REQUEST_URI=/lilyweibo/api/index.php/scarf/ranklist
+in /Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/ScarfController.php (21)
+in /Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/ScarfController.php (123)
+in /Applications/MAMP/htdocs/lilyweibo/api/index.php (20)

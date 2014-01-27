@@ -84,7 +84,6 @@ class User extends CActiveRecord
 		$access_token = Yii::app()->session["weibo_access_token"];
 		$c = new SaeTClientV2(WB_AKEY, WB_SKEY, $access_token);
 		$friendList = $c->bilateral($sns_uid);
-
 		return $friendList;
 	}
 

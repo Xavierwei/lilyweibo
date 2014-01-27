@@ -109,6 +109,16 @@ class ScarfController extends Controller {
 		$pagenum = (int)$this->request->getQuery('pagenum',10);
 		$scarf = new Scarf();
 		$rankList = $scarf->getScarfRankList($page, $pagenum);
+
+    if (!empty($rankList)) {
+      foreach($rankList as $index => $row) {
+        $user = User::model()->getUserInfo($row['uid']);
+        $rankList[$index]['user']['screen_name'] = $user->screen_name;
+        $rankList[$index]['user']['avatar'] = $user->avatar;
+        unset($rankList[$index]['uid']);
+      }
+    }
+
 		return $this->returnJSON($rankList);
 	}
 	
@@ -221,12 +231,38 @@ class ScarfController extends Controller {
 				'avatar' => Yii::app()->session['user']['avatar'],
 			);
       $model->shareScarf($newScarf['cid']); // 分享微博
+      $sns_uid = Yii::app()->session["user"]["sns_uid"];
+      if($invitedInfo = $model->isInvited($sns_uid)) //判断当前用户是否是受邀请的
+      {
+        // 更新邀请人的内容排名
+        $cid = $invitedInfo->cid;
+        $rank = $model->getRankByCid($cid);
+        $rank = $rank - 10; //提升10个排名
+        $rankValue = $model->getRankValue($rank);
+        $model->updateRankByCid($cid, $rankValue);
+      }
 			unset($newScarf['uid']);
+      $newScarf['total'] = $model->getApprovedCount();
 			return $this->returnJSON($newScarf);
 		} else {
 			$this->returnJSON($this->error('bad request', 1001));
 		}
 	}
+
+  public function actionisInvited() {
+
+    $model = new Scarf();
+    $sns_uid = Yii::app()->session["user"]["sns_uid"];
+    if($invitedInfo = $model->isInvited($sns_uid)) //判断当前用户是否是受邀请的
+    {
+      // 更新邀请人的内容排名
+      $cid = $invitedInfo->cid;
+      $rank = $model->getRankByCid($cid);
+      $rank = $rank - 10; //提升10个排名
+      $rankValue = $model->getRankValue($rank);
+      $model->updateRankByCid($cid, $rankValue);
+    }
+  }
 
 
 	/**
@@ -240,11 +276,11 @@ class ScarfController extends Controller {
       if($todayDmxCount >= 3) {
         return $this->returnJSON($this->error('over max', 1003));
       }
-			$currentRank = (int)$scarf->getUserRank($user['uid']); //获取当前排名
+			$currentRank = (int)$scarf->getRankByUid($user['uid']); //获取当前排名
 			$randomRankValue = $scarf->getRandomRankValue(); //获取随机的rank因子
 			if($scarf->updateRank($user['uid'], $randomRankValue)) //更新当前用户的rankValue
 			{
-				$newRank = (int)$scarf->getUserRank($user['uid']); //获取新排名
+				$newRank = (int)$scarf->getRankByUid($user['uid']); //获取新排名
         $scarf->logDMX($user['uid']); //记录大冒险日志
 				$data['offset'] = $currentRank - $newRank;
 				$data['newRank'] = $newRank;
@@ -277,7 +313,7 @@ class ScarfController extends Controller {
 			$myRank['total'] = $scarf->getApprovedCount();
 			//判断当前用户是否发过微博
 			if($myScarf = $scarf->isCreated($user['uid'])) {
-				$myRank['rank'] = (int)$scarf->getUserRank($user['uid']);
+				$myRank['rank'] = (int)$scarf->getRankByUid($user['uid']);
 				$myRank['image'] = $myScarf->image;
 				$myRank['status'] = (int)$myScarf->status;
 			}
@@ -288,11 +324,6 @@ class ScarfController extends Controller {
 		} else {
 			$this->returnJSON($this->error('not login', 1001));
 		}
-	}
-
-	public function actionPut()
-	{
-		$this->render('put');
 	}
 
 	/**
@@ -334,7 +365,28 @@ class ScarfController extends Controller {
 			$this->returnJSON($this->error('Illegal request', 1001));
 		}
 	}
-	
+
+  public function actionUpdateStatus()
+  {
+    //TODO: 验证管理员权限
+    if ($this->request->isPostRequest) {
+      $cid = $this->request->getPost('cid');
+      $status = $this->request->getPost('status');
+      $scarf = new Scarf();
+      $scarf->updateStatus($cid, $status);
+    }
+    else {
+      $this->returnJSON($this->error('Illegal request', 1001));
+    }
+  }
+
+  public function actionProduceNow()
+  {
+    //TODO: 验证管理员权限
+    $scarf = new Scarf();
+    $scarf->produceNow();
+  }
+
 	public static function sendResponse($status = 200, $body = '', $contentType = 'text/html') {
 		$statusHeader = 'HTTP/1.1 ' . $status . ' ' . self::getStatusCodeMessage($status);
 		header($statusHeader);

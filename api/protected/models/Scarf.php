@@ -91,7 +91,7 @@ class Scarf extends CActiveRecord
 		$start = ($page - 1) * $pagenum;
 		$offset = $pagenum;
 		$connection=Yii::app()->db;
-		$sql = "SELECT *,
+		$sql = "SELECT uid,content,style,image,
           @curRank := @curRank + 1 AS s_rank
 					FROM scarf s, (SELECT @curRank := ".$start.") r
 					WHERE status = 1
@@ -126,7 +126,6 @@ class Scarf extends CActiveRecord
 		return FALSE;
 	}
 
-
   /**
    * 根据uid获取围巾信息
    * @param $uid
@@ -142,42 +141,69 @@ class Scarf extends CActiveRecord
     return FALSE;
   }
 
+  /**
+   * 根据排名数获取Rank因子
+   */
+  public function getRankValue($rank) {
+    $row = Yii::app()->db->createCommand() //获取对应的rank因子
+      ->select('rank')
+      ->from('scarf')
+      ->offset($rank-1)
+      ->limit(1)
+      ->queryRow();
+    return $row['rank'];
+  }
 
-	/**
-	 * 根据随机数获取Rank因子
-	 */
-	public function getRandomRankValue() {
-		$max = $this->getApprovedCount();
-		$randomRank = rand(1, $max); //获取随机排名
-		$row = Yii::app()->db->createCommand() //获取对应的rank因子
-			->select('rank')
-			->from('scarf')
-			->offset($randomRank-1)
-			->limit(1)
-			->queryRow();
-		return $row['rank'];
-	}
+  /**
+   * 根据随机数获取Rank因子
+   */
+  public function getRandomRankValue() {
+    $max = $this->getApprovedCount();
+    $randomRank = rand(1, $max); //获取随机排名
+    return $this->getRankValue($randomRank);
+  }
 
-	/**
+  /**
 	 * 更新用户排名
 	 */
 	public function updateRank($uid, $rankValue) {
-		$count = Yii::app()->db->createCommand() //获取对应的rank因子
+		$count = Yii::app()->db->createCommand()
 			->update('scarf', array(
 				'rank' => $rankValue,
 			),'status=:status and uid=:uid', array(':status'=>1, ':uid'=>$uid));
 		return $count;
 	}
 
+  /**
+   * 通过Cid更新排名
+   */
+  public function updateRankByCid($cid, $rankValue) {
+    $count = Yii::app()->db->createCommand()
+      ->update('scarf', array(
+        'rank' => $rankValue,
+      ),'status=:status and cid=:cid', array(':status'=>1, ':cid'=>$cid));
+    return $count;
+  }
+
 	/**
-	 * 获取单个用户排名
+	 * 根据用户名获取排名
 	 */
-	public function getUserRank($uid) {
+	public function getRankByUid($uid) {
 		$connection=Yii::app()->db;
 		$command=$connection->createCommand("SELECT COUNT(cid) as rank FROM scarf WHERE status=1 and rank <= (SELECT rank FROM scarf WHERE uid=" . $uid . " limit 0,1)");
 		$result = $command->queryRow();
 		return $result['rank'];
 	}
+
+  /**
+   * 根据cid获取排名
+   */
+  public function getRankByCid($cid) {
+    $connection=Yii::app()->db;
+    $command=$connection->createCommand("SELECT COUNT(cid) as rank FROM scarf WHERE status=1 and rank <= (SELECT rank FROM scarf WHERE cid=" . $cid . " limit 0,1)");
+    $result = $command->queryRow();
+    return $result['rank'];
+  }
 
 	/**
 	 * 验证用户是否已发帖
@@ -191,6 +217,18 @@ class Scarf extends CActiveRecord
 		$model = $this->find($criteria);
 		return $model;
 	}
+
+  /**
+   * 验证用户是否是受邀请的
+   */
+  public function isInvited($uid) {
+    $friend = new Friend();
+    $criteria=new CDbCriteria;
+    $criteria->addCondition('friend_sns_uid=:uid');
+    $criteria->params=array(':uid'=>$uid);
+    $model = $friend->find($criteria);
+    return $model;
+  }
 
 	/**
 	 * 获取已发布状态的微博总数
@@ -232,9 +270,30 @@ class Scarf extends CActiveRecord
    * 立即打印
    */
   public function produceNow() {
-    $top1 = $this->getScarfRankList(1,1);
-    print_r($top1);
+    $top1 = $this->getScarfRankList(1,1); //获取排名第一的记录
+    Yii::app()->db->createCommand() //将当前打印中的状态改为已打印
+      ->update('scarf', array(
+        'status' => 3,
+        'update_datetime' => time()
+      ),'status=2');
+
+    Yii::app()->db->createCommand() //将当前第一名的状态改为打印中
+      ->update('scarf', array(
+        'status' => 2,
+      ),'cid=:cid', array(':cid'=>$top1[0]['cid']));
   }
+
+  /**
+   * 更新状态
+   */
+  public function updateStatus($cid, $status) {
+    $count = Yii::app()->db->createCommand() //将当前第一名的状态改为打印中
+      ->update('scarf', array(
+        'status' => $status,
+      ),'cid=:cid', array(':cid'=>$cid));
+    return $count;
+  }
+
 
   /**
 	 * Retrieves a list of models based on the current search/filter conditions.
