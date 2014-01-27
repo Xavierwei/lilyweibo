@@ -112,8 +112,12 @@ a{text-decoration:none}
         .step4gift {background: url(../img/888.gif) no-repeat;width:640px;height:23px;margin:10px 0 0 38px;}
         .step4BtnDMX {cursor:pointer;float:left;background: url('../img/userBtn.gif') no-repeat;height:120px;width:281px;margin:20px 0 0 108px;}
         .step4BtnInvite {cursor:pointer;float:left;background: url('../img/inviteBtn.gif') no-repeat;height:120px;width:281px;margin:20px 0 0 133px;}
+    .stepLogin {position: relative;}
     .stepLoginBtn {cursor:pointer;background: url(../img/join_btn.gif) no-repeat;width:864px;height:176px;margin:100px auto 0 auto;}
-    .stepLoginTerm {background: url(../img/term.gif) no-repeat 80px 0;width:300px;height:20px;margin:30px auto 0 auto;}
+    .stepLoginTerm {cursor:pointer;background: url(../img/term.gif) no-repeat 33px 2px;width:230px;height:20px;margin:30px auto 0 auto;}
+    .stepLoginTerm span {float:left;width:20px;height: 20px;background: #fff;}
+    .stepLoginTerm span.checked {background:#fff url(../img/checked.gif) no-repeat center;}
+    .stepLoginError {position: absolute;color:#f85a84;font-size:14px;font-weight: bold;left:388px;display: none;}
     .stepWaitApprove {position: relative;background: url(../img/step_wait_approve.gif) no-repeat center;height:389px;padding:1px 0 0;}
     .stepWaitApprove .preview {text-align: center;position: absolute;top:60px;left:162px;border-bottom: 5px solid #546b75;}
     .stepWaitApprove .preview img {border:5px solid #fff;display: block;}

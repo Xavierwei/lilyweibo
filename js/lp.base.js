@@ -3,6 +3,7 @@
  */
 LP.use(['jquery' , 'api'] , function( $ , api ){
     var API_ROOT = "api";
+    var submitting = false;
 
     // live for pic-item hover event
     $(document.body)
@@ -104,7 +105,12 @@ LP.use(['jquery' , 'api'] , function( $ , api ){
     });
 
     LP.action('submit_dmx' , function( ){
+        if(submitting) {
+            return false;
+        }
+        submitting = true;
         api.ajax('dmx', function(res){
+            submitting = false;
             if(res.error) {
                 data = {};
             }
@@ -251,12 +257,16 @@ LP.use(['jquery' , 'api'] , function( $ , api ){
     LP.action('invite_friends', function(){
         var friends = $('#friendsList').data('selected').toString();
         var sharetext = $('#inviteText').html();
-        api.ajax('invite', {friends: friends, sharetext: sharetext}, function(res){
-            console.log(res);
-        });
+        api.ajax('invite', {friends: friends, sharetext: sharetext});
+        LP.triggerAction('close_popup');
+
     });
 
     LP.action('weibo_login' , function(){
+        if(!$('.stepLoginTerm span').hasClass('checked')) {
+            $('.stepLoginError').fadeIn();
+            return false;
+        }
         var iframeData = {url:$(this).data('url')};
         LP.compile( 'login-iframe-template' ,
             iframeData,
@@ -264,6 +274,17 @@ LP.use(['jquery' , 'api'] , function( $ , api ){
                 $('body').append(html);
                 $('#weiboLoginForm').fadeIn();
             } );
+    });
+
+    LP.action('agree_term', function(){
+        var checkbox = $(this).find('span');
+        if(checkbox.hasClass('checked')) {
+            checkbox.removeClass('checked');
+        }
+        else {
+            checkbox.addClass('checked');
+            $('.stepLoginError').fadeOut();
+        }
     });
 
     LP.action('close_popup' , function(){

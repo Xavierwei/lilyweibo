@@ -1700,3 +1700,22 @@ in /Applications/MAMP/htdocs/lilyweibo/api/index.php (20)
 2014/01/27 19:22:22 [warning] [application] Failed to set unsafe attribute "friend_sns_uid" of "Friend".
 in /Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/ScarfController.php (367)
 in /Applications/MAMP/htdocs/lilyweibo/api/index.php (20)
+2014/01/27 15:07:02 [error] [exception.CException] exception 'CException' with message 'Property "Friend.uid" is not defined.' in /Applications/MAMP/htdocs/lily/api/framework/base/CComponent.php:173
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily/api/framework/db/ar/CActiveRecord.php(161): CComponent->__set('uid', '6')
+#1 /Applications/MAMP/htdocs/lily/api/framework/base/CModel.php(472): CActiveRecord->__set('uid', '6')
+#2 /Applications/MAMP/htdocs/lily/api/framework/base/CComponent.php(152): CModel->setAttributes(Array)
+#3 /Applications/MAMP/htdocs/lily/api/framework/db/ar/CActiveRecord.php(161): CComponent->__set('attributes', Array)
+#4 /Applications/MAMP/htdocs/lily/api/protected/controllers/ScarfController.php(366): CActiveRecord->__set('attributes', Array)
+#5 /Applications/MAMP/htdocs/lily/api/framework/web/actions/CInlineAction.php(49): ScarfController->actionInvite()
+#6 /Applications/MAMP/htdocs/lily/api/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /Applications/MAMP/htdocs/lily/api/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#8 /Applications/MAMP/htdocs/lily/api/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /Applications/MAMP/htdocs/lily/api/framework/web/CWebApplication.php(282): CController->run('invite')
+#10 /Applications/MAMP/htdocs/lily/api/framework/web/CWebApplication.php(141): CWebApplication->runController('scarf/invite')
+#11 /Applications/MAMP/htdocs/lily/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#12 /Applications/MAMP/htdocs/lily/api/index.php(20): CApplication->run()
+#13 {main}
+REQUEST_URI=/lily/api/index.php/scarf/invite
+HTTP_REFERER=http://lily.local/lily/
+---
