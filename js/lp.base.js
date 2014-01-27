@@ -37,7 +37,6 @@ LP.use(['jquery' , 'api'] , function( $ , api ){
 
 
 
-
     // ================== page actions ====================
     LP.action('submit_word' , function(){
         if($(this).hasClass('step1BtnNextDisabled')) {
@@ -150,34 +149,52 @@ LP.use(['jquery' , 'api'] , function( $ , api ){
     });
 
     LP.action('submit_friends' , function( ){
-        LP.compile( 'popup-friends-template', {},
-            function( html ){
-                $('body').append(html);
-                $('#popupFriends').fadeIn();
-                // Load Friends List
-                api.ajax('friends', function(res){
-                    var pagenum = Math.ceil(res.data.total_number / 8);
-                    for(var i = 1; i <= pagenum; i ++)
-                    {
-                        LP.compile( 'paginate-template' ,
-                            {pagenum: i},
-                            function( html ){
-                                $('#friendsPaginate').append(html);
-                            } );
-                    }
-                    $('#friendsPaginate li').eq(0).addClass('on');
-                    $('#friendsList').fadeIn().data('friends', res.data.users);
-                    var allFriends = res.data.users.slice();
-                    var friends = allFriends.splice(0,8);
-                    $.each(friends, function(index, item){
-                        LP.compile( 'friend-item-template' ,
-                            item,
-                            function( html ){
-                                $('#friendsList').append(html);
-                            } );
-                    })
-                });
+        if(submitting) {
+            return false;
+        }
+        submitting = true;
+        api.ajax('invitedfriends', function(res){
+            var invitedFriends = [];
+            $.each(res.data, function(index, item){
+                invitedFriends.push(item.friend_sns_uid);
             });
+            $('#friendsList').data('invited', invitedFriends);
+
+            submitting = false;
+            var invitedNum = res.data.length;
+            LP.compile( 'popup-friends-template', {invitedNum:invitedNum, leftNum: 20-invitedNum},
+                function( html ){
+                    $('body').append(html);
+                    $('#popupFriends').fadeIn();
+                    // Load Friends List
+                    api.ajax('friends', function(res){
+                        var pagenum = Math.ceil(res.data.total_number / 8);
+                        for(var i = 1; i <= pagenum; i ++)
+                        {
+                            LP.compile( 'paginate-template' ,
+                                {pagenum: i},
+                                function( html ){
+                                    $('#friendsPaginate').append(html);
+                                } );
+                        }
+                        $('#friendsPaginate li').eq(0).addClass('on');
+                        $('#friendsList').fadeIn().data('friends', res.data.users);
+                        var allFriends = res.data.users.slice();
+                        var friends = allFriends.splice(0,8);
+                        $.each(friends, function(index, item){
+                            if($.inArray(item.idstr, invitedFriends) != -1){
+                                item.invited = true;
+                            }
+                            LP.compile( 'friend-item-template' ,
+                                item,
+                                function( html ){
+                                    $('#friendsList').append(html);
+                                } );
+                        })
+                    });
+                });
+        });
+
     });
 
     LP.action('change_friend_page', function(){
@@ -230,6 +247,7 @@ LP.use(['jquery' , 'api'] , function( $ , api ){
         var snsuid = $(this).data('snsuid');
         var textarea = $('#inviteText');
         var newTxt;
+        var invitedNum = parseInt($('#invitedNum').html());
         if($(this).hasClass('selected')) {
             var selected = $('#friendsList').data('selected');
             var index = $.inArray(snsuid,selected);
@@ -238,20 +256,24 @@ LP.use(['jquery' , 'api'] , function( $ , api ){
             newTxt = textarea.html().replace(' @'+name, '');
             textarea.html(newTxt);
             $(this).removeClass('selected');
-
-            return;
+            invitedNum --;
         }
-        newTxt = textarea.html() + " @"+name;
-        if(newTxt.length < 140) {
-            $(this).addClass('selected');
-            textarea.html(newTxt);
-            var selected = $('#friendsList').data('selected');
-            if(!selected) {
-                selected = [];
+        else {
+            newTxt = textarea.html() + " @"+name;
+            if(newTxt.length < 140) {
+                $(this).addClass('selected');
+                textarea.html(newTxt);
+                var selected = $('#friendsList').data('selected');
+                if(!selected) {
+                    selected = [];
+                }
+                selected.push(snsuid);
+                $('#friendsList').data('selected',selected);
+                invitedNum ++;
             }
-            selected.push(snsuid);
-            $('#friendsList').data('selected',selected);
         }
+        $('#invitedNum').html(invitedNum);
+        $('#leftNum').html(20-invitedNum);
     });
 
     LP.action('invite_friends', function(){
@@ -365,21 +387,9 @@ LP.use(['jquery' , 'api'] , function( $ , api ){
                     default:
                         break;
                 }
-//                if(res.data.rank) {
-//                    $('.step4').fadeIn();
-//                    $('.steps').addClass('steps_high');
-//                    res.data.image = API_ROOT + res.data.image;
-//                    LP.compile( 'myrank-template' ,
-//                        res.data,
-//                        function( html ){
-//                            $('#myRank').append(html);
-//                        });
-//                } else {
-//                    $('.step1').fadeIn();
-//                }
             }
         }, function(){
-            $('#list_wrap').html('加载失败，请刷新页面再试一次。');
+
         });
     }
 

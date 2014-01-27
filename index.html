@@ -9,15 +9,16 @@
 </head>
 <body id="">
 <div class="page">
-    <div class="nav">
-        <a href="#">活动首页</a>
-        <a href="#">活动规则</a>
-        <a href="#">微博排名</a>
-        <a href="#">联系我们</a>
-    </div>
+    <ul class="nav">
+        <li class="nav1"><a href="index.html">活动首页</a></li>
+        <li class="nav2"><a href="rule.html">活动规则</a></li>
+        <li class="nav3"><a href="rank.html">微博排名</a></li>
+        <li class="nav4"><a href="#">联系我们</a></li>
+        <li class="nav5"></li>
+    </ul>
     <div class="pagetitle"><h1>写微博织围脖</h1></div>
     <div class="pagesubhead"><h2>赋予情人节更多快乐</h2></div>
-    <div class="introduce"><p>怎样将微博发言实时编织成围脖？<br />2月8日至2月14日   Lily为您打成所愿！</p></div>
+    <div class="introduce"><p>怎样将微博发言实时编织成围脖？<br />2月8日至2月14日   Lily为您打成所愿！</p><a class="learnMore" href="rule.html">了解更多</a></div>
     <div class="videobg">
         <div class="videobox"><img src="img/videodemo.jpg" /></div>
     </div>
@@ -114,7 +115,7 @@
             <div class="list_name">{{user.screen_name}}</div>
             <div class="list_rank">第 <span>{{s_rank}}</span> 名</div>
         </div>
-        <div class="list_infor"><img src="api{{image}}" /></div>
+        <div class="list_infor"><img width="530" src="api{{image}}" /></div>
     </div>
 </script>
 <!-- #list-item-tpl -->
@@ -181,7 +182,7 @@
     <div class="overlay" data-a="close_popup"></div>
     <div id="popupFriends" class="popup">
         <div class="close" data-a="close_popup"></div>
-        <div class="friendStatus">已经邀请了<span>{{invitedNum}}</span>位好友，还可以邀请{{leftNum}}位</div>
+        <div class="friendStatus">已经邀请了<span id="invitedNum">{{invitedNum}}</span>位好友，还可以邀请<span id="leftNum">{{leftNum}}</span>位</div>
         <div class="search"><input placeholder="输入好友名称" type="text" class="keyword" /><div class="searchBtn" data-a="searchFriend"></div></div>
         <ul id="friendsList"></ul>
         <ul id="friendsPaginate"></ul>
@@ -193,10 +194,17 @@
 
 <!-- friend-item-tpl -->
 <script type="text/tpl" id="friend-item-template">
+    {{#if invited}}
+    <li data-snsuid="{{id}}" data-name="{{screen_name}}" class="disabled">
+        <div class="avatar"><img src="{{profile_image_url}}" /></div>
+        <div class="screen_name">{{screen_name}}</div>
+    </li>
+    {{else}}
     <li data-snsuid="{{id}}" data-name="{{screen_name}}" data-a="add_friend">
         <div class="avatar"><img src="{{profile_image_url}}" /></div>
         <div class="screen_name">{{screen_name}}</div>
     </li>
+    {{/if}}
 </script>
 <!-- #friend-item-tpl -->
 

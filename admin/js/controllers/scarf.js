@@ -15,6 +15,12 @@ LilyAdminController
                 $scope.scarfs = data;
             });
         };
+        $scope.approve = function (scarf) {
+            scarf.status = 1;
+            ScarfService.update(scarf, function(data){
+                $scope.scarfs.splice($scope.scarfs.indexOf(scarf), 1);
+            });
+        };
     })
 
     .controller('ScarfCtrListAll', function($scope, $http, $modal, $log, $routeParams, ScarfService) {

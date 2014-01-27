@@ -29,7 +29,8 @@ define(function( require , exports , model ){
         list: {path: 'api/index.php/scarf/ranklist', method:'get'},
         myrank: {path: 'api/index.php/scarf/myrank', method:'get'},
         friends: {path: 'api/index.php/user/getfriendlist', method:'get'},
-        invite: {path: 'api/index.php/scarf/invite', method:'post'}
+        invite: {path: 'api/index.php/scarf/invite', method:'post'},
+        invitedfriends: {path: 'api/index.php/scarf/getinvitedfriends', method:'get'}
     };
 
     // 内部API

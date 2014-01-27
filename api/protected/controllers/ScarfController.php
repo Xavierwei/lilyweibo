@@ -65,7 +65,7 @@ class ScarfController extends Controller {
 			$offset = ($page - 1) * $pagenum;
 			
 			$list = array();
-			if ($this->request->getQuery('status')) {
+			if ($this->request->getQuery('status') != '') {
 				$status = (int)$this->request->getQuery('status');
 				$list = Yii::app()->db->createCommand()
 						->select('*')
@@ -109,7 +109,6 @@ class ScarfController extends Controller {
 		$pagenum = (int)$this->request->getQuery('pagenum',10);
 		$scarf = new Scarf();
 		$rankList = $scarf->getScarfRankList($page, $pagenum);
-
     if (!empty($rankList)) {
       foreach($rankList as $index => $row) {
         $user = User::model()->getUserInfo($row['uid']);
@@ -117,10 +116,13 @@ class ScarfController extends Controller {
         $rankList[$index]['user']['avatar'] = $user->avatar;
         unset($rankList[$index]['uid']);
       }
+			$result['data'] = $rankList;
+			$result['total'] = $scarf->getApprovedCount();
+			return $this->returnJSON($result);
     }
-    $result['data'] = $rankList;
-    $result['total'] = $scarf->getApprovedCount();
-		return $this->returnJSON($result);
+		else {
+			$this->returnJSON($this->error('end', 1001));
+		}
 	}
 	
 	/**

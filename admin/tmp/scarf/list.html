@@ -37,18 +37,16 @@
 
 <table>
     <tr>
-        <th>POSITION</th>
         <th>WEIBO USER</th>
         <th>STYLE</th>
         <th>MESSAGE</th>
         <th>ACTION</th>
     </tr>
     <tr ng-repeat="scarf in scarfs">
-        <td>{{scarf.rank}}</td>
         <td>{{scarf.user.screen_name}}</td>
         <td>{{scarf.style}}</td>
         <td>{{scarf.content}}</td>
-        <td>approve | delete</td>
+        <td><a href="javascript:void(0)" ng-click="approve(scarf)">approve</a> | delete</td>
     </tr>
 </table>
 <pagination on-select-page="pageChanged(page)" total-items="bigTotalItems" page="bigCurrentPage" max-size="maxSize" class="pagination-sm" boundary-links="true" rotate="false" num-pages="numPages"></pagination>

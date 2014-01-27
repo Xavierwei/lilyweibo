@@ -12,12 +12,10 @@ LilyAdminServices.factory( 'ScarfService', function($http, ROOT) {
             });
         },
 
-        update: function(node, success) {
-            $http.post(ROOT+'/scarf/put',node)
+        update: function(data, success) {
+            $http.post(ROOT+'/scarf/UpdateStatus',data)
             .success(function(data) {
-                if(data.success == true) {
-                    success();
-                }
+                success();
             })
             .error(function() {
 

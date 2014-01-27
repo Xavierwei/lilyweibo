@@ -1719,3 +1719,136 @@ Stack trace:
 REQUEST_URI=/lily/api/index.php/scarf/invite
 HTTP_REFERER=http://lily.local/lily/
 ---
+2014/01/27 15:51:06 [warning] [application] Failed to set unsafe attribute "updae_datetime" of "Scarf".
+in /Applications/MAMP/htdocs/lily/api/protected/controllers/ScarfController.php (227)
+in /Applications/MAMP/htdocs/lily/api/index.php (20)
+2014/01/27 16:07:38 [error] [php] Trying to get property of non-object (/Applications/MAMP/htdocs/lily/api/protected/controllers/ScarfController.php:116)
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily/api/framework/web/CController.php(286): ScarfController->runAction()
+#1 /Applications/MAMP/htdocs/lily/api/framework/web/CController.php(265): ScarfController->runActionWithFilters()
+#2 /Applications/MAMP/htdocs/lily/api/framework/web/CWebApplication.php(282): ScarfController->run()
+#3 /Applications/MAMP/htdocs/lily/api/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /Applications/MAMP/htdocs/lily/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /Applications/MAMP/htdocs/lily/api/index.php(20): CWebApplication->run()
+REQUEST_URI=/lily/api/index.php/scarf/ranklist?page=4&pagenum=5&_=1390835248395
+in /Applications/MAMP/htdocs/lily/api/protected/controllers/ScarfController.php (116)
+in /Applications/MAMP/htdocs/lily/api/index.php (20)
+2014/01/27 16:08:06 [error] [php] Trying to get property of non-object (/Applications/MAMP/htdocs/lily/api/protected/controllers/ScarfController.php:116)
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily/api/framework/web/CController.php(286): ScarfController->runAction()
+#1 /Applications/MAMP/htdocs/lily/api/framework/web/CController.php(265): ScarfController->runActionWithFilters()
+#2 /Applications/MAMP/htdocs/lily/api/framework/web/CWebApplication.php(282): ScarfController->run()
+#3 /Applications/MAMP/htdocs/lily/api/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /Applications/MAMP/htdocs/lily/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /Applications/MAMP/htdocs/lily/api/index.php(20): CWebApplication->run()
+REQUEST_URI=/lily/api/index.php/scarf/ranklist?page=4&pagenum=5&_=1390835280268
+in /Applications/MAMP/htdocs/lily/api/protected/controllers/ScarfController.php (116)
+in /Applications/MAMP/htdocs/lily/api/index.php (20)
+2014/01/27 16:09:31 [error] [php] Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/lily/api/protected/controllers/ScarfController.php:112) (/Applications/MAMP/htdocs/lily/api/protected/controllers/ScarfController.php:21)
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily/api/framework/web/actions/CInlineAction.php(49): ScarfController->actionRankList()
+#1 /Applications/MAMP/htdocs/lily/api/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /Applications/MAMP/htdocs/lily/api/framework/web/CController.php(286): ScarfController->runAction()
+#3 /Applications/MAMP/htdocs/lily/api/framework/web/CController.php(265): ScarfController->runActionWithFilters()
+#4 /Applications/MAMP/htdocs/lily/api/framework/web/CWebApplication.php(282): ScarfController->run()
+#5 /Applications/MAMP/htdocs/lily/api/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /Applications/MAMP/htdocs/lily/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#7 /Applications/MAMP/htdocs/lily/api/index.php(20): CWebApplication->run()
+REQUEST_URI=/lily/api/index.php/scarf/ranklist?page=5&pagenum=5&_=1390835280269
+in /Applications/MAMP/htdocs/lily/api/protected/controllers/ScarfController.php (21)
+in /Applications/MAMP/htdocs/lily/api/protected/controllers/ScarfController.php (123)
+in /Applications/MAMP/htdocs/lily/api/index.php (20)
+2014/01/27 16:12:50 [error] [php] Trying to get property of non-object (/Applications/MAMP/htdocs/lily/api/protected/controllers/ScarfController.php:115)
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily/api/framework/web/CController.php(286): ScarfController->runAction()
+#1 /Applications/MAMP/htdocs/lily/api/framework/web/CController.php(265): ScarfController->runActionWithFilters()
+#2 /Applications/MAMP/htdocs/lily/api/framework/web/CWebApplication.php(282): ScarfController->run()
+#3 /Applications/MAMP/htdocs/lily/api/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /Applications/MAMP/htdocs/lily/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /Applications/MAMP/htdocs/lily/api/index.php(20): CWebApplication->run()
+REQUEST_URI=/lily/api/index.php/scarf/ranklist?page=4&pagenum=5&_=1390835564712
+in /Applications/MAMP/htdocs/lily/api/protected/controllers/ScarfController.php (115)
+in /Applications/MAMP/htdocs/lily/api/index.php (20)
+2014/01/27 16:16:34 [error] [php] Trying to get property of non-object (/Applications/MAMP/htdocs/lily/api/protected/controllers/ScarfController.php:115)
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily/api/framework/web/CController.php(286): ScarfController->runAction()
+#1 /Applications/MAMP/htdocs/lily/api/framework/web/CController.php(265): ScarfController->runActionWithFilters()
+#2 /Applications/MAMP/htdocs/lily/api/framework/web/CWebApplication.php(282): ScarfController->run()
+#3 /Applications/MAMP/htdocs/lily/api/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /Applications/MAMP/htdocs/lily/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /Applications/MAMP/htdocs/lily/api/index.php(20): CWebApplication->run()
+REQUEST_URI=/lily/api/index.php/scarf/ranklist?page=4&pagenum=5&_=1390835576792
+in /Applications/MAMP/htdocs/lily/api/protected/controllers/ScarfController.php (115)
+in /Applications/MAMP/htdocs/lily/api/index.php (20)
+2014/01/27 16:16:52 [error] [php] Trying to get property of non-object (/Applications/MAMP/htdocs/lily/api/protected/controllers/ScarfController.php:115)
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily/api/framework/web/CController.php(286): ScarfController->runAction()
+#1 /Applications/MAMP/htdocs/lily/api/framework/web/CController.php(265): ScarfController->runActionWithFilters()
+#2 /Applications/MAMP/htdocs/lily/api/framework/web/CWebApplication.php(282): ScarfController->run()
+#3 /Applications/MAMP/htdocs/lily/api/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /Applications/MAMP/htdocs/lily/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /Applications/MAMP/htdocs/lily/api/index.php(20): CWebApplication->run()
+REQUEST_URI=/lily/api/index.php/scarf/ranklist?page=4&pagenum=5&_=1390835576792
+in /Applications/MAMP/htdocs/lily/api/protected/controllers/ScarfController.php (115)
+in /Applications/MAMP/htdocs/lily/api/index.php (20)
+2014/01/27 16:22:07 [error] [php] Trying to get property of non-object (/Applications/MAMP/htdocs/lily/api/protected/controllers/ScarfController.php:115)
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily/api/framework/web/CController.php(286): ScarfController->runAction()
+#1 /Applications/MAMP/htdocs/lily/api/framework/web/CController.php(265): ScarfController->runActionWithFilters()
+#2 /Applications/MAMP/htdocs/lily/api/framework/web/CWebApplication.php(282): ScarfController->run()
+#3 /Applications/MAMP/htdocs/lily/api/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /Applications/MAMP/htdocs/lily/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /Applications/MAMP/htdocs/lily/api/index.php(20): CWebApplication->run()
+REQUEST_URI=/lily/api/index.php/scarf/ranklist?page=4&pagenum=5&_=1390836120422
+in /Applications/MAMP/htdocs/lily/api/protected/controllers/ScarfController.php (115)
+in /Applications/MAMP/htdocs/lily/api/index.php (20)
+2014/01/27 17:07:45 [error] [php] Trying to get property of non-object (/Applications/MAMP/htdocs/lily/api/protected/controllers/ScarfController.php:89)
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily/api/framework/web/CController.php(286): ScarfController->runAction()
+#1 /Applications/MAMP/htdocs/lily/api/framework/web/CController.php(265): ScarfController->runActionWithFilters()
+#2 /Applications/MAMP/htdocs/lily/api/framework/web/CWebApplication.php(282): ScarfController->run()
+#3 /Applications/MAMP/htdocs/lily/api/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /Applications/MAMP/htdocs/lily/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /Applications/MAMP/htdocs/lily/api/index.php(20): CWebApplication->run()
+REQUEST_URI=/lily/api/index.php/scarf/list?status=0
+in /Applications/MAMP/htdocs/lily/api/protected/controllers/ScarfController.php (89)
+in /Applications/MAMP/htdocs/lily/api/index.php (20)
+2014/01/27 17:09:00 [error] [php] Trying to get property of non-object (/Applications/MAMP/htdocs/lily/api/protected/controllers/ScarfController.php:89)
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily/api/framework/web/CController.php(286): ScarfController->runAction()
+#1 /Applications/MAMP/htdocs/lily/api/framework/web/CController.php(265): ScarfController->runActionWithFilters()
+#2 /Applications/MAMP/htdocs/lily/api/framework/web/CWebApplication.php(282): ScarfController->run()
+#3 /Applications/MAMP/htdocs/lily/api/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /Applications/MAMP/htdocs/lily/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /Applications/MAMP/htdocs/lily/api/index.php(20): CWebApplication->run()
+REQUEST_URI=/lily/api/index.php/scarf/list?status=0
+in /Applications/MAMP/htdocs/lily/api/protected/controllers/ScarfController.php (89)
+in /Applications/MAMP/htdocs/lily/api/index.php (20)
+2014/01/27 17:26:23 [error] [php] Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/lily/api/protected/controllers/ScarfController.php:68) (/Applications/MAMP/htdocs/lily/api/protected/controllers/ScarfController.php:21)
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily/api/framework/web/actions/CInlineAction.php(49): ScarfController->actionList()
+#1 /Applications/MAMP/htdocs/lily/api/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /Applications/MAMP/htdocs/lily/api/framework/web/CController.php(286): ScarfController->runAction()
+#3 /Applications/MAMP/htdocs/lily/api/framework/web/CController.php(265): ScarfController->runActionWithFilters()
+#4 /Applications/MAMP/htdocs/lily/api/framework/web/CWebApplication.php(282): ScarfController->run()
+#5 /Applications/MAMP/htdocs/lily/api/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /Applications/MAMP/htdocs/lily/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#7 /Applications/MAMP/htdocs/lily/api/index.php(20): CWebApplication->run()
+REQUEST_URI=/lily/api/index.php/scarf/list?status=0
+in /Applications/MAMP/htdocs/lily/api/protected/controllers/ScarfController.php (21)
+in /Applications/MAMP/htdocs/lily/api/protected/controllers/ScarfController.php (95)
+in /Applications/MAMP/htdocs/lily/api/index.php (20)
+2014/01/27 17:26:49 [error] [php] Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/lily/api/protected/controllers/ScarfController.php:68) (/Applications/MAMP/htdocs/lily/api/protected/controllers/ScarfController.php:21)
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily/api/framework/web/actions/CInlineAction.php(49): ScarfController->actionList()
+#1 /Applications/MAMP/htdocs/lily/api/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /Applications/MAMP/htdocs/lily/api/framework/web/CController.php(286): ScarfController->runAction()
+#3 /Applications/MAMP/htdocs/lily/api/framework/web/CController.php(265): ScarfController->runActionWithFilters()
+#4 /Applications/MAMP/htdocs/lily/api/framework/web/CWebApplication.php(282): ScarfController->run()
+#5 /Applications/MAMP/htdocs/lily/api/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /Applications/MAMP/htdocs/lily/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#7 /Applications/MAMP/htdocs/lily/api/index.php(20): CWebApplication->run()
+REQUEST_URI=/lily/api/index.php/scarf/list?status=0
+in /Applications/MAMP/htdocs/lily/api/protected/controllers/ScarfController.php (21)
+in /Applications/MAMP/htdocs/lily/api/protected/controllers/ScarfController.php (95)
+in /Applications/MAMP/htdocs/lily/api/index.php (20)

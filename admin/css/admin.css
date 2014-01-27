@@ -16,13 +16,15 @@ a{text-decoration:none;color:#666}
 .clear:before,
 .clear:after{clear:both;content:".";font-size:0;display:block;height:0;overflow:hidden;visibility:hidden;}
 
+.header {height:40px;}
+.header li {float:left;margin:0 20px;}
 
 .page-left {float:left;width:200px;}
     .page-left .menu {margin:15px 0 0 15px;}
     .page-left .menu ul {margin-left:15px;}
 
 
-.page-right {margin-left:200px;}
+.page-right {}
 
 
 
