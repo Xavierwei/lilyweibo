@@ -113,6 +113,13 @@ class Scarf extends CActiveRecord
 	}
 	
 	/**
+	 * 发送私信
+	 */
+	public function sendMessage() {
+		
+	}
+	
+	/**
 	 * 根据cid获取围巾信息
 	 * @param type $cid
 	 */
@@ -130,7 +137,7 @@ class Scarf extends CActiveRecord
    */
   public function getScarfByUid($uid) {
 		$row = Yii::app()->db->createCommand()
-			->select('cid')
+			->select('*')
 			->from('scarf')
 			->where('uid='.$uid.' and status != 4')
 			->limit(1)
@@ -228,6 +235,19 @@ class Scarf extends CActiveRecord
     $criteria->params=array(':uid'=>$uid);
     $model = $friend->find($criteria);
     return $model;
+  }
+  
+  /**
+   *  根据uid 获取用户发表的微博数
+   */
+  public function getScarfCountByUid($uid) {
+	  $criteria=new CDbCriteria(array(
+		  'condition' => 'uid = :uid',
+		  'params' => array(
+			  ':uid' => (int)$uid,
+		  )
+	  ));
+	  return $this->count($criteria);
   }
 
 	/**

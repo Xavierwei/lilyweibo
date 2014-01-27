@@ -8,7 +8,7 @@ class ScarfController extends Controller {
     public function init() {
         parent::init();
 		$this->request = Yii::app()->request;
-		$this->user = Yii::app()->user;
+		$this->user = Yii::app()->session["user"];
 		$this->styleImages = array(
 			'1' => ROOT_PATH . '/images/weibo_style/1.png',
 			'2' => ROOT_PATH . '/images/weibo_style/2.png',
@@ -38,13 +38,41 @@ class ScarfController extends Controller {
 		$this->render('index');
 	}
 
-    public function adminIsLogin() {
-        return Yii::app()->session["admin_login"];
+    public static function adminIsLogin() {
+        return !Yii::app()->user->getIsGuest();
     }
 	
     public static function isLogin() {
         return Yii::app()->session["is_login"] == "true";
     }
+	
+	/**
+	 * 根据用户昵称查询微博【管理员】
+	 * 
+	 * 错误描述：
+	 * 1001： 没有权限
+	 * 1002：请求不是post
+	 * 1003：请求不是post
+	 * 1004：请求不是post
+	 */
+	public function actionSearch() {
+		if (!self::adminIsLogin()) {
+			$this->returnJSON($this->error('no permission', 1001));
+		}
+		if (!$this->request->isPostRequest) {
+			$this->returnJSON($this->error('Illegal request', 1002));	
+		}
+		$screen_name = trim($this->request->getPost('screen_name'));
+		$uid = User::model()->getUidByScreenName($screen_name);
+		if (!$uid) {
+			$this->returnJSON($this->error('user not exist', 1003));
+		}
+		$scarf = Scarf::model()->getScarfByUid($uid);
+		if (!empty($scarf)) {
+			$this->returnJSON($scarf);
+		}
+		$this->returnJSON($this->error('screen_name empty', 1004));
+	}
 	
 	/**
 	 * 围巾数据列表，GET方法
@@ -53,48 +81,44 @@ class ScarfController extends Controller {
 	 * 1001：请求有误
 	 */
 	public function actionList() {
-		if (1) {
-			$page = (int)$this->request->getQuery('page');
-			if ($page <= 0) {
-				$page = 1;
-			}
-			$pagenum = (int)$this->request->getQuery('pagenum', 10);
-			if ($pagenum <= 0) {
-				$page = 10;
-			}
-			$offset = ($page - 1) * $pagenum;
-			
-			$list = array();
-			if ($this->request->getQuery('status') != '') {
-				$status = (int)$this->request->getQuery('status');
-				$list = Yii::app()->db->createCommand()
-						->select('*')
-						->from('scarf')
-						->where('status = :status', array(':status' => $status))
-						->limit($pagenum, $offset)
-						->order('cid DESC')
-						->queryAll();
-			} else {
-				$list = Yii::app()->db->createCommand()
-						->select('*')
-						->from('scarf')
-						->limit($pagenum, $offset)
-						->order('cid DESC')
-						->queryAll();
-			}
-			
-			if (!empty($list)) {
-				foreach($list as $index => $row) {
-					$user = User::model()->getUserInfo($row['uid']);
-					$list[$index]['user']['screen_name'] = $user->screen_name;
-					$list[$index]['user']['avatar'] = $user->avatar;
-					unset($list[$index]['uid']);
-				}
-			}
-			$this->returnJSON($list);
-		} else {
-			$this->returnJSON($this->error("it is not post", 1001));
+		$page = (int)$this->request->getQuery('page');
+		if ($page <= 0) {
+			$page = 1;
 		}
+		$pagenum = (int)$this->request->getQuery('pagenum', 10);
+		if ($pagenum <= 0) {
+			$page = 10;
+		}
+		$offset = ($page - 1) * $pagenum;
+
+		$list = array();
+		if ($this->request->getQuery('status') != '') {
+			$status = (int)$this->request->getQuery('status');
+			$list = Yii::app()->db->createCommand()
+					->select('*')
+					->from('scarf')
+					->where('status = :status', array(':status' => $status))
+					->limit($pagenum, $offset)
+					->order('cid DESC')
+					->queryAll();
+		} else {
+			$list = Yii::app()->db->createCommand()
+					->select('*')
+					->from('scarf')
+					->limit($pagenum, $offset)
+					->order('cid DESC')
+					->queryAll();
+		}
+
+		if (!empty($list)) {
+			foreach($list as $index => $row) {
+				$user = User::model()->getUserInfo($row['uid']);
+				$list[$index]['user']['screen_name'] = $user->screen_name;
+				$list[$index]['user']['avatar'] = $user->avatar;
+				unset($list[$index]['uid']);
+			}
+		}
+		$this->returnJSON($list);
 	}
 
 	/**
@@ -109,17 +133,17 @@ class ScarfController extends Controller {
 		$pagenum = (int)$this->request->getQuery('pagenum',10);
 		$scarf = new Scarf();
 		$rankList = $scarf->getScarfRankList($page, $pagenum);
-    if (!empty($rankList)) {
-      foreach($rankList as $index => $row) {
-        $user = User::model()->getUserInfo($row['uid']);
-        $rankList[$index]['user']['screen_name'] = $user->screen_name;
-        $rankList[$index]['user']['avatar'] = $user->avatar;
-        unset($rankList[$index]['uid']);
-      }
-			$result['data'] = $rankList;
-			$result['total'] = $scarf->getApprovedCount();
-			return $this->returnJSON($result);
-    }
+		if (!empty($rankList)) {
+		  foreach($rankList as $index => $row) {
+			$user = User::model()->getUserInfo($row['uid']);
+			$rankList[$index]['user']['screen_name'] = $user->screen_name;
+			$rankList[$index]['user']['avatar'] = $user->avatar;
+			unset($rankList[$index]['uid']);
+		  }
+				$result['data'] = $rankList;
+				$result['total'] = $scarf->getApprovedCount();
+				return $this->returnJSON($result);
+		}
 		else {
 			$this->returnJSON($this->error('end', 1001));
 		}
@@ -139,13 +163,17 @@ class ScarfController extends Controller {
             if (!self::isLogin()) {
                 return $this->returnJSON($this->error("not login", 1001));
             }
+			$model = new Scarf();
+			if($model->getScarfByUid($this->user['uid'])) {
+			  return $this->returnJSON($this->error("already created", 1005));
+			}
 			$content = trim($this->request->getPost('content'));
 			if (empty($content)) {
-				$this->returnJSON($this->error('content can not be empty', 1002));
+				$this->returnJSON($this->error('content can not be empty', 1003));
 			}
 			$style = $this->request->getPost('style');
 			if (!isset($style)) {
-				$this->returnJSON($this->error('please select style', 1003));
+				$this->returnJSON($this->error('please select style', 1004));
 			}
 			if (!in_array($style, array_keys($this->styleImages))) {
 				$style = 1;
@@ -177,7 +205,7 @@ class ScarfController extends Controller {
 		$fontSize = 23;
 		$box = imagettfbbox($fontSize, 0, $font, $text);
 		$x = (528 - $box[2])/2 + 55;
-    imagettftext($im, $fontSize,0, $x, 64, $fontColor ,$font, $text);
+		imagettftext($im, $fontSize,0, $x, 64, $fontColor ,$font, $text);
 		imagejpeg($im, $imgFile);  
 		
 		return '/uploads/' . $generateImgPath . $imgName;
@@ -188,39 +216,34 @@ class ScarfController extends Controller {
 	 * 
 	 * 错误描述：
 	 * 1001：未登录
-	 * 1002：内容不能为空
-	 * 1003：微博风格没有选择
-	 * 1004：请求必须为post
-   	 * 1005：内容已创建
+   	 * 1002：内容已创建
+	 * 1003：内容不能为空
+	 * 1004：微博风格没有选择
+	 * 1005：请求必须为post
 	 */
 	public function actionPost() {
 		if ($this->request->isPostRequest && $this->request->isAjaxRequest) {
 			if (!self::isLogin()) {
-					return $this->returnJSON($this->error("not login", 1002));
-			} else {
-					$uid = Yii::app()->session["user"]["uid"];
+				return $this->returnJSON($this->error("not login", 1002));
 			}
-
-      $model = new Scarf();
-      if($model->getScarfByUid($uid)) // 判断是否已经创建过
-      {
-        return $this->returnJSON($this->error("already created", 1005));
-      }
-
+			$model = new Scarf();
+			if($model->getScarfByUid($this->user['uid'])) {
+			  return $this->returnJSON($this->error("already created", 1003));
+			}
 			$content = trim($this->request->getPost('content'));
 			if (empty($content)) {
-				$this->returnJSON($this->error('content can not be empty', 1003));
+				$this->returnJSON($this->error('content can not be empty', 1004));
 			}
 			$style = $this->request->getPost('style');
 			if (!isset($style)) {
-				$this->returnJSON($this->error('please select style', 1004));
+				$this->returnJSON($this->error('please select style', 1005));
 			}
 			if (!in_array($style, array_keys($this->styleImages))) {
 				$style = 1;
 			}
 
 			$newScarf = array(
-				'uid' => $uid,
+				'uid' => $this->user['uid'],
 				'content' => $content,
 				'style' => $style,
 				'image' => Yii::app()->session['image'],
@@ -232,24 +255,25 @@ class ScarfController extends Controller {
 			$model->insert();
 			$newScarf['cid'] = $model->getPrimaryKey();
 			$newScarf['user'] = array(
-				'screen_name' => Yii::app()->session['user']['screen_name'],
-				'avatar' => Yii::app()->session['user']['avatar'],
+				'screen_name' => $this->user['screen_name'],
+				'avatar' => $this->user['avatar'],
 			);
-      // 分享微博
-      $shareText = '我的围巾！'. $newScarf['content'];
-      $shareImg = $newScarf['image'];
-      $model->shareWeibo($shareText, 'http://img.hb.aicdn.com/5d9bfeddfce1e8309097cca7c94f2cfd3ae30f1a215df-9uwbCI_fw658');
+			
+			// 分享微博
+			$shareText = '我的围巾！'. $newScarf['content'];
+			$shareImg = $newScarf['image'];
+			$model->shareWeibo($shareText, 'http://img.hb.aicdn.com/5d9bfeddfce1e8309097cca7c94f2cfd3ae30f1a215df-9uwbCI_fw658');
 
-      $sns_uid = Yii::app()->session["user"]["sns_uid"];
-      if($invitedInfo = $model->isInvited($sns_uid)) //判断当前用户是否是受邀请的
-      {
-        // 更新邀请人的内容排名
-        $cid = $invitedInfo->cid;
-        $rank = $model->getRankByCid($cid);
-        $rank = $rank - 5; //提升10个排名
-        $rankValue = $model->getRankValue($rank);
-        $model->updateRankByCid($cid, $rankValue);
-      }
+			$sns_uid = $this->user["sns_uid"];
+			if($invitedInfo = $model->isInvited($sns_uid)) //判断当前用户是否是受邀请的
+			{
+				// 更新邀请人的内容排名
+				$cid = $invitedInfo->cid;
+				$rank = $model->getRankByCid($cid);
+				$rank = $rank - 5; //提升10个排名
+				$rankValue = $model->getRankValue($rank);
+				$model->updateRankByCid($cid, $rankValue);
+			}
 			unset($newScarf['uid']);
 			return $this->returnJSON(array('data'=>$newScarf, 'error'=>null));
 		} else {
@@ -257,19 +281,19 @@ class ScarfController extends Controller {
 		}
 	}
 
-  public function actionisInvited() {
-    $model = new Scarf();
-    $sns_uid = Yii::app()->session["user"]["sns_uid"];
-    if($invitedInfo = $model->isInvited($sns_uid)) //判断当前用户是否是受邀请的
-    {
-      // 更新邀请人的内容排名
-      $cid = $invitedInfo->cid;
-      $rank = $model->getRankByCid($cid);
-      $rank = $rank - 10; //提升10个排名
-      $rankValue = $model->getRankValue($rank);
-      $model->updateRankByCid($cid, $rankValue);
-    }
-  }
+	public function actionisInvited() {
+		$model = new Scarf();
+		$sns_uid = Yii::app()->session["user"]["sns_uid"];
+		if($invitedInfo = $model->isInvited($sns_uid)) //判断当前用户是否是受邀请的
+		{
+			// 更新邀请人的内容排名
+			$cid = $invitedInfo->cid;
+			$rank = $model->getRankByCid($cid);
+			$rank = $rank - 10; //提升10个排名
+			$rankValue = $model->getRankValue($rank);
+			$model->updateRankByCid($cid, $rankValue);
+		}
+	}
 
 
 	/**
@@ -279,16 +303,16 @@ class ScarfController extends Controller {
 		if(self::isLogin()) {
 			$user = Yii::app()->session["user"];
 			$scarf = new Scarf();
-      $todayDmxCount = $scarf->getTodayDmxCount(); //获得今天大冒险的次数
-      if($todayDmxCount >= 3) {
-        return $this->returnJSON($this->error('over max', 1003));
-      }
+			$todayDmxCount = $scarf->getTodayDmxCount(); //获得今天大冒险的次数
+			if($todayDmxCount >= 3) {
+				return $this->returnJSON($this->error('over max', 1003));
+			}
 			$currentRank = (int)$scarf->getRankByUid($user['uid']); //获取当前排名
 			$randomRankValue = $scarf->getRandomRankValue(); //获取随机的rank因子
 			if($scarf->updateRank($user['uid'], $randomRankValue)) //更新当前用户的rankValue
 			{
 				$newRank = (int)$scarf->getRankByUid($user['uid']); //获取新排名
-        $scarf->logDMX($user['uid']); //记录大冒险日志
+				$scarf->logDMX($user['uid']); //记录大冒险日志
 				$data['offset'] = $currentRank - $newRank;
 				$data['newRank'] = $newRank;
 				return $this->returnJSON(array(
@@ -299,10 +323,8 @@ class ScarfController extends Controller {
 			else {
 				return $this->returnJSON($this->error('unknow error', 1002));
 			}
-		}
-		else
-		{
-      return $this->returnJSON($this->error('not login', 1001));
+		} else {
+			return $this->returnJSON($this->error('not login', 1001));
 		}
 	}
 
@@ -310,8 +332,7 @@ class ScarfController extends Controller {
 	/**
 	 * 获得当前用户的排名，GET方法（管理员可以传入get值)
 	 */
-	public function actionMyRank()
-	{
+	public function actionMyRank() {
 		if(self::isLogin()) {
 			$scarf = new Scarf();
 			$user = Yii::app()->session["user"];
@@ -323,14 +344,17 @@ class ScarfController extends Controller {
 				$myRank['rank'] = (int)$scarf->getRankByUid($user['uid']);
 				$myRank['image'] = $myScarf->image;
 				$myRank['status'] = (int)$myScarf->status;
+				return $this->returnJSON(array("data" => $myRank));
+			} else {
+				return $this->returnJSON(array('data' => $myRank,'error'=>1002));
 			}
 			return $this->returnJSON(array(
 				"data" => $myRank,
 				"error" => null
 			));
 		} else {
-      $o = new SaeTOAuthV2( WB_AKEY , WB_SKEY );
-      $weiboUrl = $o->getAuthorizeURL(WB_CALLBACK_URL);
+			$o = new SaeTOAuthV2( WB_AKEY , WB_SKEY );
+			$weiboUrl = $o->getAuthorizeURL(WB_CALLBACK_URL);
 			$this->returnJSON(array('url'=>$weiboUrl,'error'=>1001));
 		}
 	}
@@ -344,69 +368,81 @@ class ScarfController extends Controller {
 				return $this->returnJSON($this->error('no login', 1001));
 			}
 
-      $friends = explode(',', trim($this->request->getPost('friends')));
-      $shareText = $this->request->getPost('sharetext');
-      if (!count($friends)) {
-        $this->returnJSON($this->error('please select friend', 1003));
-      }
-      if (empty($shareText)) {
-        $this->returnJSON($this->error('please enter share text', 1004));
-      }
-      $scarf = new Scarf();
-      $user = Yii::app()->session["user"];
-      $myScarf = $scarf->isCreated($user['uid']);
+			$friends = explode(',', trim($this->request->getPost('friends')));
+			$shareText = $this->request->getPost('sharetext');
+			if (!count($friends)) {
+				$this->returnJSON($this->error('please select friend', 1003));
+			}
+			if (empty($shareText)) {
+				$this->returnJSON($this->error('please enter share text', 1004));
+			}
+			$scarf = new Scarf();
+			$user = Yii::app()->session["user"];
+			$myScarf = $scarf->isCreated($user['uid']);
 			$cid = $myScarf->cid;
 
-      foreach($friends as $friend) {
-       // echo $friend;
-        if (!Friend::model()->checkIsShared($cid, $friend)) {
-          $data = array(
-            'cid' => $cid,
-            'uid' => $user['uid'],
-            'friend_sns_uid' => $friend,
-            'share_datetime' => time()
-          );
-          $mFriend = new Friend();
-          $mFriend->attributes = $data;
-          $mFriend->insert();
-        }
-      }
-
-      Scarf::model()->shareWeibo($shareText, 'http://img.hb.aicdn.com/5d9bfeddfce1e8309097cca7c94f2cfd3ae30f1a215df-9uwbCI_fw658');
-
+			foreach($friends as $friend) {
+			 // echo $friend;
+			  if (!Friend::model()->checkIsShared($cid, $friend)) {
+				$data = array(
+				  'cid' => $cid,
+				  'uid' => $user['uid'],
+				  'friend_sns_uid' => $friend,
+				  'share_datetime' => time()
+				);
+				$mFriend = new Friend();
+				$mFriend->attributes = $data;
+				$mFriend->insert();
+			  }
+			}
+			Scarf::model()->shareWeibo($shareText, 'http://img.hb.aicdn.com/5d9bfeddfce1e8309097cca7c94f2cfd3ae30f1a215df-9uwbCI_fw658');
 		} else {
 			$this->returnJSON($this->error('Illegal request', 1001));
 		}
 	}
 
-  /**
-   * 获取已邀请的好友列表
-   */
-  public function actionGetInvitedFriends() {
-    $friends = Friend::model()->getInvitedFriend(Yii::app()->session["user"]["uid"]);
-    $this->returnJSON(array('data'=>$friends, 'error'=>null));
-  }
+	/**
+	 * 获取已邀请的好友列表
+	 */
+	public function actionGetInvitedFriends() {
+	  $friends = Friend::model()->getInvitedFriend(Yii::app()->session["user"]["uid"]);
+	  $this->returnJSON(array('data'=>$friends, 'error'=>null));
+	}
 
-  public function actionUpdateStatus()
-  {
-    //TODO: 验证管理员权限
-    if ($this->request->isPostRequest) {
-      $cid = $this->request->getPost('cid');
-      $status = $this->request->getPost('status');
-      $scarf = new Scarf();
-      $scarf->updateStatus($cid, $status);
-    }
-    else {
-      $this->returnJSON($this->error('Illegal request', 1001));
-    }
-  }
+	public function actionUpdateStatus()
+	{
+		if ($this->request->isPostRequest) {
+			if (!self::adminIsLogin()) {
+				$this->returnJSON($this->error('no permission', 1002));
+			}
+			$cid = $this->request->getPost('cid');
+			$status = $this->request->getPost('status');
+			$scarf = new Scarf();
+			$scarf->updateStatus($cid, $status);
+		}
+		else {
+		  $this->returnJSON($this->error('Illegal request', 1001));
+		}
+	}
 
-  public function actionProduceNow()
-  {
-    //TODO: 验证管理员权限
-    $scarf = new Scarf();
-    $scarf->produceNow();
-  }
+	public function actionProduceNow()
+	{
+		if (!self::adminIsLogin()) {
+			$this->returnJSON($this->error('no permission', 1001));
+		}
+		$scarf = new Scarf();
+		$scarf->produceNow();
+	}
+	
+	/**
+	 * 发送私信【管理员】
+	 * @TODO 接口选哪个？
+	 */
+	public function sendMessage() {
+		if (!self::adminIsLogin()) {
+			$this->returnJSON($this->error('no permission', 1001));
+		}
+	}
 
 	public static function sendResponse($status = 200, $body = '', $contentType = 'text/html') {
 		$statusHeader = 'HTTP/1.1 ' . $status . ' ' . self::getStatusCodeMessage($status);

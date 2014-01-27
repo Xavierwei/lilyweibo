@@ -65,7 +65,6 @@ class UserController extends Controller
 		));
 	}
 
-
 	/**
 	 * 取得好友列表
 	 */
@@ -120,7 +119,7 @@ class UserController extends Controller
 				Yii::app()->session['user'] = $user;
 				//$this->returnJSON($user);
 			} else {  // 自动注册
-				if ($user = $this->regUser($basic_account)) {
+				if ($user = $this->regUser($access_token, $basic_account)) {
 					Yii::app()->session["is_login"] = "true";
 					Yii::app()->session["user"] = $user;
 					//$this->returnJSON($newUser);
@@ -146,13 +145,13 @@ class UserController extends Controller
 		return FALSE; 	    	
     }
 	
-	protected function regUser($basic_account = array()) {
+	protected function regUser($access_token, $basic_account = array()) {
 		$newUser = array();
 		$newUser = array(
 			"sns_uid" => $basic_account["idstr"],
 			'screen_name' => $basic_account["screen_name"],
 			"avatar" => $basic_account["avatar_large"],
-			//"access_token" => $access_token,
+			"access_token" => $access_token,
 			'reg_datetime' => time()
 		);
 		$mUser = new User();
