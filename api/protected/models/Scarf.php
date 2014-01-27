@@ -105,13 +105,11 @@ class Scarf extends CActiveRecord
 	 * 分享微博
    * @param $cid
 	 */
-	public function shareScarf($cid) {
+	public function shareWeibo($content, $img) {
 		$access_token = Yii::app()->session["weibo_access_token"];
 		$c = new SaeTClientV2(WB_AKEY, WB_SKEY, $access_token);
-    $scarf = $this->getScarfByCid($cid);
-    $content = '我的围巾！'. $scarf->content;
     //TODO: 集成测试时替换图片地址
-    return $c->upload($content, 'http://img.hb.aicdn.com/5d9bfeddfce1e8309097cca7c94f2cfd3ae30f1a215df-9uwbCI_fw658');
+    return $c->upload($content, $img);
 	}
 	
 	/**
@@ -210,7 +208,7 @@ class Scarf extends CActiveRecord
 	 */
 	public function isCreated($uid) {
 		$criteria=new CDbCriteria;
-		$criteria->select='image, status';
+		$criteria->select='cid, image, status';
 		$criteria->addCondition('uid=:uid');
 		$criteria->params=array(':uid'=>$uid);
 		$criteria->addCondition('status!=4');

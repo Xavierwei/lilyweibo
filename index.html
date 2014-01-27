@@ -21,12 +21,18 @@
     <div class="videobg">
         <div class="videobox"><img src="img/videodemo.jpg" /></div>
     </div>
+    <div class="totalCount">当前已有<span id="totalCountText"></span>人定制围脖</div>
 
     <div class="steps">
 
         <div class="step stepLogin">
-            <div class="stepLoginBtn" data-a="weibo_login">登陆</div>
+            <div class="stepLoginBtn" data-a="weibo_login"></div>
+            <div class="stepLoginTerm"></div>
         </div>
+
+        <div class="step stepWaitApprove" id="stepWaitApprove"></div>
+
+        <div class="step stepProduced" id="stepProduced"></div>
 
         <div class="step step1">
             <div class="step1Title"></div>
@@ -114,9 +120,26 @@
 
 <!-- login-iframe-tpl -->
 <script type="text/tpl" id="login-iframe-template">
-    <div id="weiboLoginForm">
-        <div class="close" data-a="close_login_iframe">X</div>
+    <div class="overlay" data-a="close_popup"></div>
+    <div id="weiboLoginForm" class="popup">
+        <div class="close" data-a="close_popup"></div>
         <iframe frameborder="0" scrolling="no" width="650" height="350" src="{{url}}" />
+    </div>
+</script>
+<!-- #login-iframe-tpl -->
+
+<!-- login-iframe-tpl -->
+<script type="text/tpl" id="popup-dmx-template">
+    <div class="overlay" data-a="close_popup"></div>
+    <div id="popup-dmx" class="popup">
+        <div class="close" data-a="close_popup"></div>
+        {{#if direction}}
+        <div class="title_{{direction}}"></div>
+        <div class="rank">您的排名{{direction_text}}了{{offset}}位，目前排在{{newRank}}位</div>
+        {{else}}
+        <div class="errorMsg">您今天已经赌三把了，明天再来吧！</div>
+        {{/if}}
+        <div class="backBtn" data-a="close_popup"></div>
     </div>
 </script>
 <!-- #login-iframe-tpl -->
@@ -124,7 +147,9 @@
 <!-- myrank-tpl -->
 <script type="text/tpl" id="myrank-template">
     <div class="userRank">
-        <div class="userSeat"></div>
+        <div class="userSeatWrap">
+            <div class="userSeat" style="left:{{position}}%"></div>
+        </div>
         <div class="userLast">第<span>1</span>名</div>
         <div class="userFirst">第<span>{{total}}</span>名</div>
     </div>
@@ -137,10 +162,48 @@
             </div>
             <div class="step4Preview"><img width="456" src="{{image}}" /></div>
         </div>
-        <div class="step4BtnDMX" data-a="submit_dmx"></div>
     </div>
+    <div class="step4gift"></div>
+    <div class="step4BtnDMX" data-a="submit_dmx"></div>
+    <div class="step4BtnInvite" data-a="submit_friends"></div>
 </script>
 <!-- #myrank-tpl -->
+
+<!-- preview-tpl -->
+<script type="text/tpl" id="preview-template">
+    <div class="preview"><img src="{{image}}" /></div>
+</script>
+<!-- #preview-tpl -->
+
+<!-- friends-list-tpl -->
+<script type="text/tpl" id="popup-friends-template">
+    <div class="overlay" data-a="close_popup"></div>
+    <div id="popupFriends" class="popup">
+        <div class="close" data-a="close_popup"></div>
+        <div class="friendStatus">已经邀请了<span>{{invitedNum}}</span>位好友，还可以邀请{{leftNum}}位</div>
+        <div class="search"><input placeholder="输入好友名称" type="text" class="keyword" /><div class="searchBtn" data-a="searchFriend"></div></div>
+        <ul id="friendsList"></ul>
+        <ul id="friendsPaginate"></ul>
+        <div id="inviteText">写微博织围脖真开心啊～你也快来啊！</div>
+        <div class="inviteBtn" data-a="invite_friends"></div>
+    </div>
+</script>
+<!-- #friends-list-tpl -->
+
+<!-- friend-item-tpl -->
+<script type="text/tpl" id="friend-item-template">
+    <li data-snsuid="{{id}}" data-name="{{screen_name}}" data-a="add_friend">
+        <div class="avatar"><img src="{{profile_image_url}}" /></div>
+        <div class="screen_name">{{screen_name}}</div>
+    </li>
+</script>
+<!-- #friend-item-tpl -->
+
+<!-- paginate-tpl -->
+<script type="text/tpl" id="paginate-template">
+    <li data-a="change_friend_page">{{pagenum}}</li>
+</script>
+<!-- #paginate-tpl -->
 
 <!-- Template -->
 

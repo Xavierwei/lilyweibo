@@ -12,7 +12,7 @@ class ScarfController extends Controller {
 		$this->styleImages = array(
 			'1' => ROOT_PATH . '/images/weibo_style/1.png',
 			'2' => ROOT_PATH . '/images/weibo_style/2.png',
-			'3' => ROOT_PATH . '/images/weibo_style/2.png',
+			'3' => ROOT_PATH . '/images/weibo_style/3.png',
 		);
 		$this->acceptType = strpos($this->request->getAcceptTypes(), 'json') ? 'json' : 'xml';
     }
@@ -118,8 +118,9 @@ class ScarfController extends Controller {
         unset($rankList[$index]['uid']);
       }
     }
-
-		return $this->returnJSON($rankList);
+    $result['data'] = $rankList;
+    $result['total'] = $scarf->getApprovedCount();
+		return $this->returnJSON($result);
 	}
 	
 	/**
@@ -161,7 +162,7 @@ class ScarfController extends Controller {
 		$generateImgPath = date('Ymd') . '/';
 		$imgPath = Yii::app()->params['uploadPath'] . $generateImgPath;
 		if (!is_dir($imgPath)) {
-			mkdir($imgPath, 077, TRUE);
+			mkdir($imgPath, 0777, TRUE);
 		}
 		$imgName = time() . rand(10000, 99999) .  '.jpg';
 		$imgFile = $imgPath . $imgName;
@@ -230,20 +231,23 @@ class ScarfController extends Controller {
 				'screen_name' => Yii::app()->session['user']['screen_name'],
 				'avatar' => Yii::app()->session['user']['avatar'],
 			);
-      $model->shareScarf($newScarf['cid']); // 分享微博
+      // 分享微博
+      $shareText = '我的围巾！'. $newScarf['content'];
+      $shareImg = $newScarf['image'];
+      $model->shareWeibo($shareText, 'http://img.hb.aicdn.com/5d9bfeddfce1e8309097cca7c94f2cfd3ae30f1a215df-9uwbCI_fw658');
+
       $sns_uid = Yii::app()->session["user"]["sns_uid"];
       if($invitedInfo = $model->isInvited($sns_uid)) //判断当前用户是否是受邀请的
       {
         // 更新邀请人的内容排名
         $cid = $invitedInfo->cid;
         $rank = $model->getRankByCid($cid);
-        $rank = $rank - 10; //提升10个排名
+        $rank = $rank - 5; //提升10个排名
         $rankValue = $model->getRankValue($rank);
         $model->updateRankByCid($cid, $rankValue);
       }
 			unset($newScarf['uid']);
-      $newScarf['total'] = $model->getApprovedCount();
-			return $this->returnJSON($newScarf);
+			return $this->returnJSON(array('data'=>$newScarf, 'error'=>null));
 		} else {
 			$this->returnJSON($this->error('bad request', 1001));
 		}
@@ -310,7 +314,7 @@ class ScarfController extends Controller {
 			$user = Yii::app()->session["user"];
 			$myRank['user']['screen_name'] = $user['screen_name'];
 			$myRank['user']['avatar'] = $user['avatar'];
-			$myRank['total'] = $scarf->getApprovedCount();
+			$myRank['total'] = (int)$scarf->getApprovedCount();
 			//判断当前用户是否发过微博
 			if($myScarf = $scarf->isCreated($user['uid'])) {
 				$myRank['rank'] = (int)$scarf->getRankByUid($user['uid']);
@@ -322,49 +326,63 @@ class ScarfController extends Controller {
 				"error" => null
 			));
 		} else {
-			$this->returnJSON($this->error('not login', 1001));
+      $o = new SaeTOAuthV2( WB_AKEY , WB_SKEY );
+      $weiboUrl = $o->getAuthorizeURL(WB_CALLBACK_URL);
+			$this->returnJSON(array('url'=>$weiboUrl,'error'=>1001));
 		}
 	}
 
 	/**
-	 * 分享给好友, POST方法
+	 * 邀请好友, POST方法
 	 */
-	public function actionShare() {
+	public function actionInvite() {
 		if ($this->request->isPostRequest) {
 			if (!self::isLogin()) {
 				return $this->returnJSON($this->error('no login', 1001));
 			}
-			$cid = $this->request->getPost('cid');
-			$friend_sns_uid = trim($this->request->getPort('friend_sns_uid'));
-			if (!is_numeric($cid) || empty($cid)) {
-				$this->returnJSON($this->error('cid is invalid', 1002));
-			}
-			if (empty($friend_sns_uid)) {
-				$this->returnJSON($this->error('please select friend', 1003));
-			}
-			
-			//判断好友是否分享过
-			if (Friend::model()->checkIsShared($cid, $friend_sns_uid)) {
-				$this->returnJSON($this->error('have share this scarf', 1004));
-			}
-			
-			//分享微博
-			$data = array();
-			$data = array(
-				'cid' => $cid,
-				'friend_sns_uid' => $friend_sns_uid,
-				'share_datetime' => time()
-			);
-			$mFriend = new Friend();
-			$mFriend->attributes = $data;
-			$ret = $mFriend->insert();
-			if ($ret) {
-				$this->returnJSON(array('data'));
-			}
+
+      $friends = explode(',', trim($this->request->getPost('friends')));
+      $shareText = $this->request->getPost('sharetext');
+      if (!count($friends)) {
+        $this->returnJSON($this->error('please select friend', 1003));
+      }
+      if (empty($shareText)) {
+        $this->returnJSON($this->error('please enter share text', 1004));
+      }
+      $scarf = new Scarf();
+      $user = Yii::app()->session["user"];
+      $myScarf = $scarf->isCreated($user['uid']);
+			$cid = $myScarf->cid;
+
+      foreach($friends as $friend) {
+       // echo $friend;
+        if (!Friend::model()->checkIsShared($cid, $friend)) {
+          $data = array(
+            'cid' => $cid,
+            'uid' => $user['uid'],
+            'friend_sns_uid' => $friend,
+            'share_datetime' => time()
+          );
+          $mFriend = new Friend();
+          $mFriend->attributes = $data;
+          $mFriend->insert();
+        }
+      }
+
+      Scarf::model()->shareWeibo($shareText, 'http://img.hb.aicdn.com/5d9bfeddfce1e8309097cca7c94f2cfd3ae30f1a215df-9uwbCI_fw658');
+
 		} else {
 			$this->returnJSON($this->error('Illegal request', 1001));
 		}
 	}
+
+  /**
+   * 获取已邀请的好友列表
+   */
+  public function actionGetInvitedFriends() {
+    $friends = Friend::model()->getInvitedFriend(Yii::app()->session["user"]["uid"]);
+    $this->returnJSON(array('data'=>$friends, 'error'=>null));
+  }
 
   public function actionUpdateStatus()
   {

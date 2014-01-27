@@ -88,13 +88,13 @@ LP.use(['jquery' , 'api'] , function( $ , api ){
             image: $('#val_image').val()
         }
         api.ajax('post', data, function(res){
-            var myRank = res;
-            myRank.image = API_ROOT + myRank.image;
-            LP.compile( 'myrank-template' ,
-                myRank,
+            $('.step_loading').stop().fadeOut();
+            res.data.image = API_ROOT + res.data.image;
+            LP.compile( 'preview-template' ,
+                res.data,
                 function( html ){
-                    $('#myRank').append(html);
-                    $('.step_loading').stop().fadeOut();
+                    $('#stepWaitApprove').append(html);
+                    $('.stepWaitApprove').fadeIn();
                 });
         }, function(){
             setTimeout(function(){
@@ -105,6 +105,153 @@ LP.use(['jquery' , 'api'] , function( $ , api ){
 
     LP.action('submit_dmx' , function( ){
         api.ajax('dmx', function(res){
+            if(res.error) {
+                data = {};
+            }
+            else {
+                if(res.data.offset > 0) {
+                    res.data.direction = 'up';
+                    res.data.direction_text = '上升';
+                } else {
+                    res.data.direction = 'down';
+                    res.data.direction_text = '下降';
+                }
+                res.data.offset = Math.abs(res.data.offset);
+                data = res.data;
+            }
+
+            LP.compile( 'popup-dmx-template' ,
+                data,
+                function( html ){
+                    $('body').append(html);
+                    $('#popup-dmx').fadeIn();
+                });
+
+            var myRank = $('#myRank').data('user');
+            myRank.rank = res.data.newRank;
+            $('#myRank').data('user', myRank);
+            myRank.position = parseInt(((myRank.rank-1) / myRank.total)*100);
+            if(myRank.total == myRank.rank) {
+                myRank.position = 100
+            }
+            LP.compile( 'myrank-template' ,
+                myRank,
+                function( html ){
+                    $('#myRank').html(html);
+                });
+
+        });
+    });
+
+    LP.action('submit_friends' , function( ){
+        LP.compile( 'popup-friends-template', {},
+            function( html ){
+                $('body').append(html);
+                $('#popupFriends').fadeIn();
+                // Load Friends List
+                api.ajax('friends', function(res){
+                    var pagenum = Math.ceil(res.data.total_number / 8);
+                    for(var i = 1; i <= pagenum; i ++)
+                    {
+                        LP.compile( 'paginate-template' ,
+                            {pagenum: i},
+                            function( html ){
+                                $('#friendsPaginate').append(html);
+                            } );
+                    }
+                    $('#friendsPaginate li').eq(0).addClass('on');
+                    $('#friendsList').fadeIn().data('friends', res.data.users);
+                    var allFriends = res.data.users.slice();
+                    var friends = allFriends.splice(0,8);
+                    $.each(friends, function(index, item){
+                        LP.compile( 'friend-item-template' ,
+                            item,
+                            function( html ){
+                                $('#friendsList').append(html);
+                            } );
+                    })
+                });
+            });
+    });
+
+    LP.action('change_friend_page', function(){
+        var paginateItems = $('#friendsPaginate li');
+        var index = $.inArray(this, paginateItems);
+        var allFriends = $('#friendsList').data('friends').slice();
+        var friends = allFriends.splice(index*8, (index+1)*8);
+        paginateItems.removeClass('on');
+        $(this).addClass('on');
+        $('#friendsList').fadeOut(function(){
+            $(this).empty();
+            $.each(friends, function(index, item){
+                LP.compile( 'friend-item-template' ,
+                    item,
+                    function( html ){
+                        $('#friendsList').append(html);
+                    } );
+            })
+            $(this).fadeIn();
+        });
+    });
+
+    LP.action('searchFriend', function(){
+        var allFriends = $('#friendsList').data('friends');
+        var keyword = $('#popupFriends .keyword').val();
+        if(!keyword) {
+            $('#friendsPaginate').fadeIn();
+            $('#friendsPaginate li').eq(0).click();
+            return;
+        }
+        $('#friendsPaginate').fadeOut();
+        $('#friendsList').fadeOut(function(){
+            $(this).empty();
+            $.each(allFriends, function(index, item){
+                if(item.screen_name.indexOf(keyword) != -1) {
+                    LP.compile( 'friend-item-template' ,
+                        item,
+                        function( html ){
+                            $('#friendsList').append(html);
+                        } );
+                }
+
+            })
+            $(this).fadeIn();
+        });
+    });
+
+    LP.action('add_friend', function(){
+        var name = $(this).data('name');
+        var snsuid = $(this).data('snsuid');
+        var textarea = $('#inviteText');
+        var newTxt;
+        if($(this).hasClass('selected')) {
+            var selected = $('#friendsList').data('selected');
+            var index = $.inArray(snsuid,selected);
+            selected.splice(index, 1);
+            $('#friendsList').data('selected',selected);
+            newTxt = textarea.html().replace(' @'+name, '');
+            textarea.html(newTxt);
+            $(this).removeClass('selected');
+
+            return;
+        }
+        newTxt = textarea.html() + " @"+name;
+        if(newTxt.length < 140) {
+            $(this).addClass('selected');
+            textarea.html(newTxt);
+            var selected = $('#friendsList').data('selected');
+            if(!selected) {
+                selected = [];
+            }
+            selected.push(snsuid);
+            $('#friendsList').data('selected',selected);
+        }
+    });
+
+    LP.action('invite_friends', function(){
+        var friends = $('#friendsList').data('selected').toString();
+        var sharetext = $('#inviteText').html();
+        api.ajax('invite', {friends: friends, sharetext: sharetext}, function(res){
             console.log(res);
         });
     });
@@ -119,17 +266,21 @@ LP.use(['jquery' , 'api'] , function( $ , api ){
             } );
     });
 
-    LP.action('close_login_iframe' , function(){
-       $('#weiboLoginForm').fadeOut(function(){
-           $(this).remove();
-       });
+    LP.action('close_popup' , function(){
+        $('.popup').fadeOut(function(){
+            $(this).remove();
+        });
+        $('.overlay').fadeOut(function(){
+            $(this).remove();
+        });
     });
 
     var init = function(){
         //Get Rank List
         var dataList = {page:1, pagenum: 5};
         api.ajax('list', dataList, function(res){
-            var items = res;
+            var items = res.data;
+            $('#totalCountText').html(res.total);
             $.each( items , function( index , item ){
                 LP.compile( 'list-item-template' ,
                     item,
@@ -146,20 +297,65 @@ LP.use(['jquery' , 'api'] , function( $ , api ){
         api.ajax('myrank', function(res){
             if(res.error == 1001) {
                 $('.stepLogin').fadeIn();
-                $('.stepLoginBtn').data('url',res.data);
+                $('.stepLoginBtn').data('url',res.url);
             }
             else {
-                if(res.data.rank) {
-                    $('.step4').fadeIn();
-                    res.data.image = API_ROOT + res.data.image;
-                    LP.compile( 'myrank-template' ,
-                        res.data,
-                        function( html ){
-                            $('#myRank').append(html);
-                        });
-                } else {
+                if(res.data.status ==  undefined) {
                     $('.step1').fadeIn();
                 }
+                switch(res.data.status) {
+                    case 0:
+                        res.data.image = API_ROOT + res.data.image;
+                        LP.compile( 'preview-template' ,
+                            res.data,
+                            function( html ){
+                                $('#stepWaitApprove').append(html);
+                                $('.stepWaitApprove').fadeIn();
+                            });
+                        break;
+                    case 1:
+                        if(res.data.rank) {
+                            $('#myRank').data('user',res.data);
+                            $('.step4').fadeIn();
+                            $('.steps').addClass('steps_high');
+                            res.data.image = API_ROOT + res.data.image;
+                            res.data.position = parseInt(((res.data.rank-1) / res.data.total)*100);
+                            if(res.data.total == res.data.rank) {
+                                res.data.position = 100
+                            }
+                            LP.compile( 'myrank-template' ,
+                                res.data,
+                                function( html ){
+                                    $('#myRank').append(html);
+                                });
+                        }
+                        break;
+                    case 2:
+                        break;
+                    case 3:
+                        res.data.image = API_ROOT + res.data.image;
+                        LP.compile( 'preview-template' ,
+                            res.data,
+                            function( html ){
+                                $('#stepProduced').append(html);
+                                $('.stepProduced').fadeIn();
+                            });
+                        break;
+                    default:
+                        break;
+                }
+//                if(res.data.rank) {
+//                    $('.step4').fadeIn();
+//                    $('.steps').addClass('steps_high');
+//                    res.data.image = API_ROOT + res.data.image;
+//                    LP.compile( 'myrank-template' ,
+//                        res.data,
+//                        function( html ){
+//                            $('#myRank').append(html);
+//                        });
+//                } else {
+//                    $('.step1').fadeIn();
+//                }
             }
         }, function(){
             $('#list_wrap').html('加载失败，请刷新页面再试一次。');

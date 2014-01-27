@@ -27,8 +27,8 @@ class Friend extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('uid, share_datetime', 'numerical', 'integerOnly'=>true),
-			array('friend_sns_id', 'length', 'max'=>15),
+			array('cid, uid, share_datetime', 'numerical', 'integerOnly'=>true),
+			array('friend_sns_uid', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('fid, uid, friend_sns_id, share_datetime', 'safe', 'on'=>'search'),
@@ -54,7 +54,8 @@ class Friend extends CActiveRecord
 		return array(
 			'fid' => 'Fid',
 			'uid' => 'Uid',
-			'friend_sns_id' => 'Friend Sns',
+      'cid' => 'Cid',
+			'friend_sns_uid' => 'Friend Sns',
 			'share_datetime' => 'Share Datetime',
 		);
 	}
@@ -64,10 +65,14 @@ class Friend extends CActiveRecord
 	 */
 	public function checkIsShared($cid, $friend_sns_uid) {
 		return $this->find(array(
-			'condition' => 'cid = :cid AND frind_sns_uid = :friend_sns_uid',
+			'condition' => 'cid = :cid AND friend_sns_uid = :friend_sns_uid',
 			'params' => array(':cid' => (int)$cid, ':friend_sns_uid' => trim($friend_sns_uid))
 		));
 	}
+
+  public function getInvitedFriend($uid) {
+    return Yii::app()->db->createCommand('SELECT friend_sns_uid FROM friend WHERE uid = '.$uid)->queryAll();
+  }
 
 	/**
 	 * Retrieves a list of models based on the current search/filter conditions.
