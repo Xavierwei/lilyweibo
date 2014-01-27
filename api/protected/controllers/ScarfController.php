@@ -173,9 +173,11 @@ class ScarfController extends Controller {
 		//合并文字图片
 		$im = imagecreatefrompng($bgImg);
 		$fontColor  = imagecolorallocate($im, 255, 255, 255); //这是文字颜色，绿色
-		$font = ROOT_PATH . '/font/msyh.ttf';
+		$font = ROOT_PATH . '/font/hyds.ttf';
 		$fontSize = 23;
-    imagettftext($im, $fontSize,0, 88, 59, $fontColor ,$font, $text);
+		$box = imagettfbbox($fontSize, 0, $font, $text);
+		$x = (528 - $box[2])/2 + 55;
+    imagettftext($im, $fontSize,0, $x, 64, $fontColor ,$font, $text);
 		imagejpeg($im, $imgFile);  
 		
 		return '/uploads/' . $generateImgPath . $imgName;

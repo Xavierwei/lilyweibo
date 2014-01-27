@@ -129,12 +129,14 @@ class Scarf extends CActiveRecord
    * @param $uid
    */
   public function getScarfByUid($uid) {
-    $model = $this->find(array(
-      'condition'=>'uid=:uid',
-      'params'=>array(':uid'=>$uid),
-    ));
-    if ($model) {
-      return $model;
+		$row = Yii::app()->db->createCommand()
+			->select('cid')
+			->from('scarf')
+			->where('uid='.$uid.' and status != 4')
+			->limit(1)
+			->queryRow();
+    if ($row) {
+      return $row;
     }
     return FALSE;
   }
@@ -188,7 +190,7 @@ class Scarf extends CActiveRecord
 	 */
 	public function getRankByUid($uid) {
 		$connection=Yii::app()->db;
-		$command=$connection->createCommand("SELECT COUNT(cid) as rank FROM scarf WHERE status=1 and rank <= (SELECT rank FROM scarf WHERE uid=" . $uid . " limit 0,1)");
+		$command=$connection->createCommand("SELECT COUNT(cid) as rank FROM scarf WHERE status=1 and rank <= (SELECT rank FROM scarf WHERE status=1 and uid=" . $uid . " limit 0,1)");
 		$result = $command->queryRow();
 		return $result['rank'];
 	}
@@ -198,7 +200,7 @@ class Scarf extends CActiveRecord
    */
   public function getRankByCid($cid) {
     $connection=Yii::app()->db;
-    $command=$connection->createCommand("SELECT COUNT(cid) as rank FROM scarf WHERE status=1 and rank <= (SELECT rank FROM scarf WHERE cid=" . $cid . " limit 0,1)");
+    $command=$connection->createCommand("SELECT COUNT(cid) as rank FROM scarf WHERE status=1 and rank <= (SELECT rank FROM scarf WHERE status=1 and cid=" . $cid . " limit 0,1)");
     $result = $command->queryRow();
     return $result['rank'];
   }

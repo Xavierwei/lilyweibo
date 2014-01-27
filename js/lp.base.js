@@ -168,7 +168,7 @@ LP.use(['jquery' , 'api'] , function( $ , api ){
                     $('#popupFriends').fadeIn();
                     // Load Friends List
                     api.ajax('friends', function(res){
-                        var pagenum = Math.ceil(res.data.total_number / 8);
+                        var pagenum = Math.ceil(res.data.users.length / 8);
                         for(var i = 1; i <= pagenum; i ++)
                         {
                             LP.compile( 'paginate-template' ,
@@ -201,7 +201,7 @@ LP.use(['jquery' , 'api'] , function( $ , api ){
         var paginateItems = $('#friendsPaginate li');
         var index = $.inArray(this, paginateItems);
         var allFriends = $('#friendsList').data('friends').slice();
-        var friends = allFriends.splice(index*8, (index+1)*8);
+        var friends = allFriends.splice(index*8, 8);
         paginateItems.removeClass('on');
         $(this).addClass('on');
         $('#friendsList').fadeOut(function(){

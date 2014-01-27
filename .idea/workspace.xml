@@ -2,21 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="19a3a98e-09b8-4651-ab7d-e4100f3377a4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/lp.rank.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rank.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/rule.jpg" afterPath="$PROJECT_DIR$/img/rule.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/protected/models/Scarf.php" afterPath="$PROJECT_DIR$/api/protected/models/Scarf.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/protected/controllers/ScarfController.php" afterPath="$PROJECT_DIR$/api/protected/controllers/ScarfController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/css/admin.css" afterPath="$PROJECT_DIR$/admin/css/admin.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/api.js" afterPath="$PROJECT_DIR$/js/api.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/protected/models/User.php" afterPath="$PROJECT_DIR$/api/protected/models/User.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/protected/runtime/application.log" afterPath="$PROJECT_DIR$/api/protected/runtime/application.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/index.html" afterPath="$PROJECT_DIR$/admin/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/tmp/scarf/list.html" afterPath="$PROJECT_DIR$/admin/tmp/scarf/list.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/lp.base.js" afterPath="$PROJECT_DIR$/js/lp.base.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/js/controllers/scarf.js" afterPath="$PROJECT_DIR$/admin/js/controllers/scarf.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/js/services/scarf.js" afterPath="$PROJECT_DIR$/admin/js/services/scarf.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="lily.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,10 +14,10 @@
     <file path="/index.html" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1390839911743" ignored="false" />
     <file path="/style.css" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1390838831899" ignored="false" />
     <file path="$PROJECT_DIR$/../superboomi/sites/all/modules/superboomi_services/superboomi/bm_services/bm_services.module" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1390631207561" ignored="false" />
-    <file path="/lp.base.js" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1390833600027" ignored="false" />
+    <file path="/lp.base.js" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1390841314335" ignored="false" />
     <file path="/api.js" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1390832565102" ignored="false" />
     <file path="/UserController.php" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1390755555606" ignored="false" />
-    <file path="/ScarfController.php" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1390839979459" ignored="false" />
+    <file path="/ScarfController.php" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1390842397656" ignored="false" />
     <file path="/logined.php" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1390710161707" ignored="false" />
     <file path="/logined.html" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1390710547051" ignored="false" />
     <file path="$PROJECT_DIR$/../../../XAMPP/xamppfiles/htdocs/avene_redness/0110/index.html" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1390817007914" ignored="false" />
@@ -46,7 +36,7 @@
     <file path="$PROJECT_DIR$/../avene_redness/0110/m/css/style.css" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1390744353891" ignored="false" />
     <file path="$PROJECT_DIR$/../avene_redness/0110/m/js/main.js" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1390744453063" ignored="false" />
     <file path="/main.js" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1390744448493" ignored="false" />
-    <file path="/Scarf.php" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1390820775452" ignored="false" />
+    <file path="/Scarf.php" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1390842819045" ignored="false" />
     <file path="/User.php" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1390755628012" ignored="false" />
     <file path="/saetv2.ex.class.php" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1390755405536" ignored="false" />
     <file path="$PROJECT_DIR$/../../../XAMPP/xamppfiles/htdocs/mvipx/wp-content/themes/twentythirteen/index.php" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1390798554773" ignored="false" />
@@ -92,37 +82,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="162" column="7" selection-start="12093" selection-end="12093" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state line="4" column="15" selection-start="101" selection-end="101" vertical-scroll-proportion="-2.7142856">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="admin.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/css/admin.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="16" selection-start="656" selection-end="656" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -137,10 +100,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="scarf.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="scarf.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/js/controllers/scarf.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="54" selection-start="741" selection-end="741" vertical-scroll-proportion="0.3082835">
+            <state line="5" column="33" selection-start="261" selection-end="261" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -155,28 +118,55 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="lp.base.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/lp.base.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="170" column="69" selection-start="5584" selection-end="5584" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="ScarfController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/protected/controllers/ScarfController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="67" column="50" selection-start="1618" selection-end="1618" vertical-scroll-proportion="-16.392857">
+            <state line="322" column="45" selection-start="9120" selection-end="9120" vertical-scroll-proportion="-8.648149">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="rank.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rank.html">
+      <file leaf-file-name="Scarf.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/api/protected/models/Scarf.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="28" selection-start="618" selection-end="618" vertical-scroll-proportion="-10.178572">
+            <state line="202" column="148" selection-start="5001" selection-end="5001" vertical-scroll-proportion="0.5345133">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
+      <file leaf-file-name="UserController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/protected/controllers/UserController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="25" selection-start="866" selection-end="875" vertical-scroll-proportion="-13.571428">
+            <state line="76" column="38" selection-start="1543" selection-end="1543" vertical-scroll-proportion="-16.964285">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/protected/models/User.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="85" column="46" selection-start="2100" selection-end="2100" vertical-scroll-proportion="-16.5">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="saetv2.ex.class.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/protected/vendors/sns/weibo/saetv2.ex.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1538" column="20" selection-start="42832" selection-end="42841" vertical-scroll-proportion="-13.785714">
               <folding />
             </state>
           </provider>
@@ -200,11 +190,8 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/api/protected/models/Friend.php" />
-        <option value="$PROJECT_DIR$/api/sinasdk/config.php" />
         <option value="$PROJECT_DIR$/db.sql" />
         <option value="$PROJECT_DIR$/js/api.js" />
-        <option value="$PROJECT_DIR$/js/lp.base.js" />
         <option value="$PROJECT_DIR$/js/lp.rank.js" />
         <option value="$PROJECT_DIR$/rank.html" />
         <option value="$PROJECT_DIR$/rule.html" />
@@ -213,9 +200,12 @@
         <option value="$PROJECT_DIR$/admin/css/admin.css" />
         <option value="$PROJECT_DIR$/admin/tmp/scarf/list.html" />
         <option value="$PROJECT_DIR$/admin/index.html" />
-        <option value="$PROJECT_DIR$/api/protected/controllers/ScarfController.php" />
         <option value="$PROJECT_DIR$/admin/js/services/scarf.js" />
         <option value="$PROJECT_DIR$/admin/js/controllers/scarf.js" />
+        <option value="$PROJECT_DIR$/js/lp.base.js" />
+        <option value="$PROJECT_DIR$/api/protected/models/User.php" />
+        <option value="$PROJECT_DIR$/api/protected/controllers/ScarfController.php" />
+        <option value="$PROJECT_DIR$/api/protected/models/Scarf.php" />
       </list>
     </option>
   </component>
@@ -554,6 +544,7 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294412" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32999545" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24988621" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25853437" sideWeight="0.6705588" order="0" side_tool="false" content_ui="combo" />
@@ -565,7 +556,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294412" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -632,41 +622,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/api.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="22" selection-start="1480" selection-end="1494" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gar_nier/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="888" column="0" selection-start="23899" selection-end="24059" vertical-scroll-proportion="0.7702936">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/lp.base.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="391" column="0" selection-start="13859" selection-end="13859" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/protected/controllers/SiteController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="36.535713">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/lp.rank.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="28" selection-start="249" selection-end="249" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/rule.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="7" selection-start="692" selection-end="692" vertical-scroll-proportion="-15.607142">
@@ -723,9 +678,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/protected/controllers/ScarfController.php">
+    <entry file="file://$PROJECT_DIR$/admin/js/controllers/scarf.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="50" selection-start="1618" selection-end="1618" vertical-scroll-proportion="-16.392857">
+        <state line="5" column="33" selection-start="261" selection-end="261" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -737,9 +692,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/js/controllers/scarf.js">
+    <entry file="file://$PROJECT_DIR$/js/lp.base.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="54" selection-start="741" selection-end="741" vertical-scroll-proportion="0.3082835">
+        <state line="170" column="69" selection-start="5584" selection-end="5584" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/protected/controllers/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="76" column="38" selection-start="1543" selection-end="1543" vertical-scroll-proportion="-16.964285">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/protected/vendors/sns/weibo/saetv2.ex.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1538" column="20" selection-start="42832" selection-end="42841" vertical-scroll-proportion="-13.785714">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/protected/models/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="85" column="46" selection-start="2100" selection-end="2100" vertical-scroll-proportion="-16.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/protected/controllers/ScarfController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="322" column="45" selection-start="9120" selection-end="9120" vertical-scroll-proportion="-8.648149">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/protected/models/Scarf.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="202" column="148" selection-start="5001" selection-end="5001" vertical-scroll-proportion="0.5345133">
           <folding />
         </state>
       </provider>
