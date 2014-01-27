@@ -1599,3 +1599,26 @@ REQUEST_URI=/lilyweibo/api/index.php/scarf/ranklist
 in /Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/ScarfController.php (21)
 in /Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/ScarfController.php (123)
 in /Applications/MAMP/htdocs/lilyweibo/api/index.php (20)
+2014/01/27 16:03:50 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in F:\wamp\www\lilyweibo\api\framework\db\CDbConnection.php:382
+Stack trace:
+#0 F:\wamp\www\lilyweibo\api\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 F:\wamp\www\lilyweibo\api\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 F:\wamp\www\lilyweibo\api\framework\base\CModule.php(387): CDbConnection->init()
+#3 F:\wamp\www\lilyweibo\api\framework\base\CApplication.php(450): CModule->getComponent('db')
+#4 F:\wamp\www\lilyweibo\api\framework\db\ar\CActiveRecord.php(634): CApplication->getDb()
+#5 F:\wamp\www\lilyweibo\api\framework\db\ar\CActiveRecord.php(2361): CActiveRecord->getDbConnection()
+#6 F:\wamp\www\lilyweibo\api\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Scarf))
+#7 F:\wamp\www\lilyweibo\api\framework\db\ar\CActiveRecord.php(79): CActiveRecord->getMetaData()
+#8 F:\wamp\www\lilyweibo\api\protected\controllers\ScarfController.php(110): CActiveRecord->__construct()
+#9 F:\wamp\www\lilyweibo\api\framework\web\actions\CInlineAction.php(49): ScarfController->actionRankList()
+#10 F:\wamp\www\lilyweibo\api\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 F:\wamp\www\lilyweibo\api\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 F:\wamp\www\lilyweibo\api\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 F:\wamp\www\lilyweibo\api\framework\web\CWebApplication.php(282): CController->run('ranklist')
+#14 F:\wamp\www\lilyweibo\api\framework\web\CWebApplication.php(141): CWebApplication->runController('scarf/ranklist')
+#15 F:\wamp\www\lilyweibo\api\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 F:\wamp\www\lilyweibo\api\index.php(20): CApplication->run()
+#17 {main}
+REQUEST_URI=/api/index.php/scarf/ranklist?page=1&pagenum=5&_=1390809829493
+HTTP_REFERER=http://test.lilyweibo.com/
+---

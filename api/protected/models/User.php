@@ -97,7 +97,6 @@ class User extends CActiveRecord
 		$c = new SaeTClientV2(WB_AKEY, WB_SKEY, $access_token);
 		$data = '{"text": "这个游戏太好玩了，加入一起玩吧","url": "http://app.sina.com.cn/appdetail.php?appID=770915","invite_logo": "http://hubimage.com2us.com/hubweb/contents/123_499.jpg"}';
 		$result = $c->invite($friend_sns_uid, urlencode($data));
-		print_r($result);
 		return $result;
 	}
 	

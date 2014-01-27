@@ -1,6 +1,7 @@
 api/uploads/
 api/assets/*
-!assets/.gitignore
-protected/runtime/*
-!protected/runtime/.gitignore
-protected/data/*.db
+/api/protected/runtime/*
+api/protected/data/*.db
+!api/assets/.gitignore
+!api/protected/runtime/.gitignore
+.project
