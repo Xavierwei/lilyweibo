@@ -12,7 +12,7 @@ line 106 $access_token 未传入
 
 5）文字坐标          imagettftext($im, $fontSize,0, 122, 79, $fontColor ,$font, $text);
 
-6）scarf/post 保存到数据库之后需要发送到微博上，调用微博API statuses/upload方法，发布文字和图片。
+6）(DONE!)scarf/post 保存到数据库之后需要发送到微博上，调用微博API statuses/upload方法，发布文字和图片。
 
 7）scarf/list 用get方法就可以了
 
@@ -28,3 +28,5 @@ Tony DONE:
 1) myRank方法
 2) DMX方法
 3) RankList方法
+4) 验证大冒险次数
+5）大冒险日志

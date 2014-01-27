@@ -103,24 +103,45 @@ class Scarf extends CActiveRecord
 	
 	/**
 	 * 分享微博
+   * @param $cid
 	 */
-	public function shareScarf($cid, $friend_sns_id) {
+	public function shareScarf($cid) {
 		$access_token = Yii::app()->session["weibo_access_token"];
 		$c = new SaeTClientV2(WB_AKEY, WB_SKEY, $access_token);
-		
+    $scarf = $this->getScarfByCid($cid);
+    $content = '我的围巾！'. $scarf->content;
+    //TODO: 集成测试时替换图片地址
+    return $c->upload($content, 'http://img.hb.aicdn.com/5d9bfeddfce1e8309097cca7c94f2cfd3ae30f1a215df-9uwbCI_fw658');
 	}
 	
 	/**
-	 * 获取排名
+	 * 根据cid获取围巾信息
 	 * @param type $cid
 	 */
-	public function getRank($cid) {
+	public function getScarfByCid($cid) {
 		$model = $this->findByPk($cid);
 		if ($model) {
-			return $model['rank'];
+			return $model;
 		}
 		return FALSE;
 	}
+
+
+  /**
+   * 根据uid获取围巾信息
+   * @param $uid
+   */
+  public function getScarfByUid($uid) {
+    $model = $this->find(array(
+      'condition'=>'uid=:uid',
+      'params'=>array(':uid'=>$uid),
+    ));
+    if ($model) {
+      return $model;
+    }
+    return FALSE;
+  }
+
 
 	/**
 	 * 根据随机数获取Rank因子
@@ -141,12 +162,10 @@ class Scarf extends CActiveRecord
 	 * 更新用户排名
 	 */
 	public function updateRank($uid, $rankValue) {
-
 		$count = Yii::app()->db->createCommand() //获取对应的rank因子
 			->update('scarf', array(
 				'rank' => $rankValue,
 			),'status=:status and uid=:uid', array(':status'=>1, ':uid'=>$uid));
-
 		return $count;
 	}
 
@@ -182,8 +201,42 @@ class Scarf extends CActiveRecord
 		$model = $this->count($criteria);
 		return $model;
 	}
-	
-	/**
+
+  /**
+   * 存入大冒险日志
+   */
+  public function logDMX($uid) {
+    $count = Yii::app()->db->createCommand() //获取对应的rank因子
+      ->insert('dmx_log', array(
+        'uid' => $uid,
+        'dmx_datetime' => time()
+      ));
+    return $count;
+  }
+
+  /**
+   * 获取今日大冒险的次数
+   */
+  public function getTodayDmxCount() {
+    $start_time = strtotime(date("Y-m-d"));
+    $count = Yii::app()->db->createCommand() //获取对应的rank因子
+      ->select('count(*) as count')
+      ->from('dmx_log')
+      ->where('dmx_datetime > :start_time', array(':start_time'=>$start_time))
+      ->queryRow();
+    return $count['count'];
+  }
+
+
+  /**
+   * 立即打印
+   */
+  public function produceNow() {
+    $top1 = $this->getScarfRankList(1,1);
+    print_r($top1);
+  }
+
+  /**
 	 * Retrieves a list of models based on the current search/filter conditions.
 	 *
 	 * Typical usecase:

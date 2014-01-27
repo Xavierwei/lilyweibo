@@ -176,6 +176,7 @@ class ScarfController extends Controller {
 	 * 1002：内容不能为空
 	 * 1003：微博风格没有选择
 	 * 1004：请求必须为post
+   * 1005：内容已创建
 	 */
 	public function actionPost() {
 		if ($this->request->isPostRequest && $this->request->isAjaxRequest) {
@@ -184,6 +185,13 @@ class ScarfController extends Controller {
 			} else {
 					$uid = Yii::app()->session["user"]["uid"];
 			}
+
+      $model = new Scarf();
+      if($model->getScarfByUid($uid)) // 判断是否已经创建过
+      {
+        return $this->returnJSON($this->error("already created", 1005));
+      }
+
 			$content = trim($this->request->getPost('content'));
 			if (empty($content)) {
 				$this->returnJSON($this->error('content can not be empty', 1003));
@@ -196,7 +204,6 @@ class ScarfController extends Controller {
 				$style = 1;
 			}
 
-			$model = new Scarf();
 			$newScarf = array(
 				'uid' => $uid,
 				'content' => $content,
@@ -213,12 +220,14 @@ class ScarfController extends Controller {
 				'screen_name' => Yii::app()->session['user']['screen_name'],
 				'avatar' => Yii::app()->session['user']['avatar'],
 			);
+      $model->shareScarf($newScarf['cid']); // 分享微博
 			unset($newScarf['uid']);
 			return $this->returnJSON($newScarf);
 		} else {
 			$this->returnJSON($this->error('bad request', 1001));
 		}
 	}
+
 
 	/**
 	 * 大冒险
@@ -227,11 +236,16 @@ class ScarfController extends Controller {
 		if(self::isLogin()) {
 			$user = Yii::app()->session["user"];
 			$scarf = new Scarf();
+      $todayDmxCount = $scarf->getTodayDmxCount(); //获得今天大冒险的次数
+      if($todayDmxCount >= 3) {
+        return $this->returnJSON($this->error('over max', 1003));
+      }
 			$currentRank = (int)$scarf->getUserRank($user['uid']); //获取当前排名
 			$randomRankValue = $scarf->getRandomRankValue(); //获取随机的rank因子
 			if($scarf->updateRank($user['uid'], $randomRankValue)) //更新当前用户的rankValue
 			{
 				$newRank = (int)$scarf->getUserRank($user['uid']); //获取新排名
+        $scarf->logDMX($user['uid']); //记录大冒险日志
 				$data['offset'] = $currentRank - $newRank;
 				$data['newRank'] = $newRank;
 				return $this->returnJSON(array(
@@ -240,12 +254,12 @@ class ScarfController extends Controller {
 				));
 			}
 			else {
-				$this->returnJSON($this->error('unknow error', 1002));
+				return $this->returnJSON($this->error('unknow error', 1002));
 			}
 		}
 		else
 		{
-			$this->returnJSON($this->error('not login', 1001));
+      return $this->returnJSON($this->error('not login', 1001));
 		}
 	}
 
