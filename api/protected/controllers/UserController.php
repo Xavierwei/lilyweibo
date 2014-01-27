@@ -57,13 +57,13 @@ class UserController extends Controller
 	 * 退出
 	 */
 	public function actionLogout() {
-			Yii::app()->session->clear();
-			Yii::app()->session->destroy();
+		Yii::app()->session->clear();
+		Yii::app()->session->destroy();
 
-			return $this->returnJSON(array(
-					"data" => "logout success",
-					"error" => NULL
-			));
+		return $this->returnJSON(array(
+			"data" => "logout success",
+			"error" => NULL
+		));
 	}
 
 
@@ -90,10 +90,6 @@ class UserController extends Controller
 	 */
 	public function actionInvitFriends() {
 		if(self::isLogin()) {
-
-//			if ($this->request->isPostRequest && $this->request->isAjaxRequest) {
-//explode(" ",$str
-//			}
 			$userModel = new User();
 			$userModel->invitFriend('1856415417');
 		}

@@ -187,7 +187,7 @@ class ScarfController extends Controller {
 	 * 1002：内容不能为空
 	 * 1003：微博风格没有选择
 	 * 1004：请求必须为post
-   * 1005：内容已创建
+   	 * 1005：内容已创建
 	 */
 	public function actionPost() {
 		if ($this->request->isPostRequest && $this->request->isAjaxRequest) {
@@ -254,7 +254,6 @@ class ScarfController extends Controller {
 	}
 
   public function actionisInvited() {
-
     $model = new Scarf();
     $sns_uid = Yii::app()->session["user"]["sns_uid"];
     if($invitedInfo = $model->isInvited($sns_uid)) //判断当前用户是否是受邀请的
