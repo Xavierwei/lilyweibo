@@ -1,6 +1,7 @@
 api/uploads/
 api/assets/*
 /api/protected/runtime/*
+/nbproject
 api/protected/data/*.db
 !api/assets/.gitignore
 !api/protected/runtime/.gitignore

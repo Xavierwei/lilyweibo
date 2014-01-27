@@ -34,13 +34,12 @@ class UserController extends Controller
         return Yii::app()->session["is_login"] == "true";
     }
 
-
-  public function actionIsAdmin() {
-    return $this->returnJSON(array(
-      "data" => true,
-      "error" => NULL
-    ));
-  }
+	public function actionIsAdmin() {
+		return $this->returnJSON(array(
+		  "data" => true,
+		  "error" => NULL
+		));
+	}
 
 	/**
 	 * 登陆
@@ -129,7 +128,7 @@ class UserController extends Controller
 					//$this->returnJSON($this->error("login error", 1001));
 				} 
 			}
-      $this->redirect('../../../logined.html');
+			$this->redirect('../../../logined.html');
 		} else {
 			$this->returnJSON($this->error("login error", 1001));
 		}
