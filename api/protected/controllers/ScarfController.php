@@ -52,8 +52,7 @@ class ScarfController extends Controller {
 	 * 错误描述：
 	 * 1001： 没有权限
 	 * 1002：请求不是post
-	 * 1003：请求不是post
-	 * 1004：请求不是post
+	 * 1003：没有数据
 	 */
 	public function actionSearch() {
 		if (!self::adminIsLogin()) {
@@ -62,16 +61,26 @@ class ScarfController extends Controller {
 		if (!$this->request->isPostRequest) {
 			$this->returnJSON($this->error('Illegal request', 1002));	
 		}
-		$screen_name = trim($this->request->getPost('screen_name'));
-		$uid = User::model()->getUidByScreenName($screen_name);
-		if (!$uid) {
-			$this->returnJSON($this->error('user not exist', 1003));
+		$keyword = trim($this->request->getPost('keyword'));
+		
+		$page = (int)$this->request->getQuery('page',1);
+		$pagenum = (int)$this->request->getQuery('pagenum',10);
+		$arrUids = User::model()->getUidsByScreenName($keyword);  
+		$scarfList = Scarf::model()->getSearchScarfList($page, $pagenum, $arrUids, $keyword);
+		if (!empty($scarfList)) {
+			foreach($scarfList as $index => $row) {
+				$user = User::model()->getUserInfo($row['uid']);
+				$scarfList[$index]['user']['screen_name'] = $user->screen_name;
+				$scarfList[$index]['user']['avatar'] = $user->avatar;
+				unset($scarfList[$index]['uid']);
+			}
+			$result['data'] = $scarfList;
+			$result['total'] = Scarf::model()->getSearchCount($arrUids, $keyword);
+			return $this->returnJSON($result);
 		}
-		$scarf = Scarf::model()->getScarfByUid($uid);
-		if (!empty($scarf)) {
-			$this->returnJSON($scarf);
+		else {
+			$this->returnJSON($this->error('end', 1003));
 		}
-		$this->returnJSON($this->error('screen_name empty', 1004));
 	}
 	
 	/**
