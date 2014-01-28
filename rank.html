@@ -30,8 +30,8 @@
 <script type="text/tpl" id="list-item-template">
     <div class="list_item cs-clear">
         <div class="list_user">
-            <div class="list_pho"><img src="{{user.avatar}}" width="59" /></div>
-            <div class="list_name">{{user.screen_name}}</div>
+            <div class="list_pho"><a href="http://weibo.com/{{user.sns_uid}}" target="_blank"><img src="{{user.avatar}}" width="59" /></a></div>
+            <div class="list_name"><a href="http://weibo.com/{{user.sns_uid}}" target="_blank">{{user.screen_name}}</a></div>
             <div class="list_rank">第 <span>{{s_rank}}</span> 名</div>
         </div>
         <div class="list_infor"><img width="530" src="api{{image}}" /></div>

@@ -8,7 +8,7 @@
     </tr>
     <tr ng-repeat="scarf in scarfs">
         <td>{{scarf.s_rank}}</td>
-        <td>{{scarf.user.screen_name}}</td>
+        <td><a target="_blank" href="http://weibo.com/{{scarf.user.sns_uid}}">{{scarf.user.screen_name}}</a></td>
         <td>{{scarf.style}}</td>
         <td>{{scarf.content}}</td>
         <td><a href="javascript:void(0)" class="btn btn-sm btn-warning" ng-click="unapprove(scarf)">unapprove</a></td>

@@ -1,0 +1,4 @@
+.userPho,.step4BtnDMX,.step2Btns,.step2Styles {display: inline;}
+.step2Styles li .selected {background: url(../img/style_icon_on.gif) no-repeat;}
+.popup {margin-left:0;position: absolute;top:1400px;margin-left:-350px;z-index:9999;}
+.overlay {background:none;height:3000px;position: absolute;top:0;left:0;}

@@ -6,7 +6,7 @@
         <th>PRODUCE DATE</th>
     </tr>
     <tr ng-repeat="scarf in scarfs">
-        <td>{{scarf.user.screen_name}}</td>
+        <td><a target="_blank" href="http://weibo.com/{{scarf.user.sns_uid}}">{{scarf.user.screen_name}}</a></td>
         <td>{{scarf.style}}</td>
         <td>{{scarf.content}}</td>
         <td>{{scarf.update_datetime*1000 | date:'MMM d, y HH:mm a'}}</td>

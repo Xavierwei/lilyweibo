@@ -116,6 +116,7 @@ class ScarfController extends Controller {
 				$user = User::model()->getUserInfo($row['uid']);
 				$list[$index]['user']['screen_name'] = $user->screen_name;
 				$list[$index]['user']['avatar'] = $user->avatar;
+				$list[$index]['user']['sns_uid'] = $user->sns_uid;
 				unset($list[$index]['uid']);
 			}
 		}
@@ -139,6 +140,7 @@ class ScarfController extends Controller {
 			$user = User::model()->getUserInfo($row['uid']);
 			$rankList[$index]['user']['screen_name'] = $user->screen_name;
 			$rankList[$index]['user']['avatar'] = $user->avatar;
+			$rankList[$index]['user']['sns_uid'] = $user->sns_uid;
 			unset($rankList[$index]['uid']);
 		  }
 				$result['data'] = $rankList;
@@ -397,8 +399,11 @@ class ScarfController extends Controller {
 			  }
 			}
 			Scarf::model()->shareWeibo($shareText, 'http://img.hb.aicdn.com/5d9bfeddfce1e8309097cca7c94f2cfd3ae30f1a215df-9uwbCI_fw658');
+			return $this->returnJSON(array(
+				"error" => null
+			));
 		} else {
-			$this->returnJSON($this->error('Illegal request', 1001));
+			return $this->returnJSON($this->error('Illegal request', 1001));
 		}
 	}
 
@@ -475,7 +480,7 @@ class ScarfController extends Controller {
 
   public function actionTest(){
 
-    for($i = 0; $i < 2000; $i++)
+    for($i = 0; $i < 3000; $i++)
     {
       $user = new User();
       $user->sns_uid = 0;
@@ -489,7 +494,7 @@ class ScarfController extends Controller {
       $scarf->uid = $uid;
       $scarf->content = '我是第'.$i.'条漂亮的围巾';
       $scarf->style = 1;
-      $scarf->image = '/uploads/20140128/139090597424038.jpg';
+      $scarf->image = '/uploads/20140128/139091279544827.jpg';
       $scarf->status = 1;
       $scarf->rank = $i;
       $scarf->add_datetime = time();

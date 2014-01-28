@@ -1,7 +1,7 @@
 /*
  * page base action
  */
-LP.use(['jquery' , 'api'] , function( $ , api ){
+LP.use(['jquery' , 'api', 'easing'] , function( $ , api ){
     var API_ROOT = "api";
     var submitting = false;
 
@@ -135,7 +135,7 @@ LP.use(['jquery' , 'api'] , function( $ , api ){
                 data,
                 function( html ){
                     $('body').append(html);
-                    $('#popup-dmx').fadeIn();
+                    $('#popup-dmx').fadeIn().dequeue().animate({top:'50%'}, 1000, 'easeOutElastic');
                 });
 
             var myRank = $('#myRank').data('user');
@@ -171,7 +171,7 @@ LP.use(['jquery' , 'api'] , function( $ , api ){
             LP.compile( 'popup-friends-template', {invitedNum:invitedNum, leftNum: 20-invitedNum},
                 function( html ){
                     $('body').append(html);
-                    $('#popupFriends').fadeIn();
+                    $('#popupFriends').fadeIn().dequeue().animate({top:'50%'}, 1000, 'easeOutElastic');
                     // Load Friends List
                     api.ajax('friends', function(res){
                         var pagenum = Math.ceil(res.data.users.length / 8);
@@ -265,6 +265,9 @@ LP.use(['jquery' , 'api'] , function( $ , api ){
             invitedNum --;
         }
         else {
+            if(invitedNum >= 20) {
+                return false;
+            }
             newTxt = textarea.html() + " @"+name;
             if(newTxt.length < 140) {
                 $(this).addClass('selected');
@@ -285,8 +288,18 @@ LP.use(['jquery' , 'api'] , function( $ , api ){
     LP.action('invite_friends', function(){
         var friends = $('#friendsList').data('selected').toString();
         var sharetext = $('#inviteText').html();
-        api.ajax('invite', {friends: friends, sharetext: sharetext});
+        var data = {friends: friends, sharetext: sharetext};
+        api.ajax('invite', data, function(){
+            LP.compile( 'popup-invited-template' ,
+                {},
+                function( html ){
+                    $('body').append(html);
+                    $('#popup-invited').fadeIn().dequeue().animate({top:'50%'}, 1000, 'easeOutElastic');
+                });
+        }, function(){
+        });
         LP.triggerAction('close_popup');
+
 
     });
 
@@ -300,7 +313,7 @@ LP.use(['jquery' , 'api'] , function( $ , api ){
             iframeData,
             function( html ){
                 $('body').append(html);
-                $('#weiboLoginForm').fadeIn();
+                $('#weiboLoginForm').fadeIn().dequeue().animate({top:'50%'}, 1000, 'easeOutElastic');
             } );
     });
 
@@ -316,10 +329,10 @@ LP.use(['jquery' , 'api'] , function( $ , api ){
     });
 
     LP.action('close_popup' , function(){
-        $('.popup').fadeOut(function(){
+        $('.popup').fadeOut(1500,function(){
             $(this).remove();
-        });
-        $('.overlay').fadeOut(function(){
+        }).dequeue().animate({top:'-50%'}, 800, 'easeInOutElastic');
+        $('.overlay').fadeOut(1500,function(){
             $(this).remove();
         });
     });

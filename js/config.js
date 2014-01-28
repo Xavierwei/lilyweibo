@@ -12,8 +12,8 @@ seajs.config({
       src: "../handlebars/handlebars-v1.1.2.js"
       , exports: "Handlebars"
     }
-    ,isotope:{
-      src: "../plugin/jquery.isotope.min.js"
+    ,easing:{
+      src: "../plugin/jquery.easing.1.3.js"
       , deps: ['jquery']
     }
     ,jscrollpane:{

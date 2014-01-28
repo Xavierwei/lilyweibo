@@ -3282,3 +3282,96 @@ Stack trace:
 REQUEST_URI=/lilyweibo/api/index.php/admin_asset/tmp/dialog/delete.html
 HTTP_REFERER=http://lily.local:8888/lilyweibo/api/index.php/admin/index
 ---
+2014/01/28 13:36:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /Applications/MAMP/htdocs/lily/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily/api/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /Applications/MAMP/htdocs/lily/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lily/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/lily/api/
+HTTP_REFERER=http://localhost/lily/
+---
+2014/01/28 13:37:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /Applications/MAMP/htdocs/lily/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily/api/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /Applications/MAMP/htdocs/lily/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lily/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/lily/api/
+HTTP_REFERER=http://localhost/lily/
+---
+2014/01/28 13:37:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /Applications/MAMP/htdocs/lily/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily/api/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /Applications/MAMP/htdocs/lily/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lily/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/lily/api/
+HTTP_REFERER=http://localhost/lily/
+---
+2014/01/28 13:37:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /Applications/MAMP/htdocs/lily/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily/api/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /Applications/MAMP/htdocs/lily/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lily/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/lily/api/
+HTTP_REFERER=http://localhost/lily/
+---
+2014/01/28 13:37:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /Applications/MAMP/htdocs/lily/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily/api/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /Applications/MAMP/htdocs/lily/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lily/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/lily/api/
+HTTP_REFERER=http://localhost/lily/
+---
+2014/01/28 13:38:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /Applications/MAMP/htdocs/lily/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily/api/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /Applications/MAMP/htdocs/lily/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lily/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/lily/api/
+HTTP_REFERER=http://localhost/lily/
+---
+2014/01/28 13:38:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /Applications/MAMP/htdocs/lily/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily/api/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /Applications/MAMP/htdocs/lily/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lily/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/lily/api/
+HTTP_REFERER=http://lily.local/lily/
+---
+2014/01/28 13:38:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /Applications/MAMP/htdocs/lily/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily/api/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /Applications/MAMP/htdocs/lily/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lily/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/lily/api/
+HTTP_REFERER=http://lily.local/lily/
+---
+2014/01/28 13:38:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /Applications/MAMP/htdocs/lily/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily/api/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /Applications/MAMP/htdocs/lily/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lily/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/lily/api/
+HTTP_REFERER=http://lily.local/lily/
+---
+2014/01/28 13:39:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /Applications/MAMP/htdocs/lily/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily/api/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /Applications/MAMP/htdocs/lily/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lily/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/lily/api/
+HTTP_REFERER=http://lily.local/lily/
+---
+2014/01/28 13:39:56 [warning] [application] Failed to set unsafe attribute "updae_datetime" of "Scarf".
+in /Applications/MAMP/htdocs/lily/api/protected/controllers/ScarfController.php (255)
+in /Applications/MAMP/htdocs/lily/api/index.php (20)

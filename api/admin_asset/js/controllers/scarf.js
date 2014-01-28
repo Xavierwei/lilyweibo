@@ -138,7 +138,7 @@ LilyAdminController
         };
     })
 
-    .controller('ScarfCtrListProducing', function($scope, $http, $modal, $log, $routeParams, ScarfService) {
+    .controller('ScarfCtrListProducing', function($scope, $http, $modal, $log, $routeParams, ScarfService, ROOT) {
         var getList = function() {
             paramsProducing = {};
             paramsProducing.status = 2;
@@ -150,7 +150,7 @@ LilyAdminController
             paramsNext.status = 1;
             paramsNext.pagenum = 1;
             paramsNext.page = 1;
-            ScarfService.list(paramsNext, function(data){
+            ScarfService.ranklist(paramsNext, function(data){
                 $scope.next = data[0];
             });
         }
@@ -158,9 +158,18 @@ LilyAdminController
         getList();
 
         $scope.productNow = function(){
-            ScarfService.produceNow(function(){
-                getList();
+
+            var modalInstance = $modal.open({
+                templateUrl: ROOT+'admin_asset/tmp/dialog/delete.html',
+                controller: ConfirmModalCtrl
             });
+            modalInstance.result.then(function () {
+                ScarfService.produceNow(function(){
+                    getList();
+                });
+            }, function () {
+            });
+
         }
     })
 

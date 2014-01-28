@@ -68,10 +68,10 @@ class AdminController extends Controller
   }
 
 
-//  public function actionHashPassword() {
-//    $pw = Admin::model()->hashPassword("");
-//    print_r($pw);
-//  }
+  public function actionHashPassword() {
+    $pw = md5("9b#344Uj");
+    print_r($pw);
+  }
 
 	/**
 	 * 退出

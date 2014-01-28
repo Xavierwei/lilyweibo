@@ -51,16 +51,19 @@ a{text-decoration:none}
     .totalCount span {color:#e62d2e;}
 
 .overlay {background: url(../img/trans.png);position: fixed;top:0;left:0;height:100%;width:100%;}
-.popup {display:none;position: fixed;top:50%;left:50%;margin:-175px 0 0 -325px;background: url(../img/popup_login.gif) no-repeat;width:695px;height: 463px;}
+.popup {display:none;position: fixed;top:0%;left:50%;margin:-175px 0 0 -325px;background: url(../img/popup_login.gif) no-repeat;width:695px;height: 463px;}
 .popup .close {cursor:pointer;position: absolute;top:20px;right:20px;background: url(../img/popup_close.gif) no-repeat;width:28px;height: 28px;}
 #weiboLoginForm {}
     #weiboLoginForm iframe {margin:78px 0 0 23px;}
 
 #popup-dmx .title_up {background:url(../img/dmx_up.gif) no-repeat center;width:414px;height:59px;margin:100px auto 0 auto;}
 #popup-dmx .title_down {background:url(../img/dmx_down.gif) no-repeat center;width:414px;height:59px;margin:100px auto 0 auto;}
-#popup-dmx .backBtn {background: url(../img/popup_back.gif) no-repeat;width:194px;height:75px;margin:40px auto 0 auto;}
+#popup-dmx .backBtn {cursor:pointer;background: url(../img/popup_back.gif) no-repeat;width:194px;height:75px;margin:40px auto 0 auto;}
 #popup-dmx .rank {text-align: center;font-size:28px;color:#2d84d0;margin:50px 0;}
 #popup-dmx .errorMsg {text-align: center;font-size:28px;color:#2d84d0;margin:180px 0 0;}
+
+
+
 
 #popupFriends {background: url(../img/popup_friends.gif) no-repeat;width:859px;height:587px;margin:-295px 0 0 -430px;}
     #friendsList {display:none;position: absolute;top:151px;left:52px;width:785px;}
@@ -78,11 +81,14 @@ a{text-decoration:none}
     #friendsPaginate li {cursor:pointer;font-size:14px;font-weight: bold;color:#f9a3b8;margin:0 5px;padding:5px;display: inline;}
     #friendsPaginate li.on,#friendsPaginate li:hover {color:#ff296c;}
     .friendStatus {position: absolute;font-size:16px;color:#2d84d0;top:85px;left:35px;}
+    .friendStatus span {color:#ff296c;}
     #inviteText {padding:10px;width:756px;height:40px;position: absolute;top:424px;left:40px;color:#777;}
-    .inviteBtn {background: url(../img/inviteBtn2.gif) no-repeat;width:194px;height:75px;position: absolute;bottom:27px;left:50%;margin-left:-98px;}
-#popupFriends .search {position: absolute;right:50px;top:70px;}
-#popupFriends .search input {background:#fae7ea;border:2px solid #ffd2d9;border-bottom: 1px solid #ffd2d9;padding:8px 10px;font-size:14px;color:#777;width:200px;}
-#popupFriends .search .searchBtn {background:url(../img/search_icon.gif) no-repeat;width:30px;height:30px;position: absolute;right:0;top:7px;}
+    .inviteBtn {cursor:pointer;background: url(../img/inviteBtn2.gif) no-repeat;width:194px;height:75px;position: absolute;bottom:27px;left:50%;margin-left:-98px;}
+    #popupFriends .search {position: absolute;right:50px;top:70px;}
+    #popupFriends .search input {background:#fae7ea;border:2px solid #ffd2d9;border-bottom: 1px solid #ffd2d9;padding:8px 10px;font-size:14px;color:#777;width:200px;}
+    #popupFriends .search .searchBtn {background:url(../img/search_icon.gif) no-repeat;width:30px;height:30px;position: absolute;right:0;top:7px;}
+    .invitedText {background: url(../img/invited_txt.gif) no-repeat;width:238px;height:57px;margin:130px auto 0 auto;}
+    #popup-invited .backBtn {cursor:pointer;background: url(../img/popup_back.gif) no-repeat;width:194px;height:75px;margin:40px auto 0 auto;}
 
 .steps {background: url(../img/step_bg.png) no-repeat;height:389px;padding-top:1px;position:relative;}
 .steps_high {height:551px;background: url(../img/step_bg2.png) no-repeat;}
@@ -92,7 +98,7 @@ a{text-decoration:none}
     .step1Left {float:left;}
     .step1Right {float:left;}
     .step1Title {width:668px;height:53px;margin:73px 0 0 31px;}
-    .step1Input {border:none;width:671px;height:92px;background-position:0 -73px;margin:19px 0 0 31px;font-size:24px;text-indent:1em;}
+    .step1Input {border:none;width:671px;height:92px;line-height:92px;background-position:0 -73px;margin:19px 0 0 31px;font-size:24px;padding:0 0 0 10px;}
     .step1Intro {width:637px;height:34px;background-position:-7px -197px;margin:23px 0 0 31px;}
     .step1Error {display:none;color:#fc3b77;font-size:18px;margin:5px 0 0 31px;}
     .step1BtnNext {cursor:pointer;width:176px;height:168px;background-position: -706px -68px;margin:0 0 0 31px;}
@@ -148,22 +154,24 @@ a{text-decoration:none}
 .list{background: url('../img/listbg.jpg') repeat-y;}
 .list_item{width:710px;margin:0 auto;background: url('../img/list_line.gif') no-repeat bottom;padding:45px 0 70px}
 	.list_user{float: left;width:120px;text-align: center;font-size:14px;color:#3b76b5;}
+    .list_name a {color:#3b76b5;}
 		.list_pho{background: url('../img/list_pho.png') no-repeat;width:68px;height: 72px;text-align: center;padding: 5px 0 0;margin: 0 auto}
 		.list_rank span{color:#f87f9e}
 	.list_infor{float: right;width:575px;height:113px;}
+    .list_infor img {border:5px solid #fff;}
 .list_more{cursor:pointer;background: url('../img/list_more.gif') no-repeat right;height:80px;width:758px;margin:0 auto;display: block;}
 .rankTitle {background: url(../img/ranktitle.jpg) no-repeat;height:72px;}
 .rulePage {background: url(../img/rule.jpg) no-repeat;width:940px;height:720px;}
 
 
 .step4BtnDMX:hover,.step4BtnInvite:hover,.step1BtnNext:hover,.step2BtnPrev:hover,.step2BtnNext:hover,.step3BtnPrev:hover,.step3BtnNext:hover,.learnMore:hover,
-.step2Styles li:hover
+.step2Styles li:hover,.inviteBtn:hover,.backBtn:hover
 {opacity:0.7;}
 
 .step1BtnNextDisabled:hover,.step2BtnNextDisabled:hover {opacity:1;}
 
 .nav a,
-.step4BtnDMX,.step4BtnInvite,.step1BtnNext,.step2BtnPrev,.step2BtnNext,.step3BtnPrev,.step3BtnNext,.learnMore,
+.step4BtnDMX,.step4BtnInvite,.step1BtnNext,.step2BtnPrev,.step2BtnNext,.step3BtnPrev,.step3BtnNext,.learnMore,.inviteBtn,.backBtn,
 #friendsList li,.step2Styles li
 {-webkit-transition:   all 0.3s ease;-moz-transition:  all 0.3s ease;-o-transition:  all 0.3s ease;-ms-transition:  all 0.3s ease;transition:  all 0.3s ease;}
 

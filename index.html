@@ -6,6 +6,9 @@
     <meta name="description" content="" />
     <title></title>
     <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <!--[if IE 6]>
+    <link href="css/style_ie6.css" rel="stylesheet" type="text/css" />
+    <![endif]-->
 </head>
 <body id="">
 <div class="page">
@@ -120,8 +123,8 @@
 <script type="text/tpl" id="list-item-template">
     <div class="list_item cs-clear">
         <div class="list_user">
-            <div class="list_pho"><img src="{{user.avatar}}" width="59" /></div>
-            <div class="list_name">{{user.screen_name}}</div>
+            <div class="list_pho"><a href="http://weibo.com/{{user.sns_uid}}" target="_blank"><img src="{{user.avatar}}" width="59" /></a></div>
+            <div class="list_name"><a href="http://weibo.com/{{user.sns_uid}}" target="_blank">{{user.screen_name}}</a></div>
             <div class="list_rank">第 <span>{{s_rank}}</span> 名</div>
         </div>
         <div class="list_infor"><img width="530" src="api{{image}}" /></div>
@@ -223,6 +226,17 @@
     <li data-a="change_friend_page">{{pagenum}}</li>
 </script>
 <!-- #paginate-tpl -->
+
+<!-- login-iframe-tpl -->
+<script type="text/tpl" id="popup-invited-template">
+    <div class="overlay" data-a="close_popup"></div>
+    <div id="popup-invited" class="popup">
+        <div class="close" data-a="close_popup"></div>
+        <div class="invitedText"></div>
+        <div class="backBtn" data-a="close_popup"></div>
+    </div>
+</script>
+<!-- #login-iframe-tpl -->
 
 <!-- Template -->
 
