@@ -4,7 +4,7 @@ LilyAdminServices.factory( 'ScarfService', function($http, ROOT) {
 
             $http.get(ROOT+'/scarf/list', {
                 params: param,
-                cache: true
+                cache: false
             })
             .success(function(data) {
                 success(data);
@@ -16,7 +16,7 @@ LilyAdminServices.factory( 'ScarfService', function($http, ROOT) {
         ranklist: function(param, success) {
             $http.get(ROOT+'/scarf/ranklist', {
                 params: param,
-                cache: true
+                cache: false
             })
                 .success(function(data) {
                     success(data.data);

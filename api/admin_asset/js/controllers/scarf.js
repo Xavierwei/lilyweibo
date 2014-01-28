@@ -1,5 +1,5 @@
 LilyAdminController
-    .controller('ScarfCtrListUnapproved', function($scope, $http, $modal, $log, $routeParams, ScarfService) {
+    .controller('ScarfCtrListUnapproved', function($scope, $http, $modal, $log, $routeParams, ScarfService, ROOT) {
         params = {};
         params.status = 0;
         ScarfService.list(params, function(data){
@@ -25,7 +25,7 @@ LilyAdminController
         };
         $scope.delete = function(scarf) {
             var modalInstance = $modal.open({
-                templateUrl: '../admin_asset/tmp/dialog/delete.html',
+                templateUrl: ROOT+'admin_asset/tmp/dialog/delete.html',
                 controller: ConfirmModalCtrl
             });
             modalInstance.result.then(function () {
@@ -38,7 +38,7 @@ LilyAdminController
         }
     })
 
-    .controller('ScarfCtrRankList', function($scope, $http, $modal, $log, $routeParams, ScarfService) {
+    .controller('ScarfCtrRankList', function($scope, $http, $modal, $log, $routeParams, ScarfService, ROOT) {
         params = {};
         ScarfService.ranklist(params, function(data){
             $scope.scarfs = data;
@@ -58,7 +58,7 @@ LilyAdminController
 
         $scope.unapprove = function (scarf) {
             var modalInstance = $modal.open({
-                templateUrl: '../admin_asset/tmp/dialog/delete.html',
+                templateUrl: ROOT+'admin_asset/tmp/dialog/delete.html',
                 controller: ConfirmModalCtrl
             });
             modalInstance.result.then(function () {
@@ -71,7 +71,7 @@ LilyAdminController
         };
     })
 
-    .controller('ScarfCtrListAll', function($scope, $http, $modal, $log, $routeParams, ScarfService) {
+    .controller('ScarfCtrListAll', function($scope, $http, $modal, $log, $routeParams, ScarfService, ROOT) {
         params = {};
         ScarfService.list(params, function(data){
             $scope.scarfs = data;
@@ -94,7 +94,7 @@ LilyAdminController
         };
         $scope.delete = function(scarf) {
             var modalInstance = $modal.open({
-                templateUrl: '../admin_asset/tmp/dialog/delete.html',
+                templateUrl: ROOT+'admin_asset/tmp/dialog/delete.html',
                 controller: ConfirmModalCtrl
             });
             modalInstance.result.then(function () {
@@ -107,7 +107,7 @@ LilyAdminController
         }
         $scope.unapprove = function (scarf) {
             var modalInstance = $modal.open({
-                templateUrl: '../admin_asset/tmp/dialog/delete.html',
+                templateUrl: ROOT+'admin_asset/tmp/dialog/delete.html',
                 controller: ConfirmModalCtrl
             });
             modalInstance.result.then(function () {
@@ -125,7 +125,7 @@ LilyAdminController
         params.status = 3;
         ScarfService.list(params, function(data){
             $scope.scarfs = data;
-            $scope.bigTotalItems = 20;
+            $scope.bigTotalItems = $scope.counts.produced;
             $scope.noOfPages = 0;
             $scope.currentPage = 1;
             $scope.maxSize = 5;

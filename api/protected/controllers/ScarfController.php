@@ -471,4 +471,30 @@ class ScarfController extends Controller {
 		);
 		return isset($codes[$status]) ? $codes[$status] : '';
 	}
+
+
+  public function actionTest(){
+
+    for($i = 0; $i < 2000; $i++)
+    {
+      $user = new User();
+      $user->sns_uid = 0;
+      $user->screen_name = '机器人'.$i;
+      $user->avatar = 'http://tp2.sinaimg.cn/2144684673/50/5679228493/1';
+      $user->save(false);
+
+      $uid = $user->primaryKey;
+
+      $scarf = new Scarf();
+      $scarf->uid = $uid;
+      $scarf->content = '我是第'.$i.'条漂亮的围巾';
+      $scarf->style = 1;
+      $scarf->image = '/uploads/20140128/139090597424038.jpg';
+      $scarf->status = 1;
+      $scarf->rank = $i;
+      $scarf->add_datetime = time();
+      $scarf->save(false);
+    }
+
+  }
 }

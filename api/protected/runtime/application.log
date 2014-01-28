@@ -3192,3 +3192,93 @@ Stack trace:
 REQUEST_URI=/lilyweibo/api/uploads/20140127/139079447497579.jpg
 HTTP_REFERER=http://lily.local:8888/lilyweibo/
 ---
+2014/01/28 18:46:15 [warning] [application] Failed to set unsafe attribute "updae_datetime" of "Scarf".
+in /Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/ScarfController.php (255)
+in /Applications/MAMP/htdocs/lilyweibo/api/index.php (20)
+2014/01/28 18:53:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "scarf".' in /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(270): CController->missingAction('scarf')
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(282): CController->run('scarf')
+#2 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/scarf/tes...')
+#3 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/lilyweibo/api/admin/scarf/test
+---
+2014/01/28 18:55:40 [error] [php] include(Scar.php): failed to open stream: No such file or directory (/Applications/MAMP/htdocs/lilyweibo/api/framework/YiiBase.php:427)
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/ScarfController.php(487): spl_autoload_call()
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/actions/CInlineAction.php(49): ScarfController->actionTest()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(286): ScarfController->runAction()
+#4 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(265): ScarfController->runActionWithFilters()
+#5 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(282): ScarfController->run()
+#6 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CWebApplication->run()
+REQUEST_URI=/lilyweibo/api/scarf/test
+in /Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/ScarfController.php (487)
+in /Applications/MAMP/htdocs/lilyweibo/api/index.php (20)
+2014/01/28 19:01:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin_asset/tmp/scarf/list.html".' in /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController('admin_asset/tmp...')
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilyweibo/api/index.php/admin_asset/tmp/scarf/list.html
+HTTP_REFERER=http://lily.local:8888/lilyweibo/api/index.php/admin/index
+---
+2014/01/28 19:01:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin_asset/tmp/scarf/list.html".' in /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController('admin_asset/tmp...')
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilyweibo/api/index.php/admin_asset/tmp/scarf/list.html
+HTTP_REFERER=http://lily.local:8888/lilyweibo/api/index.php/admin/index
+---
+2014/01/28 19:01:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin_asset/tmp/scarf/list.html".' in /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController('admin_asset/tmp...')
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilyweibo/api/index.php/admin_asset/tmp/scarf/list.html
+HTTP_REFERER=http://lily.local:8888/lilyweibo/api/index.php/admin/index
+---
+2014/01/28 19:01:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin_asset/tmp/scarf/list.html".' in /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController('admin_asset/tmp...')
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilyweibo/api/index.php/admin_asset/tmp/scarf/list.html
+HTTP_REFERER=http://lily.local:8888/lilyweibo/api/index.php/admin/index
+---
+2014/01/28 19:02:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin_asset/tmp/scarf/list.html".' in /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController('admin_asset/tmp...')
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilyweibo/api/index.php/admin_asset/tmp/scarf/list.html
+HTTP_REFERER=http://lily.local:8888/lilyweibo/api/index.php/admin/index
+---
+2014/01/28 19:02:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin_asset/tmp/scarf/list.html".' in /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController('admin_asset/tmp...')
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilyweibo/api/index.php/admin_asset/tmp/scarf/list.html
+HTTP_REFERER=http://lily.local:8888/lilyweibo/api/index.php/admin/index
+---
+2014/01/28 19:06:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin_asset/tmp/dialog/delete.html".' in /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController('admin_asset/tmp...')
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilyweibo/api/index.php/admin_asset/tmp/dialog/delete.html
+HTTP_REFERER=http://lily.local:8888/lilyweibo/api/index.php/admin/index
+---

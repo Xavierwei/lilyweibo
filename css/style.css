@@ -151,7 +151,7 @@ a{text-decoration:none}
 		.list_pho{background: url('../img/list_pho.png') no-repeat;width:68px;height: 72px;text-align: center;padding: 5px 0 0;margin: 0 auto}
 		.list_rank span{color:#f87f9e}
 	.list_infor{float: right;width:575px;height:113px;}
-.list_more{background: url('../img/list_more.gif') no-repeat right;height:80px;width:758px;margin:0 auto;display: block;}
+.list_more{cursor:pointer;background: url('../img/list_more.gif') no-repeat right;height:80px;width:758px;margin:0 auto;display: block;}
 .rankTitle {background: url(../img/ranktitle.jpg) no-repeat;height:72px;}
 .rulePage {background: url(../img/rule.jpg) no-repeat;width:940px;height:720px;}
 

@@ -11,11 +11,12 @@ var SGWallAdmin = angular.module('LilyAdmin', [
   'LilyAdmin.controllers'
 ]).
 config(function($routeProvider,$httpProvider) {
-    $routeProvider.when('/scarf/rank', {templateUrl: '../admin_asset/tmp/scarf/list-rank.html', controller: 'ScarfCtrRankList'});
-    $routeProvider.when('/scarf/unapproved', {templateUrl: '../admin_asset/tmp/scarf/list.html', controller: 'ScarfCtrListUnapproved'});
-    $routeProvider.when('/scarf/produced', {templateUrl: '../admin_asset/tmp/scarf/list-produced.html', controller: 'ScarfCtrListProduced'});
-    $routeProvider.when('/scarf/all', {templateUrl: '../admin_asset/tmp/scarf/list-all.html', controller: 'ScarfCtrListAll'});
-    $routeProvider.when('/production/producing', {templateUrl: '../admin_asset/tmp/scarf/list-producing.html', controller: 'ScarfCtrListProducing'});
+    var ROOT = '/lilyweibo/api/';
+    $routeProvider.when('/scarf/rank', {templateUrl: ROOT+'/admin_asset/tmp/scarf/list-rank.html', controller: 'ScarfCtrRankList'});
+    $routeProvider.when('/scarf/unapproved', {templateUrl: ROOT+'/admin_asset/tmp/scarf/list.html', controller: 'ScarfCtrListUnapproved'});
+    $routeProvider.when('/scarf/produced', {templateUrl: ROOT+'/admin_asset/tmp/scarf/list-produced.html', controller: 'ScarfCtrListProduced'});
+    $routeProvider.when('/scarf/all', {templateUrl: ROOT+'/admin_asset/tmp/scarf/list-all.html', controller: 'ScarfCtrListAll'});
+    $routeProvider.when('/production/producing', {templateUrl: ROOT+'/admin_asset/tmp/scarf/list-producing.html', controller: 'ScarfCtrListProducing'});
 
     $routeProvider.otherwise({redirectTo: '/scarf/unapproved'});
 
