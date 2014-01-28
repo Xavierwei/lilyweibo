@@ -5,7 +5,7 @@
  *
  * The followings are the available columns in table 'user':
  * @property string $uid
- * @property string $sns_uid
+ * @property string $sns_id
  * @property string $screen_name
  * @property string $avatar
  * @property string $access_token
@@ -30,12 +30,12 @@ class User extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('reg_datetime', 'numerical', 'integerOnly'=>true),
-			array('sns_uid, access_token', 'length', 'max'=>15),
+			array('sns_id, access_token', 'length', 'max'=>15),
 			array('screen_name', 'length', 'max'=>30),
 			array('avatar', 'length', 'max'=>150),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('uid, sns_uid, screen_name, avatar, access_token, reg_datetime', 'safe', 'on'=>'search'),
+			array('uid, sns_id, screen_name, avatar, access_token, reg_datetime', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -57,13 +57,37 @@ class User extends CActiveRecord
 	{
 		return array(
 			'uid' => 'Uid',
-			'sns_uid' => 'Sns Uid',
+			'sns_id' => 'Sns',
 			'screen_name' => 'Screen Name',
 			'avatar' => 'Avatar',
 			'access_token' => 'Access Token',
 			'reg_datetime' => 'Reg Datetime',
 		);
 	}
+	
+	/**
+	 * 取得用户信息
+	 * @param   int     $uid  用户id
+	 * @return  mixed   如果找到，返回对应的CActiveRecord模型，如果没有则返回NULL
+	 */
+	public function getUserInfo($uid)
+	{
+		return User::model()->findByPk($uid);
+	}
+
+	/**
+	 * 取得好友列表
+	 * @param   int     $sns_uid  用户微博id
+	 */
+	public function getUserFriend($sns_uid)
+	{
+		$access_token = Yii::app()->session["weibo_access_token"];
+		$c = new SaeTClientV2(WB_AKEY, WB_SKEY, $access_token);
+		$friendList = $c->bilateral($sns_uid);
+
+		return $friendList;
+	}
+
 
 	/**
 	 * Retrieves a list of models based on the current search/filter conditions.
@@ -84,7 +108,7 @@ class User extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('uid',$this->uid,true);
-		$criteria->compare('sns_uid',$this->sns_uid,true);
+		$criteria->compare('sns_id',$this->sns_id,true);
 		$criteria->compare('screen_name',$this->screen_name,true);
 		$criteria->compare('avatar',$this->avatar,true);
 		$criteria->compare('access_token',$this->access_token,true);
@@ -93,14 +117,6 @@ class User extends CActiveRecord
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
 		));
-	}
-	
-	public function getUidByScreenName($screen_name) {
-		$model = $this->findByAttributes(array('screen_name' => $screen_name));
-		if ($model) {
-			return $model['uid'];
-		}
-		return FALSE;
 	}
 
 	/**

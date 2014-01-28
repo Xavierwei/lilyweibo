@@ -11,10 +11,11 @@ var SGWallAdmin = angular.module('LilyAdmin', [
   'LilyAdmin.controllers'
 ]).
 config(function($routeProvider,$httpProvider) {
-    $routeProvider.when('/scarf/unapproved', {templateUrl: 'tmp/scarf/list.html', controller: 'ScarfCtrListUnapproved'});
-    $routeProvider.when('/scarf/produced', {templateUrl: 'tmp/scarf/list-produced.html', controller: 'ScarfCtrListProduced'});
-    $routeProvider.when('/scarf/all', {templateUrl: 'tmp/scarf/list.html', controller: 'ScarfCtrListAll'});
-    $routeProvider.when('/production/producing', {templateUrl: 'tmp/scarf/list-producing.html', controller: 'ScarfCtrListProducing'});
+    $routeProvider.when('/scarf/rank', {templateUrl: '../admin_asset/tmp/scarf/list-rank.html', controller: 'ScarfCtrRankList'});
+    $routeProvider.when('/scarf/unapproved', {templateUrl: '../admin_asset/tmp/scarf/list.html', controller: 'ScarfCtrListUnapproved'});
+    $routeProvider.when('/scarf/produced', {templateUrl: '../admin_asset/tmp/scarf/list-produced.html', controller: 'ScarfCtrListProduced'});
+    $routeProvider.when('/scarf/all', {templateUrl: '../admin_asset/tmp/scarf/list-all.html', controller: 'ScarfCtrListAll'});
+    $routeProvider.when('/production/producing', {templateUrl: '../admin_asset/tmp/scarf/list-producing.html', controller: 'ScarfCtrListProducing'});
 
     $routeProvider.otherwise({redirectTo: '/scarf/unapproved'});
 

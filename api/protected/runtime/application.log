@@ -1866,3 +1866,439 @@ REQUEST_URI=/lily/api/index.php/scarf/getimage
 in /Applications/MAMP/htdocs/lily/api/protected/controllers/ScarfController.php (21)
 in /Applications/MAMP/htdocs/lily/api/protected/controllers/ScarfController.php (154)
 in /Applications/MAMP/htdocs/lily/api/index.php (20)
+2014/01/28 10:04:59 [error] [exception.CException] exception 'CException' with message 'User and its behaviors do not have a method or closure named "getUserInfo".' in /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CComponent.php:266
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/db/ar/CActiveRecord.php(227): CComponent->__call('getUserInfo', Array)
+#1 /Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/ScarfController.php(138): CActiveRecord->__call('getUserInfo', Array)
+#2 /Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/ScarfController.php(138): User->getUserInfo('1')
+#3 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/actions/CInlineAction.php(49): ScarfController->actionRankList()
+#4 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(282): CController->run('ranklist')
+#8 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController('scarf/ranklist')
+#9 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CApplication->run()
+#11 {main}
+REQUEST_URI=/lilyweibo/api/index.php/scarf/ranklist?page=1&pagenum=5&_=1390874699633
+HTTP_REFERER=http://lily.local:8888/lilyweibo/
+---
+2014/01/28 10:05:02 [error] [exception.CException] exception 'CException' with message 'User and its behaviors do not have a method or closure named "getUserInfo".' in /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CComponent.php:266
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/db/ar/CActiveRecord.php(227): CComponent->__call('getUserInfo', Array)
+#1 /Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/ScarfController.php(138): CActiveRecord->__call('getUserInfo', Array)
+#2 /Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/ScarfController.php(138): User->getUserInfo('1')
+#3 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/actions/CInlineAction.php(49): ScarfController->actionRankList()
+#4 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(282): CController->run('ranklist')
+#8 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController('scarf/ranklist')
+#9 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CApplication->run()
+#11 {main}
+REQUEST_URI=/lilyweibo/api/index.php/scarf/ranklist?page=1&pagenum=5&_=1390874702640
+HTTP_REFERER=http://lily.local:8888/lilyweibo/
+---
+2014/01/28 10:05:09 [error] [exception.CException] exception 'CException' with message 'User and its behaviors do not have a method or closure named "getUserInfo".' in /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CComponent.php:266
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/db/ar/CActiveRecord.php(227): CComponent->__call('getUserInfo', Array)
+#1 /Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/ScarfController.php(138): CActiveRecord->__call('getUserInfo', Array)
+#2 /Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/ScarfController.php(138): User->getUserInfo('1')
+#3 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/actions/CInlineAction.php(49): ScarfController->actionRankList()
+#4 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(282): CController->run('ranklist')
+#8 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController('scarf/ranklist')
+#9 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CApplication->run()
+#11 {main}
+REQUEST_URI=/lilyweibo/api/index.php/scarf/ranklist?page=1&pagenum=5&_=1390874709552
+HTTP_REFERER=http://lily.local:8888/lilyweibo/
+---
+2014/01/28 10:05:14 [error] [exception.CException] exception 'CException' with message 'User and its behaviors do not have a method or closure named "getUserInfo".' in /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CComponent.php:266
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/db/ar/CActiveRecord.php(227): CComponent->__call('getUserInfo', Array)
+#1 /Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/ScarfController.php(138): CActiveRecord->__call('getUserInfo', Array)
+#2 /Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/ScarfController.php(138): User->getUserInfo('1')
+#3 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/actions/CInlineAction.php(49): ScarfController->actionRankList()
+#4 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(282): CController->run('ranklist')
+#8 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController('scarf/ranklist')
+#9 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CApplication->run()
+#11 {main}
+REQUEST_URI=/lilyweibo/api/index.php/scarf/ranklist?page=1&pagenum=5&_=1390874714759
+HTTP_REFERER=http://lily.local:8888/lilyweibo/
+---
+2014/01/28 10:06:46 [error] [exception.CException] exception 'CException' with message 'User and its behaviors do not have a method or closure named "getUserInfo".' in /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CComponent.php:266
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/db/ar/CActiveRecord.php(227): CComponent->__call('getUserInfo', Array)
+#1 /Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/ScarfController.php(138): CActiveRecord->__call('getUserInfo', Array)
+#2 /Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/ScarfController.php(138): User->getUserInfo('1')
+#3 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/actions/CInlineAction.php(49): ScarfController->actionRankList()
+#4 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(282): CController->run('ranklist')
+#8 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController('scarf/ranklist')
+#9 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CApplication->run()
+#11 {main}
+REQUEST_URI=/lilyweibo/api/index.php/scarf/ranklist?page=1&pagenum=5&_=1390874714759
+---
+2014/01/28 10:13:32 [error] [php] Trying to get property of non-object (/Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/ScarfController.php:116)
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(286): ScarfController->runAction()
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(265): ScarfController->runActionWithFilters()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(282): ScarfController->run()
+#3 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CWebApplication->run()
+REQUEST_URI=/lilyweibo/api/index.php/scarf/list?status=0
+in /Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/ScarfController.php (116)
+in /Applications/MAMP/htdocs/lilyweibo/api/index.php (20)
+2014/01/28 10:14:11 [error] [php] Trying to get property of non-object (/Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/ScarfController.php:116)
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(286): ScarfController->runAction()
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(265): ScarfController->runActionWithFilters()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(282): ScarfController->run()
+#3 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CWebApplication->run()
+REQUEST_URI=/lilyweibo/api/index.php/scarf/list?status=0
+in /Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/ScarfController.php (116)
+in /Applications/MAMP/htdocs/lilyweibo/api/index.php (20)
+2014/01/28 15:30:41 [error] [php] Undefined index: username (/Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/AdminController.php:33)
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(286): AdminController->runAction()
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(265): AdminController->runActionWithFilters()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(282): AdminController->run()
+#3 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CWebApplication->run()
+REQUEST_URI=/lilyweibo/api/index.php/admin/login?username=admin&password=9b%23344Uj
+in /Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/AdminController.php (33)
+in /Applications/MAMP/htdocs/lilyweibo/api/index.php (20)
+2014/01/28 15:37:28 [error] [php] session_regenerate_id(): Cannot regenerate session id - headers already sent (/Applications/MAMP/htdocs/lilyweibo/api/framework/web/CHttpSession.php:181)
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/auth/CWebUser.php(233): CWebUser->changeIdentity()
+#1 /Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/AdminController.php(43): CWebUser->login()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/actions/CInlineAction.php(49): AdminController->actionLogin()
+#3 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(286): AdminController->runAction()
+#5 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(265): AdminController->runActionWithFilters()
+#6 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(282): AdminController->run()
+#7 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CWebApplication->run()
+REQUEST_URI=/lilyweibo/api/index.php/admin/login
+in /Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/AdminController.php (43)
+in /Applications/MAMP/htdocs/lilyweibo/api/index.php (20)
+2014/01/28 15:38:26 [error] [php] Undefined index: cid (/Applications/MAMP/htdocs/lilyweibo/api/protected/models/Scarf.php:303)
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(286): ScarfController->runAction()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(265): ScarfController->runActionWithFilters()
+#3 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(282): ScarfController->run()
+#4 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CWebApplication->run()
+REQUEST_URI=/lilyweibo/api/index.php/scarf/produceNow
+in /Applications/MAMP/htdocs/lilyweibo/api/protected/models/Scarf.php (303)
+in /Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/ScarfController.php (434)
+in /Applications/MAMP/htdocs/lilyweibo/api/index.php (20)
+2014/01/28 15:39:12 [error] [php] Undefined index: cid (/Applications/MAMP/htdocs/lilyweibo/api/protected/models/Scarf.php:303)
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(286): ScarfController->runAction()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(265): ScarfController->runActionWithFilters()
+#3 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(282): ScarfController->run()
+#4 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CWebApplication->run()
+REQUEST_URI=/lilyweibo/api/index.php/scarf/produceNow
+in /Applications/MAMP/htdocs/lilyweibo/api/protected/models/Scarf.php (303)
+in /Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/ScarfController.php (434)
+in /Applications/MAMP/htdocs/lilyweibo/api/index.php (20)
+2014/01/28 15:40:52 [error] [php] Undefined index: cid (/Applications/MAMP/htdocs/lilyweibo/api/protected/models/Scarf.php:304)
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(286): ScarfController->runAction()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(265): ScarfController->runActionWithFilters()
+#3 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(282): ScarfController->run()
+#4 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CWebApplication->run()
+REQUEST_URI=/lilyweibo/api/index.php/scarf/produceNow
+in /Applications/MAMP/htdocs/lilyweibo/api/protected/models/Scarf.php (304)
+in /Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/ScarfController.php (434)
+in /Applications/MAMP/htdocs/lilyweibo/api/index.php (20)
+2014/01/28 16:28:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "login".' in /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(270): CController->missingAction('')
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(282): CController->run('')
+#2 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController('admin')
+#3 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/lilyweibo/api/index.php/admin/
+---
+2014/01/28 16:36:19 [error] [exception.CException] exception 'CException' with message 'AdminController and its behaviors do not have a method or closure named "layout".' in /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CComponent.php:266
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/AdminController.php(14): CComponent->__call('layout', Array)
+#1 /Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/AdminController.php(14): AdminController->layout('main2')
+#2 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/actions/CInlineAction.php(49): AdminController->actionIndex()
+#3 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(282): CController->run('')
+#7 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController('admin')
+#8 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CApplication->run()
+#10 {main}
+REQUEST_URI=/lilyweibo/api/index.php/admin/
+---
+2014/01/28 16:39:42 [error] [php] Undefined variable: model (/Applications/MAMP/htdocs/lilyweibo/api/protected/views/admin/login.php:5)
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(869): AdminController->renderFile()
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(782): AdminController->renderPartial()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/AdminController.php(16): AdminController->render()
+#3 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/actions/CInlineAction.php(49): AdminController->actionIndex()
+#4 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(286): AdminController->runAction()
+#6 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(265): AdminController->runActionWithFilters()
+#7 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(282): AdminController->run()
+#8 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CWebApplication->run()
+REQUEST_URI=/lilyweibo/api/index.php/admin/
+in /Applications/MAMP/htdocs/lilyweibo/api/protected/views/admin/login.php (5)
+in /Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/AdminController.php (16)
+in /Applications/MAMP/htdocs/lilyweibo/api/index.php (20)
+2014/01/28 16:39:45 [error] [php] Undefined variable: model (/Applications/MAMP/htdocs/lilyweibo/api/protected/views/admin/login.php:5)
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(869): AdminController->renderFile()
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(782): AdminController->renderPartial()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/AdminController.php(16): AdminController->render()
+#3 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/actions/CInlineAction.php(49): AdminController->actionIndex()
+#4 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(286): AdminController->runAction()
+#6 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(265): AdminController->runActionWithFilters()
+#7 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(282): AdminController->run()
+#8 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CWebApplication->run()
+REQUEST_URI=/lilyweibo/api/index.php/admin/
+in /Applications/MAMP/htdocs/lilyweibo/api/protected/views/admin/login.php (5)
+in /Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/AdminController.php (16)
+in /Applications/MAMP/htdocs/lilyweibo/api/index.php (20)
+2014/01/28 16:50:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "admin".' in /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(270): CController->missingAction('admin')
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(282): CController->run('admin')
+#2 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/admin/ind...')
+#3 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/lilyweibo/api/index.php/admin/admin/index
+HTTP_REFERER=http://lily.local:8888/lilyweibo/api/index.php/admin/
+---
+2014/01/28 16:53:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/index.php/scarf/getStatistics".' in /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController('api/index.php/s...')
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilyweibo/api/index.php/api/index.php/scarf/getStatistics
+HTTP_REFERER=http://lily.local:8888/lilyweibo/api/index.php/admin/index
+---
+2014/01/28 16:53:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "tmp".' in /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(270): CController->missingAction('tmp')
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(282): CController->run('tmp')
+#2 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/tmp/scarf...')
+#3 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/lilyweibo/api/index.php/admin/tmp/scarf/list.html
+HTTP_REFERER=http://lily.local:8888/lilyweibo/api/index.php/admin/index
+---
+2014/01/28 16:54:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(270): CController->missingAction('index.php')
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(282): CController->run('index.php')
+#2 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/index.php...')
+#3 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/lilyweibo/api/index.php/admin/index.php/scarf/getStatistics
+HTTP_REFERER=http://lily.local:8888/lilyweibo/api/index.php/admin/index
+---
+2014/01/28 16:54:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "tmp".' in /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(270): CController->missingAction('tmp')
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(282): CController->run('tmp')
+#2 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/tmp/scarf...')
+#3 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/lilyweibo/api/index.php/admin/tmp/scarf/list.html
+HTTP_REFERER=http://lily.local:8888/lilyweibo/api/index.php/admin/index
+---
+2014/01/28 16:56:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(270): CController->missingAction('index.php')
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(282): CController->run('index.php')
+#2 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/index.php...')
+#3 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/lilyweibo/api/admin/index.php/scarf/getStatistics
+HTTP_REFERER=http://lily.local:8888/lilyweibo/api/admin/
+---
+2014/01/28 16:56:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "tmp".' in /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(270): CController->missingAction('tmp')
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(282): CController->run('tmp')
+#2 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/tmp/scarf...')
+#3 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/lilyweibo/api/admin/tmp/scarf/list.html
+HTTP_REFERER=http://lily.local:8888/lilyweibo/api/admin/
+---
+2014/01/28 16:58:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(270): CController->missingAction('index.php')
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(282): CController->run('index.php')
+#2 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/index.php...')
+#3 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/lilyweibo/api/admin/index.php/scarf/getStatistics
+HTTP_REFERER=http://lily.local:8888/lilyweibo/api/admin/
+---
+2014/01/28 16:58:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(270): CController->missingAction('index.php')
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(282): CController->run('index.php')
+#2 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/index.php...')
+#3 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/lilyweibo/api/admin/index.php/scarf/list?status=0
+HTTP_REFERER=http://lily.local:8888/lilyweibo/api/admin/
+---
+2014/01/28 17:07:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin_asset/tmp/scarf/list.html".' in /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController('admin_asset/tmp...')
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilyweibo/api/index.php/admin_asset/tmp/scarf/list.html
+HTTP_REFERER=http://lily.local:8888/lilyweibo/api/index.php/admin/index
+---
+2014/01/28 17:07:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin_asset/tmp/scarf/list.html".' in /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController('admin_asset/tmp...')
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilyweibo/api/index.php/admin_asset/tmp/scarf/list.html
+HTTP_REFERER=http://lily.local:8888/lilyweibo/api/index.php/admin/index
+---
+2014/01/28 17:08:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin_asset/tmp/scarf/list.html".' in /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController('admin_asset/tmp...')
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilyweibo/api/index.php/admin_asset/tmp/scarf/list.html
+HTTP_REFERER=http://lily.local:8888/lilyweibo/api/index.php/admin/index
+---
+2014/01/28 17:09:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin_asset/tmp/scarf/list.html".' in /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController('admin_asset/tmp...')
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilyweibo/api/index.php/admin_asset/tmp/scarf/list.html
+HTTP_REFERER=http://lily.local:8888/lilyweibo/api/index.php/admin/index
+---
+2014/01/28 17:09:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilyweibo/api/
+---
+2014/01/28 17:15:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin_asset/tmp/scarf/list.html".' in /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController('admin_asset/tmp...')
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilyweibo/api/index.php/admin_asset/tmp/scarf/list.html
+HTTP_REFERER=http://lily.local:8888/lilyweibo/api/index.php/admin/index
+---
+2014/01/28 17:15:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin_asset/tmp/scarf/list.html".' in /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController('admin_asset/tmp...')
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilyweibo/api/index.php/admin_asset/tmp/scarf/list.html
+HTTP_REFERER=http://lily.local:8888/lilyweibo/api/index.php/admin/index
+---
+2014/01/28 17:15:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin_asset/tmp/scarf/list.html".' in /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController('admin_asset/tmp...')
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilyweibo/api/index.php/admin_asset/tmp/scarf/list.html
+HTTP_REFERER=http://lily.local:8888/lilyweibo/api/index.php/admin/index
+---
+2014/01/28 17:18:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin_asset/tmp/scarf/list.html".' in /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController('admin_asset/tmp...')
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilyweibo/api/index.php/admin_asset/tmp/scarf/list.html
+HTTP_REFERER=http://lily.local:8888/lilyweibo/api/index.php/admin/index
+---
+2014/01/28 17:18:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin_asset/tmp/scarf/list.html".' in /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController('admin_asset/tmp...')
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilyweibo/api/index.php/admin_asset/tmp/scarf/list.html
+HTTP_REFERER=http://lily.local:8888/lilyweibo/api/index.php/admin/index
+---
+2014/01/28 17:19:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin_asset/tmp/scarf/list.html".' in /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController('admin_asset/tmp...')
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilyweibo/api/index.php/admin_asset/tmp/scarf/list.html
+HTTP_REFERER=http://lily.local:8888/lilyweibo/api/index.php/admin/index
+---
+2014/01/28 17:24:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "tmp".' in /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(270): CController->missingAction('tmp')
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(282): CController->run('tmp')
+#2 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/tmp/dialo...')
+#3 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/lilyweibo/api/admin/tmp/dialog/delete.html
+HTTP_REFERER=http://lily.local:8888/lilyweibo/api/admin/index
+---

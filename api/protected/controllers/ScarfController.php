@@ -105,6 +105,7 @@ class ScarfController extends Controller {
 			$list = Yii::app()->db->createCommand()
 					->select('*')
 					->from('scarf')
+          ->where('status != 4')
 					->limit($pagenum, $offset)
 					->order('cid DESC')
 					->queryAll();
@@ -303,7 +304,7 @@ class ScarfController extends Controller {
 		if(self::isLogin()) {
 			$user = Yii::app()->session["user"];
 			$scarf = new Scarf();
-			$todayDmxCount = $scarf->getTodayDmxCount(); //获得今天大冒险的次数
+			$todayDmxCount = $scarf->getTodayDmxCount($user['uid']); //获得今天大冒险的次数
 			if($todayDmxCount >= 3) {
 				return $this->returnJSON($this->error('over max', 1003));
 			}
@@ -433,6 +434,16 @@ class ScarfController extends Controller {
 		$scarf = new Scarf();
 		$scarf->produceNow();
 	}
+
+  public function actionGetStatistics()
+  {
+    if (!self::adminIsLogin()) {
+      $this->returnJSON($this->error('no permission', 1001));
+    }
+    $scarf = new Scarf();
+    $statistics = $scarf->getStatistics();
+    return $this->returnJSON(array('data'=>$statistics, 'error'=>null));
+  }
 	
 	/**
 	 * 发送私信【管理员】

@@ -1,0 +1,17 @@
+<table class="table">
+    <tr>
+        <th width="10%">Rank</th>
+        <th width="20%">WEIBO USER</th>
+        <th width="20%">STYLE</th>
+        <th width="30%">MESSAGE</th>
+        <th width="10%">ACTION</th>
+    </tr>
+    <tr ng-repeat="scarf in scarfs">
+        <td>{{scarf.s_rank}}</td>
+        <td>{{scarf.user.screen_name}}</td>
+        <td>{{scarf.style}}</td>
+        <td>{{scarf.content}}</td>
+        <td><a href="javascript:void(0)" class="btn btn-sm btn-warning" ng-click="unapprove(scarf)">unapprove</a></td>
+    </tr>
+</table>
+<pagination on-select-page="pageChanged(page)" total-items="bigTotalItems" page="bigCurrentPage" max-size="maxSize" class="pagination-sm" boundary-links="true" rotate="false" num-pages="numPages"></pagination>

@@ -34,12 +34,6 @@ class UserController extends Controller
         return Yii::app()->session["is_login"] == "true";
     }
 
-	public function actionIsAdmin() {
-		return $this->returnJSON(array(
-		  "data" => true,
-		  "error" => NULL
-		));
-	}
 
 	/**
 	 * 登陆

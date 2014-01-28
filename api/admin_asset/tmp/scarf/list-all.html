@@ -1,0 +1,24 @@
+<table class="table">
+    <tr>
+        <th width="20%">WEIBO USER</th>
+        <th width="10%">STYLE</th>
+        <th width="20%">status</th>
+        <th width="30%">MESSAGE</th>
+        <th width="20%">ACTION</th>
+    </tr>
+    <tr ng-repeat="scarf in scarfs">
+        <td>{{scarf.user.screen_name}}</td>
+        <td>{{scarf.style}}</td>
+        <td>{{scarf.status | status}}</td>
+        <td>{{scarf.content}}</td>
+        <td>
+            <div ng-if="scarf.status == 0">
+                <a href="javascript:void(0)" class="btn btn-sm btn-success" ng-click="approve(scarf)">approve</a>  <a href="javascript:void(0)" class="btn btn-sm btn-danger" ng-click="delete(scarf)">delete</a>
+            </div>
+            <div ng-if="scarf.status == 1">
+                <a href="javascript:void(0)" class="btn btn-sm btn-warning" ng-click="unapprove(scarf)">unapprove</a>
+            </div>
+        </td>
+    </tr>
+</table>
+<pagination on-select-page="pageChanged(page)" total-items="bigTotalItems" page="bigCurrentPage" max-size="maxSize" class="pagination-sm" boundary-links="true" rotate="false" num-pages="numPages"></pagination>

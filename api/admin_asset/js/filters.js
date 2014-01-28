@@ -8,18 +8,21 @@ angular.module('LilyAdmin.filters', [])
         return String(text).replace(/\%VERSION\%/mg, version);
     }
     }])
-    .filter('nodeStatus', function() {
+    .filter('status', function() {
         return function(input) {
             var output;
             switch(input) {
+                case '0':
+                    output = 'Unapproved';
+                    break;
                 case '1':
-                    output = 'Published';
+                    output = 'Approved';
                     break;
                 case '2':
-                    output = 'Unpublished';
+                    output = 'Producing';
                     break;
                 case '3':
-                    output = 'Blocked';
+                    output = 'Produced';
                     break;
             }
             return output;

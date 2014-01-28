@@ -91,7 +91,7 @@ class Scarf extends CActiveRecord
 		$start = ($page - 1) * $pagenum;
 		$offset = $pagenum;
 		$connection=Yii::app()->db;
-		$sql = "SELECT uid,content,style,image,
+		$sql = "SELECT cid,uid,content,style,image,
           @curRank := @curRank + 1 AS s_rank
 					FROM scarf s, (SELECT @curRank := ".$start.") r
 					WHERE status = 1
@@ -275,12 +275,12 @@ class Scarf extends CActiveRecord
   /**
    * 获取今日大冒险的次数
    */
-  public function getTodayDmxCount() {
+  public function getTodayDmxCount($uid) {
     $start_time = strtotime(date("Y-m-d"));
-    $count = Yii::app()->db->createCommand() //获取对应的rank因子
+    $count = Yii::app()->db->createCommand()
       ->select('count(*) as count')
       ->from('dmx_log')
-      ->where('dmx_datetime > :start_time', array(':start_time'=>$start_time))
+      ->where('uid =:uid and dmx_datetime > :start_time', array(':uid'=>$uid, ':start_time'=>$start_time))
       ->queryRow();
     return $count['count'];
   }
@@ -314,6 +314,44 @@ class Scarf extends CActiveRecord
     return $count;
   }
 
+
+  /**
+   * 获取统计信息
+   */
+  public function getStatistics() {
+    $produced = Yii::app()->db->createCommand()
+      ->select('count(*) as count')
+      ->from('scarf')
+      ->where('status in (2,3)')
+      ->queryRow();
+
+    $approved = Yii::app()->db->createCommand()
+      ->select('count(*) as count')
+      ->from('scarf')
+      ->where('status = 1')
+      ->queryRow();
+
+    $unapproved = Yii::app()->db->createCommand()
+      ->select('count(*) as count')
+      ->from('scarf')
+      ->where('status = 0')
+      ->queryRow();
+
+    $all = Yii::app()->db->createCommand()
+      ->select('count(*) as count')
+      ->from('scarf')
+      ->where('status != 4')
+      ->queryRow();
+
+
+
+    $count['produced'] = $produced['count'];
+    $count['approved'] = $approved['count'];
+    $count['unapproved'] = $unapproved['count'];
+    $count['all'] = $all['count'];
+
+    return $count;
+  }
 
   /**
 	 * Retrieves a list of models based on the current search/filter conditions.
