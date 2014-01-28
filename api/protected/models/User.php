@@ -87,7 +87,22 @@ class User extends CActiveRecord
 
 		return $friendList;
 	}
-
+	
+	/**
+	 * 根据用户昵称返回用户id数组
+	 */
+	public function getUidsByScreenName($screen_name) {
+		$criteria = new CDbCriteria(array(
+			'select' => 'uid',
+		));
+		$criteria->addSearchCondition('screen_name', $screen_name, TRUE);
+		$models = $this->findAll($criteria);
+		$arrUids = array();
+		foreach($models as $model) {
+			$arrUids[] = $model->uid;
+		}
+		return $arrUids;
+	}
 
 	/**
 	 * Retrieves a list of models based on the current search/filter conditions.

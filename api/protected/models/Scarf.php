@@ -130,7 +130,56 @@ class Scarf extends CActiveRecord
 		}
 		return FALSE;
 	}
+	
+	/**
+	 * 根据一个数组uid返回微博列表
+	 * @param type $arrUids
+	 */
+	public function getSearchScarfList($page, $pagenum, $arrUids = array(), $keyword = '') {
+		$start = ($page - 1) * $pagenum;
+		$offset = $pagenum;
+		$strUids = implode(',', $arrUids);
+		if (!empty($strUids)) {
+			$sql = "SELECT * FROM scarf where uid IN(" . $strUids . ") OR content LIKE '%" . $keyword . "%' ORDER BY cid DESC LIMIT " . $start . "," . $offset;
+		} else {
+			$sql = "SELECT * FROM scarf where content LIKE '%" . $keyword . "%' ORDER BY cid DESC LIMIT " . $start . "," . $offset;
+		}
+		$connection = Yii::app()->db;
+		$command = $connection->createCommand($sql);
+		$list = $command->queryAll();
+		return $list;
+	}
+	
+	/*
+	 * 获取查询的总条数
+	 */
+	public function  getSearchCount($arrUids = array(), $keyword = '') {
+		$strUids = implode(',', $arrUids);
+		if (!empty($strUids)) {
+			$sql = "SELECT count(*) AS count FROM scarf where uid IN(" . $strUids . ") OR content LIKE '%" . $keyword . "%'";
+		} else {
+			$sql = "SELECT count(*) AS count FROM scarf where content LIKE '%" . $keyword . "%'";
+		}
+		$connection = Yii::app()->db;
+		$command = $connection->createCommand($sql);
+		$row = $command->queryRow();
+		return $row['count'];
+	}
 
+		/**
+	 * 根据一个数组uid返回微博列表
+	 * @param type $arrUids
+	 */
+	public function getScarfListByUids($arrUids = array()) {
+		$strUids = implode(',', $arrUids);
+		$list = Yii::app()->db->createCommand()
+		  ->select('*')
+		  ->from('scarf')
+		  ->where('status in (' . $strUids . ')')
+		  ->queryAll();
+		return $list;
+	}
+	
   /**
    * 根据uid获取围巾信息
    * @param $uid
