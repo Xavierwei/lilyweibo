@@ -20,7 +20,16 @@
     <div class="pagesubhead"><h2>赋予情人节更多快乐</h2></div>
     <div class="introduce"><p>怎样将微博发言实时编织成围脖？<br />2月8日至2月14日   Lily为您打成所愿！</p><a class="learnMore" href="rule.html">了解更多</a></div>
     <div class="videobg">
-        <div class="videobox"><img src="img/videodemo.jpg" /></div>
+        <div class="videobox">
+            <object id="player" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=10,0,0,0" width="478" height="252">
+                <param name="allowScriptAccess" value="always"/>
+                <param name="movie" value="video/player.swf"/>
+                <param name="flashVars" value="source=hourse.mp4&skinMode=show&fengmian=video/videodemo.jpg"/>
+                <param name="quality" value="high"/>
+                <param name="allowFullScreen" value="true"/>
+                <embed name="player" src="video/player.swf" allowFullScreen="true" flashVars="source=hourse.mp4&skinMode=show&fengmian=video/videodemo.jpg" quality="high" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="478" height="252" allowScriptAccess="always"></embed>
+            </object>
+        </div>
     </div>
     <div class="totalCount">当前已有<span id="totalCountText"></span>人定制围脖</div>
 
@@ -203,6 +212,7 @@
     <li data-snsuid="{{id}}" data-name="{{screen_name}}" data-a="add_friend">
         <div class="avatar"><img src="{{profile_image_url}}" /></div>
         <div class="screen_name">{{screen_name}}</div>
+        <div class="checkbox"></div>
     </li>
     {{/if}}
 </script>

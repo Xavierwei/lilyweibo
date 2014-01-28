@@ -20,36 +20,36 @@ class AdminController extends Controller
     }
   }
 
-    public function returnJSON($data) {
-        header("Content-Type: application/json");
-        echo CJSON::encode($data);
-        Yii::app()->end();
-    }
-	
-    public function error($msg, $code) {
-        return array(
-            "data" => NULL,
-            "error" => array(
-                "code" => $code,
-                "message" => $msg,
-            ),
-        );
-    }
+  public function returnJSON($data) {
+      header("Content-Type: application/json");
+      echo CJSON::encode($data);
+      Yii::app()->end();
+  }
 
-    public function actionLogin() {
-      $username = $this->request->getPost("username");
-      $password = $this->request->getPost("password");
-      $userIdentify = new UserIdentity($username, $password);
+  public function error($msg, $code) {
+      return array(
+          "data" => NULL,
+          "error" => array(
+              "code" => $code,
+              "message" => $msg,
+          ),
+      );
+  }
 
-      // 验证没有通过
-      if (!$userIdentify->authenticate()) {
-        $this->redirect(Yii::app()->request->baseUrl.'/admin/index');
-      }
-      else {
-        Yii::app()->user->login($userIdentify);
-        $this->redirect(Yii::app()->request->baseUrl.'/admin/index');
-      }
+  public function actionLogin() {
+    $username = $this->request->getPost("username");
+    $password = $this->request->getPost("password");
+    $userIdentify = new UserIdentity($username, $password);
+
+    // 验证没有通过
+    if (!$userIdentify->authenticate()) {
+      $this->redirect(Yii::app()->request->baseUrl.'/admin/index');
     }
+    else {
+      Yii::app()->user->login($userIdentify);
+      $this->redirect(Yii::app()->request->baseUrl.'/admin/index');
+    }
+  }
 
   public function actionIsAdmin() {
     if(Yii::app()->user->getIsGuest())

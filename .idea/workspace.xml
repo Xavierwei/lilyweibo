@@ -2,372 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="19a3a98e-09b8-4651-ab7d-e4100f3377a4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/.htaccess" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/css/admin.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/protected/views/layouts/admin.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/js/controllers.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/protected/views/admin/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/index2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/index2.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/tmp/scarf/list-all.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/tmp/scarf/list-producing.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/tmp/scarf/list-rank.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/tmp/scarf/list.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin_asset/js/services/scarf.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/css/admin.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/index.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/js/controllers.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/js/controllers/comment.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/js/controllers/node.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/js/controllers/user.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/js/services/comment.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/js/services/flag.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/js/services/like.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/js/services/node.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/js/services/scarf.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/js/services/user.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/tmp/scarf/list-producing.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/tmp/scarf/list.html" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/css/.gitkeep" afterPath="$PROJECT_DIR$/api/admin_asset/css/.gitkeep" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/css/app.css" afterPath="$PROJECT_DIR$/api/admin_asset/css/app.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/css/bootstrap-theme.css" afterPath="$PROJECT_DIR$/api/admin_asset/css/bootstrap-theme.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/css/bootstrap-theme.min.css" afterPath="$PROJECT_DIR$/api/admin_asset/css/bootstrap-theme.min.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/css/bootstrap.css" afterPath="$PROJECT_DIR$/api/admin_asset/css/bootstrap.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/api/admin_asset/css/bootstrap.min.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/fonts/glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/api/admin_asset/fonts/glyphicons-halflings-regular.eot" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/api/admin_asset/fonts/glyphicons-halflings-regular.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/fonts/glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/api/admin_asset/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/fonts/glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/api/admin_asset/fonts/glyphicons-halflings-regular.woff" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/img/.gitkeep" afterPath="$PROJECT_DIR$/api/admin_asset/img/.gitkeep" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/img/icons-white.png" afterPath="$PROJECT_DIR$/api/admin_asset/img/icons-white.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/img/icons.png" afterPath="$PROJECT_DIR$/api/admin_asset/img/icons.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/index-async.html" afterPath="$PROJECT_DIR$/api/admin_asset/index-async.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/index.html" afterPath="$PROJECT_DIR$/api/admin_asset/login.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/js/app.js" afterPath="$PROJECT_DIR$/api/admin_asset/js/app.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/js/bootstrap.js" afterPath="$PROJECT_DIR$/api/admin_asset/js/bootstrap.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/api/admin_asset/js/bootstrap.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/js/controllers/scarf.js" afterPath="$PROJECT_DIR$/api/admin_asset/js/controllers/scarf.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/js/directives.js" afterPath="$PROJECT_DIR$/api/admin_asset/js/directives.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/js/filters.js" afterPath="$PROJECT_DIR$/api/admin_asset/js/filters.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/js/jquery-1.102.js" afterPath="$PROJECT_DIR$/api/admin_asset/js/jquery-1.102.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/js/lib.controllers.js" afterPath="$PROJECT_DIR$/api/admin_asset/js/lib.controllers.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/js/services.js" afterPath="$PROJECT_DIR$/api/admin_asset/js/services.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/json/comment/comment.json" afterPath="$PROJECT_DIR$/api/admin_asset/json/comment/comment.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/json/comment/recent.json" afterPath="$PROJECT_DIR$/api/admin_asset/json/comment/recent.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/json/comment/recent.jsons" afterPath="$PROJECT_DIR$/api/admin_asset/json/comment/recent.jsons" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/json/flag/flag.json" afterPath="$PROJECT_DIR$/api/admin_asset/json/flag/flag.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/json/like/like.json" afterPath="$PROJECT_DIR$/api/admin_asset/json/like/like.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/json/node/neighbor.json" afterPath="$PROJECT_DIR$/api/admin_asset/json/node/neighbor.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/json/node/photo.json" afterPath="$PROJECT_DIR$/api/admin_asset/json/node/photo.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/json/node/recent.json" afterPath="$PROJECT_DIR$/api/admin_asset/json/node/recent.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/json/node/recent.jsons" afterPath="$PROJECT_DIR$/api/admin_asset/json/node/recent.jsons" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/json/node/recent2.json" afterPath="$PROJECT_DIR$/api/admin_asset/json/node/recent2.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/json/user/all.json" afterPath="$PROJECT_DIR$/api/admin_asset/json/user/all.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/json/user/all.jsons" afterPath="$PROJECT_DIR$/api/admin_asset/json/user/all.jsons" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/json/user/user.json" afterPath="$PROJECT_DIR$/api/admin_asset/json/user/user.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/angular-animate.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/angular-animate.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/angular-animate.min.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/angular-animate.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/angular-animate.min.js.map" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/angular-animate.min.js.map" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/angular-cookies.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/angular-cookies.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/angular-cookies.min.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/angular-cookies.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/angular-cookies.min.js.map" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/angular-cookies.min.js.map" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/angular-csp.css" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/angular-csp.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/angular-loader.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/angular-loader.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/angular-loader.min.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/angular-loader.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/angular-loader.min.js.map" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/angular-loader.min.js.map" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/angular-resource.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/angular-resource.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/angular-resource.min.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/angular-resource.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/angular-resource.min.js.map" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/angular-resource.min.js.map" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/angular-route.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/angular-route.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/angular-route.min.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/angular-route.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/angular-route.min.js.map" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/angular-route.min.js.map" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/angular-sanitize.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/angular-sanitize.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/angular-sanitize.min.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/angular-sanitize.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/angular-sanitize.min.js.map" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/angular-sanitize.min.js.map" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/angular-touch.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/angular-touch.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/angular-touch.min.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/angular-touch.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/angular-touch.min.js.map" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/angular-touch.min.js.map" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/angular.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/angular.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/angular.min.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/angular.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/angular.min.js.map" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/angular.min.js.map" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/errors.json" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/errors.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_af-na.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_af-na.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_af-za.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_af-za.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_af.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_af.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_am-et.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_am-et.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_am.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_am.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_ar-001.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_ar-001.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_ar-ae.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_ar-ae.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_ar-bh.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_ar-bh.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_ar-dz.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_ar-dz.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_ar-eg.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_ar-eg.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_ar-iq.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_ar-iq.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_ar-jo.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_ar-jo.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_ar-kw.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_ar-kw.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_ar-lb.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_ar-lb.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_ar-ly.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_ar-ly.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_ar-ma.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_ar-ma.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_ar-om.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_ar-om.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_ar-qa.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_ar-qa.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_ar-sa.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_ar-sa.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_ar-sd.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_ar-sd.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_ar-sy.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_ar-sy.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_ar-tn.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_ar-tn.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_ar-ye.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_ar-ye.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_ar.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_ar.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_bg-bg.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_bg-bg.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_bg.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_bg.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_bn-bd.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_bn-bd.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_bn-in.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_bn-in.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_bn.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_bn.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_ca-ad.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_ca-ad.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_ca-es.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_ca-es.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_ca.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_ca.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_cs-cz.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_cs-cz.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_cs.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_cs.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_da-dk.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_da-dk.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_da.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_da.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_de-at.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_de-at.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_de-be.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_de-be.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_de-ch.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_de-ch.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_de-de.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_de-de.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_de-li.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_de-li.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_de-lu.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_de-lu.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_de.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_de.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_el-cy.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_el-cy.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_el-gr.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_el-gr.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_el.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_el.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_en-as.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_en-as.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_en-au.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_en-au.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_en-bb.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_en-bb.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_en-be.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_en-be.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_en-bm.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_en-bm.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_en-bw.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_en-bw.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_en-bz.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_en-bz.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_en-ca.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_en-ca.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_en-dsrt-us.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_en-dsrt-us.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_en-dsrt.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_en-dsrt.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_en-fm.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_en-fm.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_en-gb.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_en-gb.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_en-gu.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_en-gu.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_en-gy.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_en-gy.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_en-hk.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_en-hk.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_en-ie.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_en-ie.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_en-in.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_en-in.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_en-iso.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_en-iso.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_en-jm.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_en-jm.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_en-mh.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_en-mh.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_en-mp.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_en-mp.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_en-mt.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_en-mt.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_en-mu.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_en-mu.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_en-na.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_en-na.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_en-nz.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_en-nz.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_en-ph.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_en-ph.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_en-pk.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_en-pk.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_en-pr.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_en-pr.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_en-pw.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_en-pw.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_en-sg.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_en-sg.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_en-tc.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_en-tc.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_en-tt.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_en-tt.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_en-um.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_en-um.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_en-us.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_en-us.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_en-vg.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_en-vg.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_en-vi.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_en-vi.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_en-za.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_en-za.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_en-zw.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_en-zw.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_en.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_en.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_es-419.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_es-419.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_es-ar.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_es-ar.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_es-bo.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_es-bo.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_es-cl.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_es-cl.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_es-co.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_es-co.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_es-cr.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_es-cr.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_es-do.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_es-do.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_es-ea.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_es-ea.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_es-ec.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_es-ec.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_es-es.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_es-es.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_es-gq.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_es-gq.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_es-gt.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_es-gt.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_es-hn.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_es-hn.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_es-ic.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_es-ic.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_es-mx.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_es-mx.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_es-ni.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_es-ni.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_es-pa.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_es-pa.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_es-pe.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_es-pe.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_es-pr.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_es-pr.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_es-py.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_es-py.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_es-sv.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_es-sv.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_es-us.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_es-us.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_es-uy.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_es-uy.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_es-ve.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_es-ve.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_es.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_es.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_et-ee.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_et-ee.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_et.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_et.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_eu-es.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_eu-es.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_eu.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_eu.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_fa-af.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_fa-af.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_fa-ir.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_fa-ir.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_fa.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_fa.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_fi-fi.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_fi-fi.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_fi.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_fi.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_fil-ph.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_fil-ph.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_fil.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_fil.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_fr-be.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_fr-be.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_fr-bf.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_fr-bf.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_fr-bi.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_fr-bi.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_fr-bj.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_fr-bj.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_fr-bl.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_fr-bl.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_fr-ca.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_fr-ca.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_fr-cd.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_fr-cd.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_fr-cf.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_fr-cf.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_fr-cg.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_fr-cg.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_fr-ch.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_fr-ch.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_fr-ci.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_fr-ci.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_fr-cm.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_fr-cm.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_fr-dj.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_fr-dj.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_fr-fr.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_fr-fr.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_fr-ga.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_fr-ga.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_fr-gf.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_fr-gf.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_fr-gn.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_fr-gn.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_fr-gp.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_fr-gp.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_fr-gq.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_fr-gq.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_fr-km.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_fr-km.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_fr-lu.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_fr-lu.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_fr-mc.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_fr-mc.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_fr-mf.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_fr-mf.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_fr-mg.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_fr-mg.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_fr-ml.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_fr-ml.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_fr-mq.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_fr-mq.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_fr-ne.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_fr-ne.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_fr-re.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_fr-re.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_fr-yt.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_fr-yt.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_fr.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_fr.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_gl-es.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_gl-es.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_gl.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_gl.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_gsw-ch.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_gsw-ch.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_gsw.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_gsw.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_gu-in.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_gu-in.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_gu.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_gu.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_he-il.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_he-il.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_he.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_he.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_hi-in.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_hi-in.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_hi.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_hi.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_hr-hr.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_hr-hr.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_hr.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_hr.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_hu-hu.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_hu-hu.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_hu.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_hu.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_id-id.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_id-id.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_id.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_id.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_in.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_in.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_is-is.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_is-is.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_is.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_is.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_it-it.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_it-it.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_it-sm.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_it-sm.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_it.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_it.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_iw.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_iw.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_ja-jp.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_ja-jp.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_ja.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_ja.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_kn-in.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_kn-in.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_kn.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_kn.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_ko-kr.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_ko-kr.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_ko.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_ko.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_ln-cd.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_ln-cd.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_ln.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_ln.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_lt-lt.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_lt-lt.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_lt.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_lt.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_lv-lv.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_lv-lv.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_lv.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_lv.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_ml-in.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_ml-in.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_ml.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_ml.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_mr-in.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_mr-in.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_mr.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_mr.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_ms-my.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_ms-my.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_ms.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_ms.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_mt-mt.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_mt-mt.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_mt.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_mt.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_nl-cw.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_nl-cw.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_nl-nl.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_nl-nl.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_nl-sx.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_nl-sx.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_nl.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_nl.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_no.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_no.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_or-in.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_or-in.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_or.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_or.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_pl-pl.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_pl-pl.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_pl.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_pl.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_pt-br.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_pt-br.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_pt-pt.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_pt-pt.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_pt.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_pt.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_ro-ro.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_ro-ro.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_ro.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_ro.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_ru-ru.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_ru-ru.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_ru.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_ru.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_sk-sk.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_sk-sk.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_sk.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_sk.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_sl-si.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_sl-si.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_sl.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_sl.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_sq-al.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_sq-al.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_sq.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_sq.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_sr-cyrl-rs.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_sr-cyrl-rs.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_sr-latn-rs.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_sr-latn-rs.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_sr.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_sr.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_sv-se.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_sv-se.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_sv.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_sv.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_sw-tz.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_sw-tz.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_sw.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_sw.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_ta-in.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_ta-in.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_ta.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_ta.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_te-in.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_te-in.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_te.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_te.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_th-th.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_th-th.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_th.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_th.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_tl.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_tl.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_tr-tr.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_tr-tr.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_tr.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_tr.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_uk-ua.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_uk-ua.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_uk.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_uk.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_ur-pk.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_ur-pk.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_ur.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_ur.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_vi-vn.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_vi-vn.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_vi.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_vi.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_zh-cn.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_zh-cn.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_zh-hans-cn.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_zh-hans-cn.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_zh-hk.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_zh-hk.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_zh-tw.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_zh-tw.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_zh.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_zh.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_zu-za.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_zu-za.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/i18n/angular-locale_zu.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/i18n/angular-locale_zu.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/ui-bootstrap-0.9.0.min.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/ui-bootstrap-0.9.0.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/ui-bootstrap-tpls-0.9.0.min.js" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/ui-bootstrap-tpls-0.9.0.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/version.json" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/version.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/lib/angular/version.txt" afterPath="$PROJECT_DIR$/api/admin_asset/lib/angular/version.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/tmp/comment/edit.html" afterPath="$PROJECT_DIR$/api/admin_asset/tmp/comment/edit.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/tmp/comment/list.html" afterPath="$PROJECT_DIR$/api/admin_asset/tmp/comment/list.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/tmp/comment/post.html" afterPath="$PROJECT_DIR$/api/admin_asset/tmp/comment/post.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/tmp/dialog/delete.html" afterPath="$PROJECT_DIR$/api/admin_asset/tmp/dialog/delete.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/tmp/dialog/dialog.html" afterPath="$PROJECT_DIR$/api/admin_asset/tmp/dialog/dialog.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/tmp/scarf/list-produced.html" afterPath="$PROJECT_DIR$/api/admin_asset/tmp/scarf/list-produced.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/tmp/user/create.html" afterPath="$PROJECT_DIR$/api/admin_asset/tmp/user/create.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/tmp/user/current.html" afterPath="$PROJECT_DIR$/api/admin_asset/tmp/user/current.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/tmp/user/edit.html" afterPath="$PROJECT_DIR$/api/admin_asset/tmp/user/edit.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/tmp/user/list.html" afterPath="$PROJECT_DIR$/api/admin_asset/tmp/user/list.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/tmp/user/login.html" afterPath="$PROJECT_DIR$/api/admin_asset/tmp/user/login.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/video/hourse.mp4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/video/player.swf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/protected/controllers/AdminController.php" afterPath="$PROJECT_DIR$/api/protected/controllers/AdminController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/protected/models/Scarf.php" afterPath="$PROJECT_DIR$/api/protected/models/Scarf.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/protected/controllers/ScarfController.php" afterPath="$PROJECT_DIR$/api/protected/controllers/ScarfController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/protected/models/User.php" afterPath="$PROJECT_DIR$/api/protected/models/User.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/protected/controllers/UserController.php" afterPath="$PROJECT_DIR$/api/protected/controllers/UserController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/protected/runtime/application.log" afterPath="$PROJECT_DIR$/api/protected/runtime/application.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/sinasdk/config.php" afterPath="$PROJECT_DIR$/api/sinasdk/config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/protected/views/admin/login.php" afterPath="$PROJECT_DIR$/api/protected/views/admin/login.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/protected/config/main.php" afterPath="$PROJECT_DIR$/api/protected/config/main.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/todolist.md" afterPath="$PROJECT_DIR$/todolist.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/lp.base.js" afterPath="$PROJECT_DIR$/js/lp.base.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rank.html" afterPath="$PROJECT_DIR$/rank.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rule.html" afterPath="$PROJECT_DIR$/rule.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="lily.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1390875589197" ignored="false" />
-    <file path="/index.html" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1390895812986" ignored="false" />
-    <file path="/style.css" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1390838831899" ignored="false" />
+    <file path="/index.html" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1390905619484" ignored="false" />
+    <file path="/style.css" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1390904707375" ignored="false" />
     <file path="$PROJECT_DIR$/../superboomi/sites/all/modules/superboomi_services/superboomi/bm_services/bm_services.module" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1390631207561" ignored="false" />
     <file path="/lp.base.js" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1390841314335" ignored="false" />
     <file path="/api.js" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1390832565102" ignored="false" />
@@ -447,16 +98,27 @@
       <file leaf-file-name="scarf.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/admin_asset/js/controllers/scarf.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="139" column="0" selection-start="4944" selection-end="4944" vertical-scroll-proportion="0.0">
+            <state line="114" column="44" selection-start="4172" selection-end="4172" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="admin.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/admin_asset/css/admin.css">
+      <file leaf-file-name="lp.base.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/lp.base.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="23" selection-start="2387" selection-end="2387" vertical-scroll-proportion="0.0">
+            <state line="25" column="43" selection-start="925" selection-end="925" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="68" column="132" selection-start="4240" selection-end="4240" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -471,55 +133,46 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="list-produced.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/admin_asset/tmp/scarf/list-produced.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="list.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/admin_asset/tmp/scarf/list.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="34" selection-start="337" selection-end="548" vertical-scroll-proportion="-6.785714">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="list-rank.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/admin_asset/tmp/scarf/list-rank.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="8" selection-start="30" selection-end="30" vertical-scroll-proportion="-0.6785714">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="delete.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/admin_asset/tmp/dialog/delete.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="17" selection-start="44" selection-end="44" vertical-scroll-proportion="-0.6785714">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="AdminController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/protected/controllers/AdminController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="55" selection-start="1232" selection-end="1232" vertical-scroll-proportion="-33.25">
+            <state line="58" column="23" selection-start="1370" selection-end="1370" vertical-scroll-proportion="-18.428572">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ScarfController.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="29" column="141" selection-start="1740" selection-end="1740" vertical-scroll-proportion="0.4876106">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rank.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rank.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="9" selection-start="746" selection-end="746" vertical-scroll-proportion="-11.535714">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rule.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rule.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="9" selection-start="746" selection-end="746" vertical-scroll-proportion="-11.535714">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ScarfController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/protected/controllers/ScarfController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="30" selection-start="1361" selection-end="1373" vertical-scroll-proportion="-0.21609798">
+            <state line="435" column="3" selection-start="12198" selection-end="12198" vertical-scroll-proportion="-133.78572">
               <folding />
             </state>
           </provider>
@@ -543,22 +196,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/api/protected/views/layouts/main2.php" />
-        <option value="$PROJECT_DIR$/api/protected/views/layouts/admin.php" />
-        <option value="$PROJECT_DIR$/api/protected/views/admin/index.php" />
-        <option value="$PROJECT_DIR$/api/protected/config/main.php" />
-        <option value="$PROJECT_DIR$/api/admin_asset/js/app.js" />
         <option value="$PROJECT_DIR$/api/admin_asset/js/services.js" />
         <option value="$PROJECT_DIR$/api/protected/views/admin/login.php" />
-        <option value="$PROJECT_DIR$/api/protected/controllers/AdminController.php" />
         <option value="$PROJECT_DIR$/api/admin_asset/js/services/scarf.js" />
-        <option value="$PROJECT_DIR$/api/protected/controllers/ScarfController.php" />
         <option value="$PROJECT_DIR$/api/admin_asset/tmp/scarf/list.html" />
         <option value="$PROJECT_DIR$/api/admin_asset/tmp/scarf/list-rank.html" />
         <option value="$PROJECT_DIR$/api/admin_asset/tmp/dialog/delete.html" />
         <option value="$PROJECT_DIR$/api/admin_asset/css/admin.css" />
         <option value="$PROJECT_DIR$/api/admin_asset/tmp/scarf/list-all.html" />
         <option value="$PROJECT_DIR$/api/admin_asset/js/controllers/scarf.js" />
+        <option value="$PROJECT_DIR$/api/protected/controllers/ScarfController.php" />
+        <option value="$PROJECT_DIR$/api/protected/controllers/AdminController.php" />
+        <option value="$PROJECT_DIR$/rank.html" />
+        <option value="$PROJECT_DIR$/rule.html" />
+        <option value="$PROJECT_DIR$/css/style.css" />
+        <option value="$PROJECT_DIR$/js/lp.base.js" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -621,7 +274,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
+              <option name="myItemId" value="video" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -632,230 +285,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="lilyweibo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lily" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lilyweibo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protected" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lily" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lilyweibo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protected" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lily" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lilyweibo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protected" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lily" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lilyweibo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protected" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lily" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lilyweibo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protected" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lily" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lilyweibo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin_asset" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lily" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lilyweibo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin_asset" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tmp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lily" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lilyweibo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin_asset" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tmp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scarf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lily" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lilyweibo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin_asset" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tmp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dialog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lily" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lilyweibo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin_asset" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -873,19 +302,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin_asset" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
+              <option name="myItemId" value="img" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -896,14 +313,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="lilyweibo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin_asset" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -921,11 +330,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/video" />
       <recent name="$PROJECT_DIR$/api" />
       <recent name="$PROJECT_DIR$/api/protected/views/layouts" />
       <recent name="$PROJECT_DIR$/api/protected/views/admin" />
       <recent name="$PROJECT_DIR$/admin" />
-      <recent name="$PROJECT_DIR$/admin/tmp/scarf" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/api" />
@@ -1058,65 +467,9 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/api/protected/config/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="49" selection-start="56" selection-end="56" vertical-scroll-proportion="-1.3571428">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/protected/views/admin/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="101" selection-start="1800" selection-end="1800" vertical-scroll-proportion="-22.392857">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/admin_asset/js/services.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="23" selection-start="206" selection-end="206" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/admin_asset/js/services/scarf.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="0" selection-start="1198" selection-end="1198" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/admin_asset/tmp/dialog/dialog.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/admin_asset/js/lib.controllers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="4" selection-start="86" selection-end="86" vertical-scroll-proportion="0.06490179">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/admin_asset/tmp/scarf/list-rank.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="8" selection-start="30" selection-end="30" vertical-scroll-proportion="-0.6785714">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/admin_asset/tmp/dialog/delete.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="17" selection-start="44" selection-end="44" vertical-scroll-proportion="-0.6785714">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/admin_asset/css/admin.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="23" selection-start="2387" selection-end="2387" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1142,20 +495,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/admin_asset/js/controllers/scarf.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="139" column="0" selection-start="4944" selection-end="4944" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/protected/controllers/AdminController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="55" selection-start="1232" selection-end="1232" vertical-scroll-proportion="-33.25">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/protected/models/User.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="63" column="19" selection-start="1609" selection-end="1609" vertical-scroll-proportion="-0.24671917">
@@ -1165,7 +504,81 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/api/protected/controllers/ScarfController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="30" selection-start="1361" selection-end="1373" vertical-scroll-proportion="-0.21609798">
+        <state line="435" column="3" selection-start="12198" selection-end="12198" vertical-scroll-proportion="-133.78572">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todolist.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="13" selection-start="150" selection-end="150" vertical-scroll-proportion="0.25960717">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/protected/controllers/AdminController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="23" selection-start="1370" selection-end="1370" vertical-scroll-proportion="-18.428572">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rule.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="9" selection-start="746" selection-end="746" vertical-scroll-proportion="-11.535714">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rank.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="9" selection-start="746" selection-end="746" vertical-scroll-proportion="-11.535714">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/admin_asset/css/admin.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="16" selection-start="716" selection-end="716" vertical-scroll-proportion="0.13039723">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="68" column="132" selection-start="4240" selection-end="4240" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/admin_asset/js/controllers/scarf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="114" column="44" selection-start="4172" selection-end="4172" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/lp.base.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="43" selection-start="925" selection-end="925" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../XAMPP/xamppfiles/htdocs/avene_redness/0110/video.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="21" selection-start="2494" selection-end="3536" vertical-scroll-proportion="0.57168144">
+          <folding>
+            <marker date="1390818052000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="141" selection-start="1740" selection-end="1740" vertical-scroll-proportion="0.4876106">
           <folding />
         </state>
       </provider>

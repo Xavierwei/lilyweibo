@@ -6,3 +6,4 @@ api/protected/data/*.db
 !api/assets/.gitignore
 !api/protected/runtime/.gitignore
 .project
+video/hourse.mp4

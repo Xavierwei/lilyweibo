@@ -5,46 +5,46 @@ class ScarfController extends Controller {
 	public $acceptType = NULL;
 	public $styleImages = NULL;
 	
-    public function init() {
-        parent::init();
-		$this->request = Yii::app()->request;
-		$this->user = Yii::app()->session["user"];
-		$this->styleImages = array(
-			'1' => ROOT_PATH . '/images/weibo_style/1.png',
-			'2' => ROOT_PATH . '/images/weibo_style/2.png',
-			'3' => ROOT_PATH . '/images/weibo_style/3.png',
-		);
-		$this->acceptType = strpos($this->request->getAcceptTypes(), 'json') ? 'json' : 'xml';
-    }
-	
-    public function returnJSON($data) {
-        header("Content-Type: application/json");
-        echo CJSON::encode($data);
-        Yii::app()->end();
-    }
-	
-    public function error($msg, $code) {
-        return array(
-            "data" => NULL,
-            "error" => array(
-                "code" => $code,
-                "message" => $msg,
-            ),
-        );
-    }
+  public function init() {
+      parent::init();
+  $this->request = Yii::app()->request;
+  $this->user = Yii::app()->session["user"];
+  $this->styleImages = array(
+    '1' => ROOT_PATH . '/images/weibo_style/1.png',
+    '2' => ROOT_PATH . '/images/weibo_style/2.png',
+    '3' => ROOT_PATH . '/images/weibo_style/3.png',
+  );
+  $this->acceptType = strpos($this->request->getAcceptTypes(), 'json') ? 'json' : 'xml';
+  }
+
+  public function returnJSON($data) {
+      header("Content-Type: application/json");
+      echo CJSON::encode($data);
+      Yii::app()->end();
+  }
+
+  public function error($msg, $code) {
+      return array(
+          "data" => NULL,
+          "error" => array(
+              "code" => $code,
+              "message" => $msg,
+          ),
+      );
+  }
 	
 	public function actionIndex()
 	{
 		$this->render('index');
 	}
 
-    public static function adminIsLogin() {
-        return !Yii::app()->user->getIsGuest();
-    }
-	
-    public static function isLogin() {
-        return Yii::app()->session["is_login"] == "true";
-    }
+  public static function adminIsLogin() {
+      return !Yii::app()->user->getIsGuest();
+  }
+
+  public static function isLogin() {
+      return Yii::app()->session["is_login"] == "true";
+  }
 	
 	/**
 	 * 根据用户昵称查询微博【管理员】

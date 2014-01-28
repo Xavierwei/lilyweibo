@@ -33,6 +33,12 @@ LP.use(['jquery' , 'api'] , function( $ , api ){
                 LP.triggerAction('submit_word');
             }
         })
+        .delegate('.keyword' , 'keyup' , function(e){
+            if (e.which == 13 ) {
+                e.preventDefault();
+                LP.triggerAction('searchFriend');
+            }
+        })
 
 
 

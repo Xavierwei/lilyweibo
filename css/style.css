@@ -64,8 +64,10 @@ a{text-decoration:none}
 
 #popupFriends {background: url(../img/popup_friends.gif) no-repeat;width:859px;height:587px;margin:-295px 0 0 -430px;}
     #friendsList {display:none;position: absolute;top:151px;left:52px;width:785px;}
-    #friendsList li {cursor:pointer;background:#ffd0d8;border-bottom: 4px solid #fb89a9;float:left;width:142px;padding:12px;height:62px;margin:11px;}
+    #friendsList li {position:relative;cursor:pointer;background:#ffd0d8;border-bottom: 4px solid #fb89a9;float:left;width:142px;padding:12px;height:62px;margin:11px;}
     #friendsList li:hover {background:#ffe5e9;}
+    #friendsList li .checkbox {background:#fff;border:2px solid #FB89A9;width:14px;height:14px;position: absolute;bottom:5px;right:5px;}
+    #friendsList li.selected .checkbox {background:#fff url(../img/checked2.gif) no-repeat center;border:2px solid #FB89A9;}
     #friendsList li.disabled {cursor: default;background: #dae8f1;border-bottom: 4px solid #b6ccda;}
     #friendsList li.disabled .avatar{border-bottom: 4px solid #b6ccda;}
     #friendsList li.disabled .screen_name {color: #81a8c1;}
