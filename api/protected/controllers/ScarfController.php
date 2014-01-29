@@ -289,20 +289,6 @@ class ScarfController extends Controller {
 		}
 	}
 
-	public function actionisInvited() {
-		$model = new Scarf();
-		$sns_uid = Yii::app()->session["user"]["sns_uid"];
-		if($invitedInfo = $model->isInvited($sns_uid)) //判断当前用户是否是受邀请的
-		{
-			// 更新邀请人的内容排名
-			$cid = $invitedInfo->cid;
-			$rank = $model->getRankByCid($cid);
-			$rank = $rank - 10; //提升10个排名
-			$rankValue = $model->getRankValue($rank);
-			$model->updateRankByCid($cid, $rankValue);
-		}
-	}
-
 
 	/**
 	 * 大冒险
@@ -351,6 +337,7 @@ class ScarfController extends Controller {
 			if($myScarf = $scarf->isCreated($user['uid'])) {
 				$myRank['rank'] = (int)$scarf->getRankByUid($user['uid']);
 				$myRank['image'] = $myScarf->image;
+        $myRank['dmxcount'] = 3 - (int)$scarf->getTodayDmxCount($user['uid']); //获得今天大冒险的次数
 				$myRank['status'] = (int)$myScarf->status;
 				return $this->returnJSON(array("data" => $myRank));
 			} else {

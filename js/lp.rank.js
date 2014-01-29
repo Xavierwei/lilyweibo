@@ -6,7 +6,9 @@ LP.use(['jquery' , 'api'] , function( $ , api ){
     var submitting = false;
 
     var loadRank = function(dataList) {
+        $('.list_loading').fadeIn();
         api.ajax('list', dataList, function(res){
+            $('.list_loading').stop().fadeOut();
             if(res.error && res.error.code == 1001) {
                 $('.list_more').fadeOut();
                 return false;

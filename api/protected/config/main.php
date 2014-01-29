@@ -20,15 +20,7 @@ return array(
 		'application.helpers.*',
 	),
 
-	'modules'=>array(
-		// uncomment the following to enable the Gii tool
-		'gii'=>array(
-			'class'=>'system.gii.GiiModule',
-			'password'=>'123',
-			// If removed, Gii defaults to localhost only. Edit carefully to taste.
-			'ipFilters'=>array('127.0.0.1','::1'),
-		),
-	),
+
 
 	// application components
 	'components'=>array(
@@ -42,15 +34,7 @@ return array(
 			'rules'=>array(
  				'<controller:\w+>/<id:\d+>'=>'<controller>/view',
  				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
- 				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
-	
-				//REST routers
-				array('scarf/list', 'pattern' => 'scarf/list', 'verb' => 'POST'),
-				array('scarf/myrank', 'pattern' => 'scarf/myrank', 'verb' => 'GET'),
-				array('scarf/post', 'pattern' => 'scarf/post', 'verb' => 'POST'),
-				array('scarf/put', 'pattern' => 'scarf/put', 'verb' => 'POST'),
-				array('scarf/dmx', 'pattern' => 'scarf/dmx', 'verb' => 'GET'),
-				array('scarf/share', 'pattern' => 'scarf/share', 'verb' => 'POST'),
+ 				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>'
 			),
 		),
 		/*
@@ -87,19 +71,4 @@ return array(
 		),
 	),
 
-	// application-level parameters that can be accessed
-	// using Yii::app()->params['paramName']
-	'params'=>array(
-		// this is used in contact page
-		'adminEmail'=>'webmaster@example.com',
-		
-		//上传图片路径，网址
-		'uploadPath' => ROOT_PATH . '/uploads/',
-		'uploadUrl' => 'http://www.19youxi.com/uploads/',
-		
-		//sns配置
-		'sina_akey' => '27031883',	//sina AKEY
-		'sina_skey' => 'ec7c9b399b7d811f1b5f93dc449be341',	//sina SKEY
-		'sina_callback' => 'http://www.19youxi.com/index.php/user/sinacallback',	//sina 回调地址
-	),
 );

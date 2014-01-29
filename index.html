@@ -4,7 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
     <meta name="keywords" content="" />
     <meta name="description" content="" />
-    <title></title>
+    <title>#写微博织围脖#</title>
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <!--[if IE 6]>
     <link href="css/style_ie6.css" rel="stylesheet" type="text/css" />
@@ -13,7 +13,7 @@
 <body id="">
 <div class="page">
     <ul class="nav">
-        <li class="nav1"><a href="index.html">活动首页</a></li>
+        <li class="nav1"><a class="on" href="index.html">活动首页</a></li>
         <li class="nav2"><a href="rule.html">活动规则</a></li>
         <li class="nav3"><a href="rank.html">微博排名</a></li>
         <li class="nav4"><a href="#">联系我们</a></li>
@@ -137,7 +137,7 @@
     <div class="overlay" data-a="close_popup"></div>
     <div id="weiboLoginForm" class="popup">
         <div class="close" data-a="close_popup"></div>
-        <iframe frameborder="0" scrolling="no" width="650" height="350" src="{{url}}" />
+        <iframe frameborder="0" scrolling="no" width="650" height="389" src="{{url}}" />
     </div>
 </script>
 <!-- #login-iframe-tpl -->
@@ -178,8 +178,12 @@
         </div>
     </div>
     <div class="step4gift"></div>
-    <div class="step4BtnDMX" data-a="submit_dmx"></div>
-    <div class="step4BtnInvite" data-a="submit_friends"></div>
+    <div class="step4BtnDMX" data-a="submit_dmx">
+        <div class="step4DMXCount">今天您还可以抽取<span>{{dmxcount}}</span>次随机排名</div>
+    </div>
+    <div class="step4BtnInvite" data-a="submit_friends">
+        <div class="step4BtnTip">邀请好友可额外提升排名</div>
+    </div>
 </script>
 <!-- #myrank-tpl -->
 

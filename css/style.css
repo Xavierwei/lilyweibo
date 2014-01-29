@@ -27,14 +27,15 @@ a{text-decoration:none}
 .nav{background: url('../img/nav.jpg') no-repeat;height:85px;padding:10px 0 0 20px;margin:0;}
     .nav li {background: url(../img/nav_sep.gif) no-repeat left 12px;float:left;padding:10px 55px 10px 75px;}
     .nav a {text-indent:-999em;color:#fff;font-size:14px;display:block;font-weight: bold;background: url(../img/topnav.gif) no-repeat;width:82px;height:30px;}
+    .nav a.on {border-bottom: 3px dashed #f9e577;}
     .nav1 a {background-position:0 0;}
     .nav2 a {background-position:-208px 0;}
     .nav3 a {background-position:-417px 0;}
     .nav4 a {background-position:-625px 0;}
-    .nav1 a:hover {background-position:0 -80px;}
-    .nav2 a:hover {background-position:-208px -80px;}
-    .nav3 a:hover {background-position:-417px -80px;}
-    .nav4 a:hover {background-position:-625px -80px;}
+    .nav1 a:hover,.nav1 a.on {background-position:0 -80px;}
+    .nav2 a:hover,.nav2 a.on {background-position:-208px -80px;}
+    .nav3 a:hover,.nav3 a.on {background-position:-417px -80px;}
+    .nav4 a:hover,.nav4 a.on {background-position:-625px -80px;}
     .nav li.nav1 {margin-left:20px;}
     .nav li.nav5 {height:40px;width:21px;padding:0;}
 
@@ -54,7 +55,7 @@ a{text-decoration:none}
 .popup {display:none;position: fixed;top:0%;left:50%;margin:-175px 0 0 -325px;background: url(../img/popup_login.gif) no-repeat;width:695px;height: 463px;}
 .popup .close {cursor:pointer;position: absolute;top:20px;right:20px;background: url(../img/popup_close.gif) no-repeat;width:28px;height: 28px;}
 #weiboLoginForm {}
-    #weiboLoginForm iframe {margin:78px 0 0 23px;}
+    #weiboLoginForm iframe {margin:57px 0 0 23px;}
 
 #popup-dmx .title_up {background:url(../img/dmx_up.gif) no-repeat center;width:414px;height:59px;margin:100px auto 0 auto;}
 #popup-dmx .title_down {background:url(../img/dmx_down.gif) no-repeat center;width:414px;height:59px;margin:100px auto 0 auto;}
@@ -135,8 +136,11 @@ a{text-decoration:none}
         .myRank .rank {float:right;}
         .myRank .rank span {color:#f85a84;}
         .step4gift {background: url(../img/888.gif) no-repeat;width:640px;height:23px;margin:10px 0 0 38px;}
-        .step4BtnDMX {cursor:pointer;float:left;background: url('../img/userBtn.gif') no-repeat;height:120px;width:281px;margin:20px 0 0 108px;}
-        .step4BtnInvite {cursor:pointer;float:left;background: url('../img/inviteBtn.gif') no-repeat;height:120px;width:281px;margin:20px 0 0 133px;}
+        .step4BtnDMX {position:relative;cursor:pointer;float:left;background: url('../img/userBtn.gif') no-repeat;height:120px;width:281px;margin:20px 0 0 108px;}
+        .step4DMXCount {color:#0d7acd;font-size:16px;position: absolute;bottom:0;left:34px;text-shadow: 2px 2px 0px #fff;}
+        .step4DMXCount span {color:#f85a84;}
+        .step4BtnInvite {position:relative;cursor:pointer;float:left;background: url('../img/inviteBtn.gif') no-repeat;height:120px;width:281px;margin:20px 0 0 133px;}
+        .step4BtnTip {color:#0d7acd;font-size:16px;position: absolute;bottom:0;left:65px;text-shadow: 2px 2px 0px #fff;}
     .stepLogin {position: relative;}
     .stepLoginBtn {cursor:pointer;background: url(../img/join_btn.gif) no-repeat;width:864px;height:176px;margin:100px auto 0 auto;}
     .stepLoginTerm {cursor:pointer;background: url(../img/term.gif) no-repeat 33px 2px;width:230px;height:20px;margin:30px auto 0 auto;}
@@ -160,18 +164,19 @@ a{text-decoration:none}
 	.list_infor{float: right;width:575px;height:113px;}
     .list_infor img {border:5px solid #fff;}
 .list_more{cursor:pointer;background: url('../img/list_more.gif') no-repeat right;height:80px;width:758px;margin:0 auto;display: block;}
+.list_loading {display:none;background: url(../img/list_load.gif) no-repeat center;height:71px;width:107px;margin:0 auto;}
 .rankTitle {background: url(../img/ranktitle.jpg) no-repeat;height:72px;}
 .rulePage {background: url(../img/rule.jpg) no-repeat;width:940px;height:720px;}
 
 
 .step4BtnDMX:hover,.step4BtnInvite:hover,.step1BtnNext:hover,.step2BtnPrev:hover,.step2BtnNext:hover,.step3BtnPrev:hover,.step3BtnNext:hover,.learnMore:hover,
-.step2Styles li:hover,.inviteBtn:hover,.backBtn:hover
+.step2Styles li:hover,.inviteBtn:hover,.backBtn:hover,.list_more:hover
 {opacity:0.7;}
 
 .step1BtnNextDisabled:hover,.step2BtnNextDisabled:hover {opacity:1;}
 
 .nav a,
-.step4BtnDMX,.step4BtnInvite,.step1BtnNext,.step2BtnPrev,.step2BtnNext,.step3BtnPrev,.step3BtnNext,.learnMore,.inviteBtn,.backBtn,
+.step4BtnDMX,.step4BtnInvite,.step1BtnNext,.step2BtnPrev,.step2BtnNext,.step3BtnPrev,.step3BtnNext,.learnMore,.inviteBtn,.backBtn,.list_more,
 #friendsList li,.step2Styles li
 {-webkit-transition:   all 0.3s ease;-moz-transition:  all 0.3s ease;-o-transition:  all 0.3s ease;-ms-transition:  all 0.3s ease;transition:  all 0.3s ease;}
 

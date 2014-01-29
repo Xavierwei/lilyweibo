@@ -140,6 +140,7 @@ LP.use(['jquery' , 'api', 'easing'] , function( $ , api ){
 
             var myRank = $('#myRank').data('user');
             myRank.rank = res.data.newRank;
+            myRank.dmxcount --;
             $('#myRank').data('user', myRank);
             myRank.position = parseInt(((myRank.rank-1) / myRank.total)*100);
             if(myRank.total == myRank.rank) {
@@ -337,12 +338,13 @@ LP.use(['jquery' , 'api', 'easing'] , function( $ , api ){
         });
     });
 
-    var init = function(){
+    var getRankList = function(){
         //Get Rank List
         var dataList = {page:1, pagenum: 5};
         api.ajax('list', dataList, function(res){
             var items = res.data;
             $('#totalCountText').html(res.total);
+            $('#list_wrap').empty();
             $.each( items , function( index , item ){
                 LP.compile( 'list-item-template' ,
                     item,
@@ -354,7 +356,11 @@ LP.use(['jquery' , 'api', 'easing'] , function( $ , api ){
         }, function(){
             $('#list_wrap').html('加载失败，请刷新页面再试一次。');
         });
+    }
 
+    var init = function(){
+        getRankList();
+        setInterval(getRankList,1000*60*2);
         //Get User Status
         api.ajax('myrank', function(res){
             if(res.error == 1001) {
