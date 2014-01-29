@@ -204,12 +204,11 @@ class ScarfController extends Controller {
 		}
 		$imgName = time() . rand(10000, 99999) .  '.jpg';
 		$imgFile = $imgPath . $imgName;
-		$imgUrl = Yii::app()->params['uploadUrl'] . $generateImgPath . $imgName;
 		
 		//合并文字图片
 		$im = imagecreatefrompng($bgImg);
 		$fontColor  = imagecolorallocate($im, 255, 255, 255); //这是文字颜色，绿色
-		$font = ROOT_PATH . '/font/hyds.ttf';
+		$font = ROOT_PATH . '/font/fzxs.ttf';
 		$fontSize = 23;
 		$box = imagettfbbox($fontSize, 0, $font, $text);
 		$x = (528 - $box[2])/2 + 55;
@@ -269,8 +268,8 @@ class ScarfController extends Controller {
 			
 			// 分享微博
 			$shareText = '我的围巾！'. $newScarf['content'];
-			$shareImg = $newScarf['image'];
-			$model->shareWeibo($shareText, 'http://img.hb.aicdn.com/5d9bfeddfce1e8309097cca7c94f2cfd3ae30f1a215df-9uwbCI_fw658');
+			$shareImg = Yii::app()->getBaseUrl(true).$newScarf['image'];
+			$model->shareWeibo($shareText, $shareImg);
 
 			$sns_uid = $this->user["sns_uid"];
 			if($invitedInfo = $model->isInvited($sns_uid)) //判断当前用户是否是受邀请的
@@ -286,6 +285,20 @@ class ScarfController extends Controller {
 			return $this->returnJSON(array('data'=>$newScarf, 'error'=>null));
 		} else {
 			$this->returnJSON($this->error('bad request', 1001));
+		}
+	}
+
+	public function actionisInvited() {
+		$model = new Scarf();
+		$sns_uid = Yii::app()->session["user"]["sns_uid"];
+		if($invitedInfo = $model->isInvited($sns_uid)) //判断当前用户是否是受邀请的
+		{
+			// 更新邀请人的内容排名
+			$cid = $invitedInfo->cid;
+			$rank = $model->getRankByCid($cid);
+			$rank = $rank - 10; //提升10个排名
+			$rankValue = $model->getRankValue($rank);
+			$model->updateRankByCid($cid, $rankValue);
 		}
 	}
 
@@ -390,7 +403,8 @@ class ScarfController extends Controller {
 				$mFriend->insert();
 			  }
 			}
-			Scarf::model()->shareWeibo($shareText, 'http://img.hb.aicdn.com/5d9bfeddfce1e8309097cca7c94f2cfd3ae30f1a215df-9uwbCI_fw658');
+      $shareImg = Yii::app()->getBaseUrl(true).$myScarf['image'];
+			Scarf::model()->shareWeibo($shareText, $shareImg);
 			return $this->returnJSON(array(
 				"error" => null
 			));

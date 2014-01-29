@@ -20,7 +20,15 @@ return array(
 		'application.helpers.*',
 	),
 
-
+	'modules'=>array(
+		// uncomment the following to enable the Gii tool
+		'gii'=>array(
+			'class'=>'system.gii.GiiModule',
+			'password'=>'123',
+			// If removed, Gii defaults to localhost only. Edit carefully to taste.
+			'ipFilters'=>array('127.0.0.1','::1'),
+		),
+	),
 
 	// application components
 	'components'=>array(
@@ -71,4 +79,12 @@ return array(
 		),
 	),
 
+	// application-level parameters that can be accessed
+	// using Yii::app()->params['paramName']
+	'params'=>array(
+		// this is used in contact page
+
+		'uploadPath' => ROOT_PATH . '/uploads/'
+
+	),
 );

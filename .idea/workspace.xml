@@ -2,18 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="19a3a98e-09b8-4651-ab7d-e4100f3377a4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/inviteBtn.gif" afterPath="$PROJECT_DIR$/img/inviteBtn.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/userBtn.gif" afterPath="$PROJECT_DIR$/img/userBtn.gif" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/font/Vineta.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/font/hyds.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/font/msyh.ttf" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/protected/controllers/ScarfController.php" afterPath="$PROJECT_DIR$/api/protected/controllers/ScarfController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/sinasdk/config.php" afterPath="$PROJECT_DIR$/api/sinasdk/config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/admin_asset/tmp/scarf/list-producing.html" afterPath="$PROJECT_DIR$/api/admin_asset/tmp/scarf/list-producing.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/lp.base.js" afterPath="$PROJECT_DIR$/js/lp.base.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/lp.rank.js" afterPath="$PROJECT_DIR$/js/lp.rank.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/protected/runtime/application.log" afterPath="$PROJECT_DIR$/api/protected/runtime/application.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/protected/config/main.php" afterPath="$PROJECT_DIR$/api/protected/config/main.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rank.html" afterPath="$PROJECT_DIR$/rank.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rule.html" afterPath="$PROJECT_DIR$/rule.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="lily.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,7 +19,7 @@
     <file path="/lp.base.js" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1390975191643" ignored="false" />
     <file path="/api.js" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1390832565102" ignored="false" />
     <file path="/UserController.php" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1390755555606" ignored="false" />
-    <file path="/ScarfController.php" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1390973907440" ignored="false" />
+    <file path="/ScarfController.php" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1390985890195" ignored="false" />
     <file path="/logined.php" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1390710161707" ignored="false" />
     <file path="/logined.html" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1390710547051" ignored="false" />
     <file path="$PROJECT_DIR$/../../../XAMPP/xamppfiles/htdocs/avene_redness/0110/index.html" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1390817007914" ignored="false" />
@@ -100,96 +95,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="admin.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/admin_asset/css/admin.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="38" selection-start="1058" selection-end="1058" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="27" selection-start="619" selection-end="630" vertical-scroll-proportion="-10.178572">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="31" selection-start="1367" selection-end="1367" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="scarf.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/admin_asset/js/controllers/scarf.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="124" column="23" selection-start="4524" selection-end="4524" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="list-producing.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/api/admin_asset/tmp/scarf/list-producing.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="12" selection-start="211" selection-end="211" vertical-scroll-proportion="0.13298337">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="rank.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rank.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="38" selection-start="642" selection-end="642" vertical-scroll-proportion="-9.5">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="rule.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rule.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="38" selection-start="583" selection-end="583" vertical-scroll-proportion="-8.821428">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ScarfController.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ScarfController.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/api/protected/controllers/ScarfController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="291" column="0" selection-start="8267" selection-end="8267" vertical-scroll-proportion="-35.964287">
+            <state line="400" column="32" selection-start="11505" selection-end="11505" vertical-scroll-proportion="3.7401574">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="lp.base.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/lp.base.js">
+      <file leaf-file-name="main.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/protected/config/main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="360" column="26" selection-start="12548" selection-end="12548" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="lp.rank.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/lp.rank.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="45" selection-start="303" selection-end="303" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+            <state line="86" column="43" selection-start="2234" selection-end="2234" vertical-scroll-proportion="-34.714287">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -218,16 +137,16 @@
         <option value="$PROJECT_DIR$/api/admin_asset/js/controllers.js" />
         <option value="$PROJECT_DIR$/api/protected/views/admin/index.php" />
         <option value="$PROJECT_DIR$/api/admin_asset/css/admin.css" />
-        <option value="$PROJECT_DIR$/api/protected/config/main.php" />
         <option value="$PROJECT_DIR$/api/sinasdk/config.php" />
         <option value="$PROJECT_DIR$/js/lp.base.js" />
         <option value="$PROJECT_DIR$/js/lp.rank.js" />
-        <option value="$PROJECT_DIR$/api/protected/controllers/ScarfController.php" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/rank.html" />
         <option value="$PROJECT_DIR$/rule.html" />
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/api/admin_asset/tmp/scarf/list-producing.html" />
+        <option value="$PROJECT_DIR$/api/protected/config/main.php" />
+        <option value="$PROJECT_DIR$/api/protected/controllers/ScarfController.php" />
       </list>
     </option>
   </component>
@@ -377,7 +296,103 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lily" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lilyweibo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lily" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lilyweibo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lily" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lilyweibo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lily" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lilyweibo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -717,27 +732,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/api/admin_asset/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="47" selection-start="312" selection-end="312" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/admin_asset/js/controllers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="51" selection-start="1008" selection-end="1008" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/protected/config/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="18" selection-start="445" selection-end="445" vertical-scroll-proportion="-10.178572">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/sinasdk/config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="73" selection-start="172" selection-end="172" vertical-scroll-proportion="-2.0357144">
@@ -752,23 +746,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/protected/views/admin/index.php">
+    <entry file="file://$PROJECT_DIR$/api/admin_asset/tmp/scarf/list-producing.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="43" selection-start="972" selection-end="972" vertical-scroll-proportion="-14.928572">
+        <state line="13" column="12" selection-start="448" selection-end="448" vertical-scroll-proportion="0.21609798">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/admin_asset/js/controllers/scarf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="124" column="23" selection-start="4524" selection-end="4524" vertical-scroll-proportion="0.016225448">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="31" selection-start="1367" selection-end="1367" vertical-scroll-proportion="0.4758204">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="27" selection-start="619" selection-end="630" vertical-scroll-proportion="0.25221238">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/admin_asset/css/admin.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="38" selection-start="1058" selection-end="1058" vertical-scroll-proportion="0.0">
+        <state line="21" column="38" selection-start="1058" selection-end="1058" vertical-scroll-proportion="0.16321243">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rank.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="38" selection-start="642" selection-end="642" vertical-scroll-proportion="0.23272091">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rule.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="38" selection-start="583" selection-end="583" vertical-scroll-proportion="0.21609798">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/lp.base.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="360" column="26" selection-start="12548" selection-end="12548" vertical-scroll-proportion="0.0">
+        <state line="360" column="26" selection-start="12548" selection-end="12548" vertical-scroll-proportion="0.5943638">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
@@ -777,58 +806,44 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/lp.rank.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="45" selection-start="303" selection-end="303" vertical-scroll-proportion="0.0">
+        <state line="10" column="45" selection-start="303" selection-end="303" vertical-scroll-proportion="0.16225448">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/api/protected/controllers/AdminController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/protected/views/admin/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="52" selection-start="1204" selection-end="1232" vertical-scroll-proportion="0.5153106">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/protected/models/Scarf.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="266" column="18" selection-start="6719" selection-end="6719" vertical-scroll-proportion="0.3415929">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/protected/config/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="86" column="43" selection-start="2234" selection-end="2234" vertical-scroll-proportion="-34.714287">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/api/protected/controllers/ScarfController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="291" column="0" selection-start="8267" selection-end="8267" vertical-scroll-proportion="-35.964287">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="27" selection-start="619" selection-end="630" vertical-scroll-proportion="-10.178572">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rank.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="38" selection-start="642" selection-end="642" vertical-scroll-proportion="-9.5">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rule.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="38" selection-start="583" selection-end="583" vertical-scroll-proportion="-8.821428">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="31" selection-start="1367" selection-end="1367" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/admin_asset/js/controllers/scarf.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="124" column="23" selection-start="4524" selection-end="4524" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/admin_asset/tmp/scarf/list-producing.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="12" selection-start="211" selection-end="211" vertical-scroll-proportion="0.13298337">
+        <state line="400" column="32" selection-start="11505" selection-end="11505" vertical-scroll-proportion="3.7401574">
           <folding />
         </state>
       </provider>
