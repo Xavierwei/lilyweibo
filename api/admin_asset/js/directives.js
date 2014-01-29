@@ -79,3 +79,17 @@ angular.module('LilyAdmin.directives', []).
         }
 
     })
+
+    .directive('searchInput',  function ($rootScope) {
+        return {
+            link: function (scope, elem) {
+                elem.bind('keyup',function(e){
+                    if(e.which == 13) {
+                        scope.$apply(scope.search);
+                    }
+                });
+
+            }
+        }
+
+    })

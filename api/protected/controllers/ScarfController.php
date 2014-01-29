@@ -58,11 +58,7 @@ class ScarfController extends Controller {
 		if (!self::adminIsLogin()) {
 			$this->returnJSON($this->error('no permission', 1001));
 		}
-		if (!$this->request->isPostRequest) {
-			$this->returnJSON($this->error('Illegal request', 1002));	
-		}
-		$keyword = trim($this->request->getPost('keyword'));
-		
+		$keyword = trim($this->request->getQuery('keyword'));
 		$page = (int)$this->request->getQuery('page',1);
 		$pagenum = (int)$this->request->getQuery('pagenum',10);
 		$arrUids = User::model()->getUidsByScreenName($keyword);  

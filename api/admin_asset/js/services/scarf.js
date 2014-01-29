@@ -25,6 +25,18 @@ LilyAdminServices.factory( 'ScarfService', function($http, ROOT) {
                 });
         },
 
+        search: function(keyword, success) {
+            $http.get(ROOT+'/scarf/search', {
+                params: {keyword:keyword},
+                cache: false
+            })
+                .success(function(data) {
+                    success(data);
+                })
+                .error(function() {
+                });
+        },
+
         update: function(data, success) {
             $http.post(ROOT+'/scarf/UpdateStatus',data)
             .success(function(data) {
@@ -44,9 +56,6 @@ LilyAdminServices.factory( 'ScarfService', function($http, ROOT) {
 
             });
         },
-
-
-
 
         getStatistics: function(success) {
             $http.post(ROOT+'/scarf/getStatistics')

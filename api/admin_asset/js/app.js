@@ -17,6 +17,7 @@ config(function($routeProvider,$httpProvider) {
     $routeProvider.when('/scarf/produced', {templateUrl: ROOT+'/admin_asset/tmp/scarf/list-produced.html', controller: 'ScarfCtrListProduced'});
     $routeProvider.when('/scarf/all', {templateUrl: ROOT+'/admin_asset/tmp/scarf/list-all.html', controller: 'ScarfCtrListAll'});
     $routeProvider.when('/production/producing', {templateUrl: ROOT+'/admin_asset/tmp/scarf/list-producing.html', controller: 'ScarfCtrListProducing'});
+    $routeProvider.when('/scarf/search/:keyword', {templateUrl: ROOT+'/admin_asset/tmp/scarf/list-all.html', controller: 'ScarfCtrSearch'});
 
     $routeProvider.otherwise({redirectTo: '/scarf/unapproved'});
 

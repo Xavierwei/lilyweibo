@@ -5,7 +5,7 @@
 var LilyAdminController = angular.module('LilyAdmin.controllers', []);
 
 LilyAdminController
-    .controller('MainCtrl', function($scope, $http, $modal, $log, $routeParams, ScarfService) {
+    .controller('MainCtrl', function($scope, $http, $modal, $log,$location, $routeParams, ScarfService) {
         ScarfService.getStatistics(function(data){
             $scope.counts = {
                 produced:data.produced,
@@ -23,6 +23,21 @@ LilyAdminController
             ScarfService.logout(function(){
                 window.location.reload();
             });
+        }
+
+        $scope.logout = function(){
+            ScarfService.logout(function(){
+                window.location.reload();
+            });
+        }
+
+        $scope.search = function(){
+            if($scope.keyword == '') {
+                $location.path( "/scarf/unapproved" );
+            }
+            else {
+                $location.path( "/scarf/search/" + $scope.keyword );
+            }
         }
 
     });

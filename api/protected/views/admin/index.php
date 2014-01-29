@@ -17,9 +17,14 @@
     <li><a href="#/scarf/unapproved">Unapproved <span>({{counts.unapproved}})</span></a></li>
     <li><a href="#/scarf/all">All <span>({{counts.all}})</span></a></li>
   </ul>
-
   <div ng-click="refreshPage()" class="refresh glyphicon glyphicon-refresh"></div>
   <div class="clear"></div>
+
+  <div ng-show="showSubNav" class="search">
+    <input class="form-control" search-input ng-model="keyword" type="text" />
+    <input ng-click="search()" type="button" class="btn btn-default" value="Search" />
+  </div>
+
   <div ng-view></div>
 </div>
 

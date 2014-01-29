@@ -120,6 +120,55 @@ LilyAdminController
         };
     })
 
+    .controller('ScarfCtrSearch', function($scope, $http, $modal, $log, $routeParams, ScarfService, ROOT) {
+        params = {};
+        ScarfService.search($routeParams.keyword, function(data){
+            $scope.scarfs = data.data;
+            $scope.bigTotalItems = data.total;
+            $scope.noOfPages = 0;
+            $scope.currentPage = 1;
+            $scope.maxSize = 5;
+        });
+        $scope.pageChanged = function (page) {
+            params.page = page;
+            ScarfService.list(params, function(data){
+                $scope.scarfs = data;
+            });
+        };
+        $scope.approve = function (scarf) {
+            scarf.status = 1;
+            ScarfService.update(scarf, function(data){
+                $scope.scarfs.splice($scope.scarfs.indexOf(scarf), 1);
+            });
+        };
+        $scope.delete = function(scarf) {
+            var modalInstance = $modal.open({
+                templateUrl: ROOT+'admin_asset/tmp/dialog/delete.html',
+                controller: ConfirmModalCtrl
+            });
+            modalInstance.result.then(function () {
+                scarf.status = 4;
+                ScarfService.update(scarf, function(data){
+                    $scope.scarfs.splice($scope.scarfs.indexOf(scarf), 1);
+                });
+            }, function () {
+            });
+        }
+        $scope.unapprove = function (scarf) {
+            var modalInstance = $modal.open({
+                templateUrl: ROOT+'admin_asset/tmp/dialog/delete.html',
+                controller: ConfirmModalCtrl
+            });
+            modalInstance.result.then(function () {
+                scarf.status = 0;
+                ScarfService.update(scarf, function(data){
+                    $scope.scarfs.splice($scope.scarfs.indexOf(scarf), 1);
+                });
+            }, function () {
+            });
+        };
+    })
+
     .controller('ScarfCtrListProduced', function($scope, $http, $modal, $log, $routeParams, ScarfService) {
         params = {};
         params.status = 3;

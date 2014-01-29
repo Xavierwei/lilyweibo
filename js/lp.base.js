@@ -34,7 +34,7 @@ LP.use(['jquery' , 'api', 'easing'] , function( $ , api ){
             }
         })
         .delegate('.keyword' , 'keyup' , function(e){
-            if (e.which == 13 ) {
+            if (e.which == 13 || $(this).val().length == 0) {
                 e.preventDefault();
                 LP.triggerAction('searchFriend');
             }
