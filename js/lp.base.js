@@ -4,6 +4,7 @@
 LP.use(['jquery' , 'api', 'easing'] , function( $ , api ){
     var API_ROOT = "api";
     var submitting = false;
+    var searchTimeout;
 
     // live for pic-item hover event
     $(document.body)
@@ -34,13 +35,17 @@ LP.use(['jquery' , 'api', 'easing'] , function( $ , api ){
             }
         })
         .delegate('.keyword' , 'keyup' , function(e){
-            if (e.which == 13 || $(this).val().length == 0) {
+            clearTimeout(searchTimeout);
+            if (e.which == 13 ) {
                 e.preventDefault();
                 LP.triggerAction('searchFriend');
+                return;
             }
+            searchTimeout = setTimeout(function(){
+                e.preventDefault();
+                LP.triggerAction('searchFriend');
+            },1000);
         })
-
-
 
 
     // ================== page actions ====================
@@ -235,8 +240,12 @@ LP.use(['jquery' , 'api', 'easing'] , function( $ , api ){
         $('#friendsPaginate').fadeOut();
         $('#friendsList').fadeOut(function(){
             $(this).empty();
+            var invitedFriends = $('#friendsList').data('invited');
             $.each(allFriends, function(index, item){
                 if(item.screen_name.indexOf(keyword) != -1) {
+                    if($.inArray(item.idstr, invitedFriends) != -1){
+                        item.invited = true;
+                    }
                     LP.compile( 'friend-item-template' ,
                         item,
                         function( html ){

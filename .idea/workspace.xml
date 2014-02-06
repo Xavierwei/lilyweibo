@@ -2,36 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="19a3a98e-09b8-4651-ab7d-e4100f3377a4" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/font/Vineta.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/font/hyds.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/font/msyh.ttf" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/protected/controllers/ScarfController.php" afterPath="$PROJECT_DIR$/api/protected/controllers/ScarfController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/protected/runtime/application.log" afterPath="$PROJECT_DIR$/api/protected/runtime/application.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/protected/config/main.php" afterPath="$PROJECT_DIR$/api/protected/config/main.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/lp.base.js" afterPath="$PROJECT_DIR$/js/lp.base.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="lily.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1390969887136" ignored="false" />
-    <file path="/index.html" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1390977762515" ignored="false" />
-    <file path="/style.css" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1390977836190" ignored="false" />
+    <file path="/Dummy.txt" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1391603254562" ignored="false" />
+    <file path="/index.html" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1391602821538" ignored="false" />
+    <file path="/style.css" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1391601935809" ignored="false" />
     <file path="$PROJECT_DIR$/../superboomi/sites/all/modules/superboomi_services/superboomi/bm_services/bm_services.module" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1390631207561" ignored="false" />
-    <file path="/lp.base.js" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1390975191643" ignored="false" />
-    <file path="/api.js" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1390832565102" ignored="false" />
-    <file path="/UserController.php" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1390755555606" ignored="false" />
+    <file path="/lp.base.js" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1391603151008" ignored="false" />
+    <file path="/api.js" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1391562869742" ignored="false" />
+    <file path="/UserController.php" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1391493636349" ignored="false" />
     <file path="/ScarfController.php" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1390985890195" ignored="false" />
     <file path="/logined.php" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1390710161707" ignored="false" />
     <file path="/logined.html" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1390710547051" ignored="false" />
     <file path="$PROJECT_DIR$/../../../XAMPP/xamppfiles/htdocs/avene_redness/0110/index.html" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1390817007914" ignored="false" />
-    <file path="/index.php" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1390968590128" ignored="false" />
-    <file path="/scarf.js" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1390968166165" ignored="false" />
-    <file path="/controllers.js" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1390968304974" ignored="false" />
+    <file path="/index.php" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1391584831495" ignored="false" />
+    <file path="/scarf.js" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1391573296971" ignored="false" />
+    <file path="/controllers.js" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1391579885952" ignored="false" />
     <file path="/services.js" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1390723181206" ignored="false" />
     <file path="/todolist.md" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1390813532207" ignored="false" />
-    <file path="/list.html" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1390928216515" ignored="false" />
+    <file path="/list.html" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1391586455931" ignored="false" />
     <file path="/list-produced.html" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1390879245453" ignored="false" />
     <file path="/json_data.md" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1390729206064" ignored="false" />
-    <file path="/directives.js" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1390967678359" ignored="false" />
+    <file path="/directives.js" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1391602405586" ignored="false" />
     <file path="/list-producing.html" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1390891263280" ignored="false" />
     <file path="$PROJECT_DIR$/../avene_redness/0110/m/story.html" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1390743023308" ignored="false" />
     <file path="/story.html" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1390743023308" ignored="false" />
@@ -58,19 +54,91 @@
     <file path="/home.css" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1390829752344" ignored="false" />
     <file path="/rank.html" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1390974858950" ignored="false" />
     <file path="/lp.rank.js" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1390975485737" ignored="false" />
-    <file path="/rule.html" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1390836302076" ignored="false" />
-    <file path="/admin.css" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1390968785455" ignored="false" />
+    <file path="/rule.html" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1391529013660" ignored="false" />
+    <file path="/admin.css" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1391581501561" ignored="false" />
     <file path="/list-rank.html" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1390901595187" ignored="false" />
     <file path="/list-all.html" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1390902189364" ignored="false" />
-    <file path="/AdminController.php" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1390921984845" ignored="false" />
-    <file path="/login.html" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1390894254250" ignored="false" />
+    <file path="/AdminController.php" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1391587132045" ignored="false" />
+    <file path="/login.html" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1391515697266" ignored="false" />
     <file path="/login.php" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1390900020606" ignored="false" />
-    <file path="/admin.php" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1390898517199" ignored="false" />
+    <file path="/admin.php" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1391567622275" ignored="false" />
     <file path="/delete.html" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1390901909019" ignored="false" />
     <file path="/app.js" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1390907167159" ignored="false" />
     <file path="/config.js" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1390913691466" ignored="false" />
-    <file path="/style_ie6.css" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1390917294068" ignored="false" />
+    <file path="/style_ie6.css" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1391588450631" ignored="false" />
     <file path="$PROJECT_DIR$/../avene_photowall/api/protected/config/main.php" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1390970398513" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/web/index.html" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1391170122200" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/api/protected/controllers/NodeController.php" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1391572220151" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/static/js/lp.base.js" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1391526499592" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/api/protected/models/NodeAR.php" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1391571143221" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/web/css/layout.css" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1391516409921" ignored="false" />
+    <file path="/layout.css" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1391516204597" ignored="false" />
+    <file path="/fonts.css" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1391149980284" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/web/css/fonts.css" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1391149986293" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/static/js/config.js" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1391143270532" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/web/css/needtocombine.css" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1391169875980" ignored="false" />
+    <file path="/needtocombine.css" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1391169857419" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/web/css/jsPane.css" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1391149509666" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/static/js/api.js" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1391165766547" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/static/js/plugin/jquery.jscrollpane.js" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1391171711246" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/api/protected/controllers/CommentController.php" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1391171829280" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/web/css/animation.css" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1391171946088" ignored="false" />
+    <file path="$PROJECT_DIR$/../avene_redness/js/jquery.queryloader22.js" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1391172340638" ignored="false" />
+    <file path="$PROJECT_DIR$/../ave_photowall/api/protected/controllers/UserController.php" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1391569232559" ignored="false" />
+    <file path="$PROJECT_DIR$/../ave_photowall/api/protected/models/User.php" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1391569222010" ignored="false" />
+    <file path="$PROJECT_DIR$/../ave_photowall/api/sinasdk/config.php" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1391490363060" ignored="false" />
+    <file path="$PROJECT_DIR$/../ave_photowall/api/protected/config/main.php" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1391501335222" ignored="false" />
+    <file path="/a.dummy" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1391491236362" ignored="false" />
+    <file path="$PROJECT_DIR$/../ave_photowall/api/index.php" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1391491340228" ignored="false" />
+    <file path="$PROJECT_DIR$/../ave_photowall/api/protected/controllers/PhotoController.php" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1391601622668" ignored="false" />
+    <file path="/PhotoController.php" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1391587422789" ignored="false" />
+    <file path="$PROJECT_DIR$/../ave_photowall/api/protected/models/Photo.php" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1391601565696" ignored="false" />
+    <file path="/Photo.php" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1391579685872" ignored="false" />
+    <file path="$PROJECT_DIR$/../ave_photowall/index.html" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1391602822568" ignored="false" />
+    <file path="$PROJECT_DIR$/../ave_photowall/photowall/api/framework/yiilite.php" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1391506923646" ignored="false" />
+    <file path="$PROJECT_DIR$/../ave_photowall/photowall/api/framework/cli/views/webapp/protected/views/layouts/main.php" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1391506923646" ignored="false" />
+    <file path="$PROJECT_DIR$/../ave_photowall/photowall/api/framework/gii/views/layouts/main.php" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1391506923646" ignored="false" />
+    <file path="$PROJECT_DIR$/../ave_photowall/photowall/api/protected/views/layouts/main.php" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1391506923646" ignored="false" />
+    <file path="$PROJECT_DIR$/../ave_photowall/photowall/index.html" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1391507068863" ignored="false" />
+    <file path="$PROJECT_DIR$/../ave_photowall/api/framework/cli/views/webapp/protected/views/layouts/main.php" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1391507365346" ignored="false" />
+    <file path="$PROJECT_DIR$/../ave_photowall/api/framework/gii/views/layouts/main.php" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1391507365346" ignored="false" />
+    <file path="$PROJECT_DIR$/../ave_photowall/api/protected/views/layouts/main.php" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1391507365346" ignored="false" />
+    <file path="$PROJECT_DIR$/../ave_photowall/css/style.css" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1391602896220" ignored="false" />
+    <file path="$PROJECT_DIR$/../ave_photowall/css/style_ie6.css" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1391588974153" ignored="false" />
+    <file path="$PROJECT_DIR$/../ave_photowall/rule.html" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1391592467800" ignored="false" />
+    <file path="$PROJECT_DIR$/../ave_photowall/winner.html" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1391589234819" ignored="false" />
+    <file path="/winner.html" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1391565322402" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/web/login.html" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1391515697681" ignored="false" />
+    <file path="$PROJECT_DIR$/../ave_photowall/js/lp.base.js" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1391603151008" ignored="false" />
+    <file path="$USER_HOME$/Downloads/www.eau-thermale-avene.cn/photowall/index.html" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1391519096663" ignored="false" />
+    <file path="$PROJECT_DIR$/../ave_photowall/about.html" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1391519566193" ignored="false" />
+    <file path="$PROJECT_DIR$/../ave_photowall/js/api.js" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1391562869742" ignored="false" />
+    <file path="$PROJECT_DIR$/../ave_photowall/api/protected/controllers/WinnerController.php" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1391562805324" ignored="false" />
+    <file path="/WinnerController.php" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1391562325849" ignored="false" />
+    <file path="$PROJECT_DIR$/../ave_photowall/api/protected/models/Winner.php" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1391562434871" ignored="false" />
+    <file path="$PROJECT_DIR$/../ave_photowall/api/protected/controllers/AdminController.php" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1391587152788" ignored="false" />
+    <file path="$PROJECT_DIR$/../bank_wall/static/js/lp.core.js" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1391567135498" ignored="false" />
+    <file path="$PROJECT_DIR$/../ave_photowall/api/admin_asset/js/app.js" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1391579301645" ignored="false" />
+    <file path="$PROJECT_DIR$/../ave_photowall/api/admin_asset/js/controllers/scarf.js" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1391567379573" ignored="false" />
+    <file path="$PROJECT_DIR$/../ave_photowall/api/admin_asset/js/services/scarf.js" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1391567392603" ignored="false" />
+    <file path="$PROJECT_DIR$/../ave_photowall/api/admin_asset/js/services.js" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1391567411952" ignored="false" />
+    <file path="$PROJECT_DIR$/../ave_photowall/api/admin_asset/js/directives.js" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1391602424867" ignored="false" />
+    <file path="$PROJECT_DIR$/../ave_photowall/api/admin_asset/js/controllers.js" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1391582501213" ignored="false" />
+    <file path="$PROJECT_DIR$/../ave_photowall/api/admin_asset/js/filters.js" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1391572905001" ignored="false" />
+    <file path="$PROJECT_DIR$/../ave_photowall/api/protected/views/layouts/admin.php" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1391567622275" ignored="false" />
+    <file path="$PROJECT_DIR$/../ave_photowall/api/protected/views/admin/index.php" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1391584838760" ignored="false" />
+    <file path="$PROJECT_DIR$/../ave_photowall/api/admin_asset/js/controllers/photo.js" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1391585298499" ignored="false" />
+    <file path="/*.regexp" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1391567833681" ignored="false" />
+    <file path="$PROJECT_DIR$/../ave_photowall/api/admin_asset/tmp/photo/list.html" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1391586455931" ignored="false" />
+    <file path="/NodeController.php" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1391570824765" ignored="false" />
+    <file path="/NodeAR.php" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1391571123949" ignored="false" />
+    <file path="/filters.js" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1391572896472" ignored="false" />
+    <file path="$PROJECT_DIR$/../ave_photowall/api/admin_asset/css/admin.css" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1391586285179" ignored="false" />
+    <file path="/photo.js" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1391585295063" ignored="false" />
+    <file path="$PROJECT_DIR$/../ave_photowall/api/admin_asset/js/services/photo.js" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1391582621937" ignored="false" />
+    <file path="$PROJECT_DIR$/../ave_photowall/api/protected/runtime/application.log" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1391578287686" ignored="false" />
+    <file path="$PROJECT_DIR$/../ave_photowall/api/protected/components/UserIdentity.php" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1391586365516" ignored="false" />
+    <file path="/UserIdentity.php" changelist="19a3a98e-09b8-4651-ab7d-e4100f3377a4" time="1391586365516" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,10 +163,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ScarfController.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/api/protected/controllers/ScarfController.php">
+      <file leaf-file-name="UserController.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/api/protected/controllers/UserController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="400" column="32" selection-start="11505" selection-end="11505" vertical-scroll-proportion="3.7401574">
+            <state line="95" column="26" selection-start="1887" selection-end="1887" vertical-scroll-proportion="0.6649169">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserIdentity.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/protected/components/UserIdentity.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="24" selection-start="487" selection-end="487" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -107,7 +184,70 @@
       <file leaf-file-name="main.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/protected/config/main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="86" column="43" selection-start="2234" selection-end="2234" vertical-scroll-proportion="-34.714287">
+            <state line="24" column="17" selection-start="647" selection-end="647" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ScarfController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/protected/controllers/ScarfController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="44" selection-start="288" selection-end="288" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Scarf.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/protected/models/Scarf.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="402" column="3" selection-start="9029" selection-end="9910" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="list.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/admin_asset/tmp/scarf/list.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="36" selection-start="225" selection-end="225" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="directives.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/admin_asset/js/directives.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="controllers.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/admin_asset/js/controllers.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="16" selection-start="248" selection-end="248" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdminController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/protected/controllers/AdminController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="84" column="3" selection-start="1595" selection-end="1767" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Admin.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/protected/models/Admin.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="80" column="34" selection-start="2068" selection-end="2068" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -138,15 +278,15 @@
         <option value="$PROJECT_DIR$/api/protected/views/admin/index.php" />
         <option value="$PROJECT_DIR$/api/admin_asset/css/admin.css" />
         <option value="$PROJECT_DIR$/api/sinasdk/config.php" />
-        <option value="$PROJECT_DIR$/js/lp.base.js" />
         <option value="$PROJECT_DIR$/js/lp.rank.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/rank.html" />
         <option value="$PROJECT_DIR$/rule.html" />
-        <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/api/admin_asset/tmp/scarf/list-producing.html" />
         <option value="$PROJECT_DIR$/api/protected/config/main.php" />
         <option value="$PROJECT_DIR$/api/protected/controllers/ScarfController.php" />
+        <option value="$PROJECT_DIR$/js/lp.base.js" />
+        <option value="$PROJECT_DIR$/css/style.css" />
       </list>
     </option>
   </component>
@@ -182,6 +322,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -196,7 +337,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="lilyweibo" />
+              <option name="myItemId" value="lily" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -206,7 +347,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="lilyweibo" />
+              <option name="myItemId" value="lily" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -220,7 +361,25 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="lilyweibo" />
+              <option name="myItemId" value="lily" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lily" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lily" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -234,7 +393,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="lilyweibo" />
+              <option name="myItemId" value="lily" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -248,25 +407,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="lilyweibo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sinasdk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
               <option name="myItemId" value="lily" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lilyweibo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -284,7 +425,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="lilyweibo" />
+              <option name="myItemId" value="lily" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -296,7 +437,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
+              <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -306,59 +447,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="lilyweibo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protected" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layouts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
               <option name="myItemId" value="lily" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lilyweibo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protected" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lily" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lilyweibo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -380,7 +469,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="lilyweibo" />
+              <option name="myItemId" value="lily" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -402,7 +491,29 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="lilyweibo" />
+              <option name="myItemId" value="lily" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lily" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lily" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -420,81 +531,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="lilyweibo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin_asset" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tmp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="user" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
               <option name="myItemId" value="lily" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lilyweibo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin_asset" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tmp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scarf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lily" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lilyweibo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin_asset" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tmp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lily" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lilyweibo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -507,86 +544,11 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lily" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lilyweibo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin_asset" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="services" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lily" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lilyweibo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin_asset" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lily" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lilyweibo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin_asset" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -650,13 +612,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="2243" height="1319" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32999545" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24988621" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22758307" sideWeight="0.6705588" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2366864" sideWeight="0.6705588" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -732,118 +694,104 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/api/sinasdk/config.php">
+    <entry file="file://$PROJECT_DIR$/api/protected/config/oauth.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="73" selection-start="172" selection-end="172" vertical-scroll-proportion="-2.0357144">
+        <state line="8" column="2" selection-start="262" selection-end="262" vertical-scroll-proportion="0.13298337" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/protected/components/Controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="1" selection-start="811" selection-end="811" vertical-scroll-proportion="0.3657043" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/protected/config/console.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="22" selection-start="758" selection-end="758" vertical-scroll-proportion="0.46544182" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="31" selection-start="424" selection-end="424" vertical-scroll-proportion="0.18285215" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/protected/vendors/sns/weibo/saetv2.ex.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="481" column="23" selection-start="12083" selection-end="12083" vertical-scroll-proportion="-12.040708" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/protected/models/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="79" column="33" selection-start="1882" selection-end="1882" vertical-scroll-proportion="0.10848644">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/protected/views/admin/login.php">
+    <entry file="file://$PROJECT_DIR$/api/protected/controllers/UserController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="47" selection-start="289" selection-end="309" vertical-scroll-proportion="-4.071429">
+        <state line="95" column="26" selection-start="1887" selection-end="1887" vertical-scroll-proportion="0.6649169">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/admin_asset/tmp/scarf/list-producing.html">
+    <entry file="file://$PROJECT_DIR$/api/protected/models/Admin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="12" selection-start="448" selection-end="448" vertical-scroll-proportion="0.21609798">
+        <state line="80" column="34" selection-start="2068" selection-end="2068" vertical-scroll-proportion="0.0">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/admin_asset/js/controllers/scarf.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="124" column="23" selection-start="4524" selection-end="4524" vertical-scroll-proportion="0.016225448">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="31" selection-start="1367" selection-end="1367" vertical-scroll-proportion="0.4758204">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="27" selection-start="619" selection-end="630" vertical-scroll-proportion="0.25221238">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/admin_asset/css/admin.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="38" selection-start="1058" selection-end="1058" vertical-scroll-proportion="0.16321243">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rank.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="38" selection-start="642" selection-end="642" vertical-scroll-proportion="0.23272091">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rule.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="38" selection-start="583" selection-end="583" vertical-scroll-proportion="0.21609798">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/lp.base.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="360" column="26" selection-start="12548" selection-end="12548" vertical-scroll-proportion="0.5943638">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/lp.rank.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="45" selection-start="303" selection-end="303" vertical-scroll-proportion="0.16225448">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/protected/controllers/AdminController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="84" column="3" selection-start="1595" selection-end="1767" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/protected/views/admin/index.php">
+    <entry file="file://$PROJECT_DIR$/api/protected/components/UserIdentity.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="52" selection-start="1204" selection-end="1232" vertical-scroll-proportion="0.5153106">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/protected/models/Scarf.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="266" column="18" selection-start="6719" selection-end="6719" vertical-scroll-proportion="0.3415929">
+        <state line="19" column="24" selection-start="487" selection-end="487" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/protected/config/main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="43" selection-start="2234" selection-end="2234" vertical-scroll-proportion="-34.714287">
+        <state line="24" column="17" selection-start="647" selection-end="647" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/protected/controllers/ScarfController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="400" column="32" selection-start="11505" selection-end="11505" vertical-scroll-proportion="3.7401574">
+        <state line="10" column="44" selection-start="288" selection-end="288" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/admin_asset/js/controllers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="16" selection-start="248" selection-end="248" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/admin_asset/js/directives.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/protected/models/Scarf.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="402" column="3" selection-start="9029" selection-end="9910" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/admin_asset/tmp/scarf/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="36" selection-start="225" selection-end="225" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
