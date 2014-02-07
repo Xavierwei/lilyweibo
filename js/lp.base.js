@@ -119,6 +119,12 @@ LP.use(['jquery' , 'api', 'easing'] , function( $ , api ){
             return false;
         }
         submitting = true;
+        LP.compile( 'popup-dmx-template' ,
+            {},
+            function( html ){
+                $('body').append(html);
+                $('#popup-dmx').fadeIn().dequeue().animate({top:'50%'}, 1000, 'easeOutElastic');
+            });
         api.ajax('dmx', function(res){
             submitting = false;
             if(res.error) {
@@ -139,8 +145,10 @@ LP.use(['jquery' , 'api', 'easing'] , function( $ , api ){
             LP.compile( 'popup-dmx-template' ,
                 data,
                 function( html ){
-                    $('body').append(html);
-                    $('#popup-dmx').fadeIn().dequeue().animate({top:'50%'}, 1000, 'easeOutElastic');
+                    var inner = $(html).find('#popup-dmx-wrap').html();
+                    $('#popup-dmx-wrap').fadeOut(300,function(){
+                        $(this).html(inner).fadeIn(300);
+                    });
                 });
 
             var myRank = $('#myRank').data('user');

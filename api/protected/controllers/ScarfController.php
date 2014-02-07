@@ -322,6 +322,18 @@ class ScarfController extends Controller {
 				$scarf->logDMX($user['uid']); //记录大冒险日志
 				$data['offset'] = $currentRank - $newRank;
 				$data['newRank'] = $newRank;
+
+        // 分享微博
+        if($data['offset'] >= 0) {
+          $shareText = '我刚赌了一把！排名上升了'.$data['offset'].'名，现在排名'.$data['newRank'].'名';
+        }
+        else {
+          $shareText = '我刚赌了一把！排名下降了'.abs($data['offset']).'名，现在排名'.$data['newRank'].'名';
+        }
+
+        //TODO: 更换POSTER
+        Scarf::model()->shareWeibo($shareText, 'http://www.lily-collection.com/media/wysiwyg/spring-vedio-poster.jpg');
+
 				return $this->returnJSON(array(
 					"data" => $data,
 					"error" => null

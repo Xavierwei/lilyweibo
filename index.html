@@ -46,7 +46,9 @@
 
         <div class="step stepWaitApprove" id="stepWaitApprove"></div>
 
-        <div class="step stepProduced" id="stepProduced"></div>
+        <div class="step stepProduced" id="stepProduced">
+            <a class="stepProducedAddress" href="http://j.map.baidu.com/Kxo3T" target="_blank"><img src="img/space.gif" width="300" height="60" /></a>
+        </div>
 
         <div class="step step1">
             <div class="step1Title"></div>
@@ -147,13 +149,19 @@
     <div class="overlay" data-a="close_popup"></div>
     <div id="popup-dmx" class="popup">
         <div class="close" data-a="close_popup"></div>
-        {{#if direction}}
-        <div class="title_{{direction}}"></div>
-        <div class="rank">您的排名{{direction_text}}了{{offset}}位，目前排在{{newRank}}位</div>
-        {{else}}
-        <div class="errorMsg">您今天已经赌三把了，明天再来吧！</div>
-        {{/if}}
-        <div class="backBtn" data-a="close_popup"></div>
+        <div id="popup-dmx-wrap">
+            {{#if offset}}
+            {{#if direction}}
+            <div class="title_{{direction}}"></div>
+            <div class="rank">您的排名{{direction_text}}了{{offset}}位，目前排在{{newRank}}位</div>
+            {{else}}
+            <div class="errorMsg">您今天已经赌三把了，明天再来吧！</div>
+            {{/if}}
+            <div class="backBtn" data-a="close_popup"></div>
+            {{else}}
+            <div class="errorMsg"><br />排名中，请稍等...</div>
+            {{/if}}
+        </div>
     </div>
 </script>
 <!-- #login-iframe-tpl -->

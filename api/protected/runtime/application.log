@@ -3692,3 +3692,461 @@ Stack trace:
 REQUEST_URI=/lilyweibo/api/uploads/20140128/139090597424038.jpg
 HTTP_REFERER=http://lily.local:8888/lilyweibo/
 ---
+2014/02/07 09:50:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/20140128/139090597424038.jpg".' in /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController('uploads/2014012...')
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilyweibo/api/uploads/20140128/139090597424038.jpg
+HTTP_REFERER=http://lily.local:8888/lilyweibo/
+---
+2014/02/07 09:52:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/20140128/139090597424038.jpg".' in /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController('uploads/2014012...')
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilyweibo/api/uploads/20140128/139090597424038.jpg
+HTTP_REFERER=http://lily.local:8888/lilyweibo/
+---
+2014/02/07 09:54:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/20140128/139090597424038.jpg".' in /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController('uploads/2014012...')
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilyweibo/api/uploads/20140128/139090597424038.jpg
+HTTP_REFERER=http://lily.local:8888/lilyweibo/
+---
+2014/02/07 09:56:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/20140128/139090597424038.jpg".' in /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController('uploads/2014012...')
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilyweibo/api/uploads/20140128/139090597424038.jpg
+HTTP_REFERER=http://lily.local:8888/lilyweibo/
+---
+2014/02/07 10:11:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/20140128/139090597424038.jpg".' in /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController('uploads/2014012...')
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilyweibo/api/uploads/20140128/139090597424038.jpg
+HTTP_REFERER=http://lily.local:8888/lilyweibo/
+---
+2014/02/07 10:11:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/20140128/139090597424038.jpg".' in /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController('uploads/2014012...')
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilyweibo/api/uploads/20140128/139090597424038.jpg
+HTTP_REFERER=http://lily.local:8888/lilyweibo/
+---
+2014/02/07 10:11:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/20140128/139090597424038.jpg".' in /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController('uploads/2014012...')
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilyweibo/api/uploads/20140128/139090597424038.jpg
+HTTP_REFERER=http://lily.local:8888/lilyweibo/
+---
+2014/02/07 10:12:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/20140128/139090597424038.jpg".' in /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController('uploads/2014012...')
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilyweibo/api/uploads/20140128/139090597424038.jpg
+HTTP_REFERER=http://lily.local:8888/lilyweibo/
+---
+2014/02/07 10:14:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/20140128/139090597424038.jpg".' in /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController('uploads/2014012...')
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilyweibo/api/uploads/20140128/139090597424038.jpg
+HTTP_REFERER=http://lily.local:8888/lilyweibo/
+---
+2014/02/07 10:14:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/20140128/139090597424038.jpg".' in /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController('uploads/2014012...')
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilyweibo/api/uploads/20140128/139090597424038.jpg
+HTTP_REFERER=http://lily.local:8888/lilyweibo/
+---
+2014/02/07 10:14:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/20140128/139090597424038.jpg".' in /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController('uploads/2014012...')
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilyweibo/api/uploads/20140128/139090597424038.jpg
+HTTP_REFERER=http://lily.local:8888/lilyweibo/
+---
+2014/02/07 10:16:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/20140128/139090597424038.jpg".' in /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController('uploads/2014012...')
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilyweibo/api/uploads/20140128/139090597424038.jpg
+HTTP_REFERER=http://lily.local:8888/lilyweibo/
+---
+2014/02/07 10:18:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/20140128/139090597424038.jpg".' in /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController('uploads/2014012...')
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilyweibo/api/uploads/20140128/139090597424038.jpg
+HTTP_REFERER=http://lily.local:8888/lilyweibo/
+---
+2014/02/07 10:19:59 [warning] [application] Failed to set unsafe attribute "updae_datetime" of "Scarf".
+in /Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/ScarfController.php (261)
+in /Applications/MAMP/htdocs/lilyweibo/api/index.php (20)
+2014/02/07 10:20:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/20140128/139090597424038.jpg".' in /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController('uploads/2014012...')
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilyweibo/api/uploads/20140128/139090597424038.jpg
+HTTP_REFERER=http://lily.local:8888/lilyweibo/
+---
+2014/02/07 10:22:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/20140128/139090597424038.jpg".' in /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController('uploads/2014012...')
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilyweibo/api/uploads/20140128/139090597424038.jpg
+HTTP_REFERER=http://lily.local:8888/lilyweibo/
+---
+2014/02/07 10:23:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/20140128/139090597424038.jpg".' in /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController('uploads/2014012...')
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilyweibo/api/uploads/20140128/139090597424038.jpg
+HTTP_REFERER=http://lily.local:8888/lilyweibo/
+---
+2014/02/07 10:25:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/20140128/139090597424038.jpg".' in /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController('uploads/2014012...')
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilyweibo/api/uploads/20140128/139090597424038.jpg
+HTTP_REFERER=http://lily.local:8888/lilyweibo/
+---
+2014/02/07 10:25:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/20140128/139090597424038.jpg".' in /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController('uploads/2014012...')
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilyweibo/api/uploads/20140128/139090597424038.jpg
+HTTP_REFERER=http://lily.local:8888/lilyweibo/
+---
+2014/02/07 10:25:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/20140128/139090597424038.jpg".' in /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController('uploads/2014012...')
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilyweibo/api/uploads/20140128/139090597424038.jpg
+HTTP_REFERER=http://lily.local:8888/lilyweibo/
+---
+2014/02/07 10:25:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/20140128/139090597424038.jpg".' in /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController('uploads/2014012...')
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilyweibo/api/uploads/20140128/139090597424038.jpg
+HTTP_REFERER=http://lily.local:8888/lilyweibo/
+---
+2014/02/07 10:25:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/20140128/139090597424038.jpg".' in /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController('uploads/2014012...')
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilyweibo/api/uploads/20140128/139090597424038.jpg
+HTTP_REFERER=http://lily.local:8888/lilyweibo/
+---
+2014/02/07 10:27:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/20140128/139090597424038.jpg".' in /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController('uploads/2014012...')
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilyweibo/api/uploads/20140128/139090597424038.jpg
+HTTP_REFERER=http://lily.local:8888/lilyweibo/
+---
+2014/02/07 10:28:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/20140128/139090597424038.jpg".' in /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController('uploads/2014012...')
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilyweibo/api/uploads/20140128/139090597424038.jpg
+HTTP_REFERER=http://lily.local:8888/lilyweibo/
+---
+2014/02/07 10:30:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/20140128/139090597424038.jpg".' in /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController('uploads/2014012...')
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilyweibo/api/uploads/20140128/139090597424038.jpg
+HTTP_REFERER=http://lily.local:8888/lilyweibo/
+---
+2014/02/07 10:31:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/20140128/139090597424038.jpg".' in /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController('uploads/2014012...')
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilyweibo/api/uploads/20140128/139090597424038.jpg
+HTTP_REFERER=http://lily.local:8888/lilyweibo/
+---
+2014/02/07 10:33:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/20140128/139090597424038.jpg".' in /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController('uploads/2014012...')
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilyweibo/api/uploads/20140128/139090597424038.jpg
+HTTP_REFERER=http://lily.local:8888/lilyweibo/
+---
+2014/02/07 10:35:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/20140128/139090597424038.jpg".' in /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController('uploads/2014012...')
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilyweibo/api/uploads/20140128/139090597424038.jpg
+HTTP_REFERER=http://lily.local:8888/lilyweibo/
+---
+2014/02/07 10:36:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/20140128/139090597424038.jpg".' in /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController('uploads/2014012...')
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilyweibo/api/uploads/20140128/139090597424038.jpg
+HTTP_REFERER=http://lily.local:8888/lilyweibo/
+---
+2014/02/07 10:36:41 [error] [php] file_get_contents(): Filename cannot be empty (/Applications/MAMP/htdocs/lilyweibo/api/sinasdk/saetv2.ex.class.php:451)
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/sinasdk/saetv2.ex.class.php(292): SaeTOAuthV2->oAuthRequest()
+#1 /Applications/MAMP/htdocs/lilyweibo/api/sinasdk/saetv2.ex.class.php(1107): SaeTOAuthV2->post()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/protected/models/Scarf.php(112): SaeTClientV2->upload()
+#3 /Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/ScarfController.php(333): Scarf->shareWeibo()
+#4 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/actions/CInlineAction.php(49): ScarfController->actionDmx()
+#5 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(286): ScarfController->runAction()
+#7 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(265): ScarfController->runActionWithFilters()
+#8 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(282): ScarfController->run()
+#9 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CWebApplication->run()
+REQUEST_URI=/lilyweibo/api/index.php/scarf/dmx?_=1391740600375
+in /Applications/MAMP/htdocs/lilyweibo/api/sinasdk/saetv2.ex.class.php (451)
+in /Applications/MAMP/htdocs/lilyweibo/api/sinasdk/saetv2.ex.class.php (333)
+in /Applications/MAMP/htdocs/lilyweibo/api/sinasdk/saetv2.ex.class.php (292)
+2014/02/07 10:36:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/20140128/139090597424038.jpg".' in /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController('uploads/2014012...')
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilyweibo/api/uploads/20140128/139090597424038.jpg
+HTTP_REFERER=http://lily.local:8888/lilyweibo/
+---
+2014/02/07 10:37:00 [error] [php] Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/ScarfController.php:333) (/Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/ScarfController.php:21)
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/actions/CInlineAction.php(49): ScarfController->actionDmx()
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(286): ScarfController->runAction()
+#3 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CController.php(265): ScarfController->runActionWithFilters()
+#4 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(282): ScarfController->run()
+#5 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#7 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CWebApplication->run()
+REQUEST_URI=/lilyweibo/api/index.php/scarf/dmx?_=1391740619404
+in /Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/ScarfController.php (21)
+in /Applications/MAMP/htdocs/lilyweibo/api/protected/controllers/ScarfController.php (339)
+in /Applications/MAMP/htdocs/lilyweibo/api/index.php (20)
+2014/02/07 10:38:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/20140128/139090597424038.jpg".' in /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController('uploads/2014012...')
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilyweibo/api/uploads/20140128/139090597424038.jpg
+HTTP_REFERER=http://lily.local:8888/lilyweibo/
+---
+2014/02/07 10:39:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/20140128/139090597424038.jpg".' in /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController('uploads/2014012...')
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilyweibo/api/uploads/20140128/139090597424038.jpg
+HTTP_REFERER=http://lily.local:8888/lilyweibo/
+---
+2014/02/07 10:41:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/20140128/139090597424038.jpg".' in /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController('uploads/2014012...')
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilyweibo/api/uploads/20140128/139090597424038.jpg
+HTTP_REFERER=http://lily.local:8888/lilyweibo/
+---
+2014/02/07 10:41:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/20140128/139090597424038.jpg".' in /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController('uploads/2014012...')
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilyweibo/api/uploads/20140128/139090597424038.jpg
+HTTP_REFERER=http://lily.local:8888/lilyweibo/
+---
+2014/02/07 10:42:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/20140128/139090597424038.jpg".' in /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController('uploads/2014012...')
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilyweibo/api/uploads/20140128/139090597424038.jpg
+HTTP_REFERER=http://lily.local:8888/lilyweibo/
+---
+2014/02/07 10:44:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/20140128/139090597424038.jpg".' in /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController('uploads/2014012...')
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilyweibo/api/uploads/20140128/139090597424038.jpg
+HTTP_REFERER=http://lily.local:8888/lilyweibo/
+---
+2014/02/07 10:45:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/20140128/139090597424038.jpg".' in /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController('uploads/2014012...')
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilyweibo/api/uploads/20140128/139090597424038.jpg
+HTTP_REFERER=http://lily.local:8888/lilyweibo/
+---
+2014/02/07 10:45:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/20140128/139090597424038.jpg".' in /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController('uploads/2014012...')
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilyweibo/api/uploads/20140128/139090597424038.jpg
+HTTP_REFERER=http://lily.local:8888/lilyweibo/
+---
+2014/02/07 10:46:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/20140128/139090597424038.jpg".' in /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController('uploads/2014012...')
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilyweibo/api/uploads/20140128/139090597424038.jpg
+HTTP_REFERER=http://lily.local:8888/lilyweibo/
+---
+2014/02/07 10:47:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/20140128/139090597424038.jpg".' in /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController('uploads/2014012...')
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilyweibo/api/uploads/20140128/139090597424038.jpg
+HTTP_REFERER=http://lily.local:8888/lilyweibo/
+---
+2014/02/07 10:47:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/20140128/139090597424038.jpg".' in /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController('uploads/2014012...')
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilyweibo/api/uploads/20140128/139090597424038.jpg
+HTTP_REFERER=http://lily.local:8888/lilyweibo/
+---
+2014/02/07 10:49:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/20140128/139090597424038.jpg".' in /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController('uploads/2014012...')
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilyweibo/api/uploads/20140128/139090597424038.jpg
+HTTP_REFERER=http://lily.local:8888/lilyweibo/
+---
+2014/02/07 10:51:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/20140128/139090597424038.jpg".' in /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController('uploads/2014012...')
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilyweibo/api/uploads/20140128/139090597424038.jpg
+HTTP_REFERER=http://lily.local:8888/lilyweibo/
+---
+2014/02/07 10:53:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/20140128/139090597424038.jpg".' in /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController('uploads/2014012...')
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilyweibo/api/uploads/20140128/139090597424038.jpg
+HTTP_REFERER=http://lily.local:8888/lilyweibo/
+---
+2014/02/07 10:55:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/20140128/139090597424038.jpg".' in /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController('uploads/2014012...')
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilyweibo/api/uploads/20140128/139090597424038.jpg
+HTTP_REFERER=http://lily.local:8888/lilyweibo/
+---
+2014/02/07 10:57:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/20140128/139090597424038.jpg".' in /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController('uploads/2014012...')
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilyweibo/api/uploads/20140128/139090597424038.jpg
+HTTP_REFERER=http://lily.local:8888/lilyweibo/
+---
+2014/02/07 10:59:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/20140128/139090597424038.jpg".' in /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController('uploads/2014012...')
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilyweibo/api/uploads/20140128/139090597424038.jpg
+HTTP_REFERER=http://lily.local:8888/lilyweibo/
+---
+2014/02/07 11:01:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/20140128/139090597424038.jpg".' in /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lilyweibo/api/framework/web/CWebApplication.php(141): CWebApplication->runController('uploads/2014012...')
+#1 /Applications/MAMP/htdocs/lilyweibo/api/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lilyweibo/api/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/lilyweibo/api/uploads/20140128/139090597424038.jpg
+HTTP_REFERER=http://lily.local:8888/lilyweibo/
+---
